@@ -1,0 +1,698 @@
+XMLSubSys.o: XMLSubSys.cpp ../../../src/config.h \
+ /usr/include/c++/4.6/iostream \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++config.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/os_defines.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/bits/predefs.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/cpu_defines.h \
+ /usr/include/c++/4.6/ostream /usr/include/c++/4.6/ios \
+ /usr/include/c++/4.6/iosfwd /usr/include/c++/4.6/bits/stringfwd.h \
+ /usr/include/c++/4.6/bits/postypes.h /usr/include/c++/4.6/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
+ /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/4.6/exception /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/c++/4.6/bits/stl_algobase.h \
+ /usr/include/c++/4.6/bits/functexcept.h \
+ /usr/include/c++/4.6/bits/exception_defines.h \
+ /usr/include/c++/4.6/bits/cpp_type_traits.h \
+ /usr/include/c++/4.6/ext/type_traits.h \
+ /usr/include/c++/4.6/ext/numeric_traits.h \
+ /usr/include/c++/4.6/bits/stl_pair.h /usr/include/c++/4.6/bits/move.h \
+ /usr/include/c++/4.6/bits/concept_check.h \
+ /usr/include/c++/4.6/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.6/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.6/bits/stl_iterator.h \
+ /usr/include/c++/4.6/debug/debug.h /usr/include/c++/4.6/bits/localefwd.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++locale.h \
+ /usr/include/c++/4.6/clocale /usr/include/locale.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/4.6/cctype \
+ /usr/include/ctype.h /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/c++/4.6/bits/ios_base.h \
+ /usr/include/c++/4.6/ext/atomicity.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
+ /usr/include/c++/4.6/bits/locale_classes.h /usr/include/c++/4.6/string \
+ /usr/include/c++/4.6/bits/allocator.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++allocator.h \
+ /usr/include/c++/4.6/ext/new_allocator.h /usr/include/c++/4.6/new \
+ /usr/include/c++/4.6/bits/ostream_insert.h \
+ /usr/include/c++/4.6/bits/cxxabi_forced.h \
+ /usr/include/c++/4.6/bits/stl_function.h \
+ /usr/include/c++/4.6/backward/binders.h \
+ /usr/include/c++/4.6/bits/range_access.h \
+ /usr/include/c++/4.6/bits/basic_string.h \
+ /usr/include/c++/4.6/initializer_list \
+ /usr/include/c++/4.6/bits/basic_string.tcc \
+ /usr/include/c++/4.6/bits/locale_classes.tcc \
+ /usr/include/c++/4.6/streambuf /usr/include/c++/4.6/bits/streambuf.tcc \
+ /usr/include/c++/4.6/bits/basic_ios.h \
+ /usr/include/c++/4.6/bits/locale_facets.h /usr/include/c++/4.6/cwctype \
+ /usr/include/wctype.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/ctype_base.h \
+ /usr/include/c++/4.6/bits/streambuf_iterator.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/ctype_inline.h \
+ /usr/include/c++/4.6/bits/locale_facets.tcc \
+ /usr/include/c++/4.6/bits/basic_ios.tcc \
+ /usr/include/c++/4.6/bits/ostream.tcc /usr/include/c++/4.6/istream \
+ /usr/include/c++/4.6/bits/istream.tcc \
+ /usr/local/include/xercesc/sax2/XMLReaderFactory.hpp \
+ /usr/local/include/xercesc/sax2/SAX2XMLReader.hpp \
+ /usr/local/include/xercesc/util/XercesDefs.hpp \
+ /usr/local/include/xercesc/util/Xerces_autoconf_config.hpp \
+ /usr/include/inttypes.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h \
+ /usr/include/x86_64-linux-gnu/bits/select2.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/local/include/xercesc/util/XercesVersion.hpp \
+ /usr/local/include/xercesc/util/XMLUniDefs.hpp \
+ /usr/local/include/xercesc/framework/XMLValidator.hpp \
+ /usr/local/include/xercesc/framework/XMLAttr.hpp \
+ /usr/local/include/xercesc/util/PlatformUtils.hpp \
+ /usr/local/include/xercesc/util/XMLException.hpp \
+ /usr/local/include/xercesc/util/XMemory.hpp /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ /usr/local/include/xercesc/util/XMLExceptMsgs.hpp \
+ /usr/local/include/xercesc/dom/DOMError.hpp \
+ /usr/local/include/xercesc/util/XMLUni.hpp \
+ /usr/local/include/xercesc/framework/XMLErrorReporter.hpp \
+ /usr/local/include/xercesc/util/PanicHandler.hpp \
+ /usr/local/include/xercesc/util/XMLFileMgr.hpp \
+ /usr/local/include/xercesc/util/XMLMutexMgr.hpp \
+ /usr/local/include/xercesc/util/QName.hpp \
+ /usr/local/include/xercesc/util/XMLString.hpp \
+ /usr/local/include/xercesc/util/BaseRefVectorOf.hpp \
+ /usr/local/include/xercesc/util/ArrayIndexOutOfBoundsException.hpp \
+ /usr/local/include/xercesc/util/XMLEnumerator.hpp \
+ /usr/local/include/xercesc/framework/MemoryManager.hpp \
+ /usr/local/include/xercesc/util/BaseRefVectorOf.c \
+ /usr/local/include/xercesc/framework/XMLBuffer.hpp /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string3.h /usr/include/assert.h \
+ /usr/local/include/xercesc/internal/XSerializable.hpp \
+ /usr/local/include/xercesc/internal/XSerializeEngine.hpp \
+ /usr/local/include/xercesc/util/RefHashTableOf.hpp \
+ /usr/local/include/xercesc/util/Hashers.hpp \
+ /usr/local/include/xercesc/util/IllegalArgumentException.hpp \
+ /usr/local/include/xercesc/util/NoSuchElementException.hpp \
+ /usr/local/include/xercesc/util/RuntimeException.hpp \
+ /usr/local/include/xercesc/util/RefHashTableOf.c \
+ /usr/local/include/xercesc/util/Janitor.hpp \
+ /usr/local/include/xercesc/util/Janitor.c \
+ /usr/local/include/xercesc/util/NullPointerException.hpp \
+ /usr/local/include/xercesc/util/ValueVectorOf.hpp \
+ /usr/local/include/xercesc/util/ValueVectorOf.c \
+ /usr/local/include/xercesc/internal/XSerializationException.hpp \
+ /usr/local/include/xercesc/internal/XProtoType.hpp \
+ /usr/local/include/xercesc/framework/XMLAttDef.hpp \
+ /usr/local/include/xercesc/validators/datatype/DatatypeValidator.hpp \
+ /usr/local/include/xercesc/util/KVStringPair.hpp \
+ /usr/local/include/xercesc/util/regx/RegularExpression.hpp \
+ /usr/local/include/xercesc/util/RefArrayVectorOf.hpp \
+ /usr/local/include/xercesc/util/RefArrayVectorOf.c \
+ /usr/local/include/xercesc/util/regx/Op.hpp \
+ /usr/local/include/xercesc/util/RefVectorOf.hpp \
+ /usr/local/include/xercesc/util/RefVectorOf.c \
+ /usr/local/include/xercesc/util/regx/TokenFactory.hpp \
+ /usr/local/include/xercesc/util/regx/Token.hpp \
+ /usr/local/include/xercesc/util/Mutexes.hpp \
+ /usr/local/include/xercesc/util/regx/BMPattern.hpp \
+ /usr/local/include/xercesc/util/regx/OpFactory.hpp \
+ /usr/local/include/xercesc/util/regx/RegxUtil.hpp \
+ /usr/local/include/xercesc/validators/schema/SchemaSymbols.hpp \
+ /usr/local/include/xercesc/framework/psvi/XSSimpleTypeDefinition.hpp \
+ /usr/local/include/xercesc/framework/psvi/XSTypeDefinition.hpp \
+ /usr/local/include/xercesc/framework/psvi/XSObject.hpp \
+ /usr/local/include/xercesc/framework/psvi/XSConstants.hpp \
+ /usr/local/include/xercesc/framework/ValidationContext.hpp \
+ /usr/local/include/xercesc/util/NameIdPool.hpp \
+ /usr/local/include/xercesc/util/NameIdPool.c \
+ /usr/local/include/xercesc/framework/XMLValidityCodes.hpp \
+ /usr/local/include/xercesc/framework/XMLPScanToken.hpp \
+ /usr/local/include/xercesc/validators/common/Grammar.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/local/include/xercesc/framework/XMLElementDecl.hpp \
+ /usr/local/include/xercesc/framework/XMLAttDefList.hpp \
+ /usr/local/include/xercesc/framework/XMLEntityDecl.hpp \
+ /usr/local/include/xercesc/framework/XMLNotationDecl.hpp \
+ /usr/local/include/xercesc/sax/SAXException.hpp \
+ ../../../src/utils/common/TplConvert.h /usr/include/c++/4.6/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/huge_val.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
+ /usr/include/x86_64-linux-gnu/bits/inf.h \
+ /usr/include/x86_64-linux-gnu/bits/nan.h \
+ /usr/include/x86_64-linux-gnu/bits/mathdef.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h \
+ /usr/include/c++/4.6/climits ../../../src/utils/common/UtilExceptions.h \
+ /usr/include/c++/4.6/stdexcept ../../../src/utils/common/StdDefs.h \
+ ../../../src/utils/common/MsgHandler.h /usr/include/c++/4.6/vector \
+ /usr/include/c++/4.6/bits/stl_construct.h \
+ /usr/include/c++/4.6/bits/stl_uninitialized.h \
+ /usr/include/c++/4.6/bits/stl_vector.h \
+ /usr/include/c++/4.6/bits/stl_bvector.h \
+ /usr/include/c++/4.6/bits/vector.tcc SUMOSAXHandler.h \
+ ../../../src/utils/xml/GenericSAXHandler.h /usr/include/c++/4.6/map \
+ /usr/include/c++/4.6/bits/stl_tree.h /usr/include/c++/4.6/bits/stl_map.h \
+ /usr/include/c++/4.6/bits/stl_multimap.h /usr/include/c++/4.6/stack \
+ /usr/include/c++/4.6/deque /usr/include/c++/4.6/bits/stl_deque.h \
+ /usr/include/c++/4.6/bits/deque.tcc \
+ /usr/include/c++/4.6/bits/stl_stack.h /usr/include/c++/4.6/sstream \
+ /usr/include/c++/4.6/bits/sstream.tcc \
+ /usr/local/include/xercesc/sax2/Attributes.hpp \
+ /usr/local/include/xercesc/sax2/DefaultHandler.hpp \
+ /usr/local/include/xercesc/sax2/ContentHandler.hpp \
+ /usr/local/include/xercesc/sax2/LexicalHandler.hpp \
+ /usr/local/include/xercesc/sax2/DeclHandler.hpp \
+ /usr/local/include/xercesc/sax/DTDHandler.hpp \
+ /usr/local/include/xercesc/sax/EntityResolver.hpp \
+ /usr/local/include/xercesc/sax/ErrorHandler.hpp \
+ /usr/local/include/xercesc/sax/SAXParseException.hpp \
+ ../../../src/utils/common/StringBijection.h \
+ ../../../src/utils/xml/SUMOSAXAttributes.h \
+ ../../../src/utils/common/SUMOTime.h \
+ ../../../src/utils/common/UtilExceptions.h XMLSubSys.h
+
+../../../src/config.h:
+
+/usr/include/c++/4.6/iostream:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++config.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/x86_64-linux-gnu/bits/predefs.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/cpu_defines.h:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/ios:
+
+/usr/include/c++/4.6/iosfwd:
+
+/usr/include/c++/4.6/bits/stringfwd.h:
+
+/usr/include/c++/4.6/bits/postypes.h:
+
+/usr/include/c++/4.6/cwchar:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
+/usr/include/c++/4.6/exception:
+
+/usr/include/c++/4.6/bits/char_traits.h:
+
+/usr/include/c++/4.6/bits/stl_algobase.h:
+
+/usr/include/c++/4.6/bits/functexcept.h:
+
+/usr/include/c++/4.6/bits/exception_defines.h:
+
+/usr/include/c++/4.6/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.6/ext/type_traits.h:
+
+/usr/include/c++/4.6/ext/numeric_traits.h:
+
+/usr/include/c++/4.6/bits/stl_pair.h:
+
+/usr/include/c++/4.6/bits/move.h:
+
+/usr/include/c++/4.6/bits/concept_check.h:
+
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.6/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.6/bits/stl_iterator.h:
+
+/usr/include/c++/4.6/debug/debug.h:
+
+/usr/include/c++/4.6/bits/localefwd.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++locale.h:
+
+/usr/include/c++/4.6/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/c++/4.6/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/4.6/bits/ios_base.h:
+
+/usr/include/c++/4.6/ext/atomicity.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
+
+/usr/include/c++/4.6/bits/locale_classes.h:
+
+/usr/include/c++/4.6/string:
+
+/usr/include/c++/4.6/bits/allocator.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++allocator.h:
+
+/usr/include/c++/4.6/ext/new_allocator.h:
+
+/usr/include/c++/4.6/new:
+
+/usr/include/c++/4.6/bits/ostream_insert.h:
+
+/usr/include/c++/4.6/bits/cxxabi_forced.h:
+
+/usr/include/c++/4.6/bits/stl_function.h:
+
+/usr/include/c++/4.6/backward/binders.h:
+
+/usr/include/c++/4.6/bits/range_access.h:
+
+/usr/include/c++/4.6/bits/basic_string.h:
+
+/usr/include/c++/4.6/initializer_list:
+
+/usr/include/c++/4.6/bits/basic_string.tcc:
+
+/usr/include/c++/4.6/bits/locale_classes.tcc:
+
+/usr/include/c++/4.6/streambuf:
+
+/usr/include/c++/4.6/bits/streambuf.tcc:
+
+/usr/include/c++/4.6/bits/basic_ios.h:
+
+/usr/include/c++/4.6/bits/locale_facets.h:
+
+/usr/include/c++/4.6/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/ctype_base.h:
+
+/usr/include/c++/4.6/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/ctype_inline.h:
+
+/usr/include/c++/4.6/bits/locale_facets.tcc:
+
+/usr/include/c++/4.6/bits/basic_ios.tcc:
+
+/usr/include/c++/4.6/bits/ostream.tcc:
+
+/usr/include/c++/4.6/istream:
+
+/usr/include/c++/4.6/bits/istream.tcc:
+
+/usr/local/include/xercesc/sax2/XMLReaderFactory.hpp:
+
+/usr/local/include/xercesc/sax2/SAX2XMLReader.hpp:
+
+/usr/local/include/xercesc/util/XercesDefs.hpp:
+
+/usr/local/include/xercesc/util/Xerces_autoconf_config.hpp:
+
+/usr/include/inttypes.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigset.h:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
+/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+
+/usr/local/include/xercesc/util/XercesVersion.hpp:
+
+/usr/local/include/xercesc/util/XMLUniDefs.hpp:
+
+/usr/local/include/xercesc/framework/XMLValidator.hpp:
+
+/usr/local/include/xercesc/framework/XMLAttr.hpp:
+
+/usr/local/include/xercesc/util/PlatformUtils.hpp:
+
+/usr/local/include/xercesc/util/XMLException.hpp:
+
+/usr/local/include/xercesc/util/XMemory.hpp:
+
+/usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/local/include/xercesc/util/XMLExceptMsgs.hpp:
+
+/usr/local/include/xercesc/dom/DOMError.hpp:
+
+/usr/local/include/xercesc/util/XMLUni.hpp:
+
+/usr/local/include/xercesc/framework/XMLErrorReporter.hpp:
+
+/usr/local/include/xercesc/util/PanicHandler.hpp:
+
+/usr/local/include/xercesc/util/XMLFileMgr.hpp:
+
+/usr/local/include/xercesc/util/XMLMutexMgr.hpp:
+
+/usr/local/include/xercesc/util/QName.hpp:
+
+/usr/local/include/xercesc/util/XMLString.hpp:
+
+/usr/local/include/xercesc/util/BaseRefVectorOf.hpp:
+
+/usr/local/include/xercesc/util/ArrayIndexOutOfBoundsException.hpp:
+
+/usr/local/include/xercesc/util/XMLEnumerator.hpp:
+
+/usr/local/include/xercesc/framework/MemoryManager.hpp:
+
+/usr/local/include/xercesc/util/BaseRefVectorOf.c:
+
+/usr/local/include/xercesc/framework/XMLBuffer.hpp:
+
+/usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string3.h:
+
+/usr/include/assert.h:
+
+/usr/local/include/xercesc/internal/XSerializable.hpp:
+
+/usr/local/include/xercesc/internal/XSerializeEngine.hpp:
+
+/usr/local/include/xercesc/util/RefHashTableOf.hpp:
+
+/usr/local/include/xercesc/util/Hashers.hpp:
+
+/usr/local/include/xercesc/util/IllegalArgumentException.hpp:
+
+/usr/local/include/xercesc/util/NoSuchElementException.hpp:
+
+/usr/local/include/xercesc/util/RuntimeException.hpp:
+
+/usr/local/include/xercesc/util/RefHashTableOf.c:
+
+/usr/local/include/xercesc/util/Janitor.hpp:
+
+/usr/local/include/xercesc/util/Janitor.c:
+
+/usr/local/include/xercesc/util/NullPointerException.hpp:
+
+/usr/local/include/xercesc/util/ValueVectorOf.hpp:
+
+/usr/local/include/xercesc/util/ValueVectorOf.c:
+
+/usr/local/include/xercesc/internal/XSerializationException.hpp:
+
+/usr/local/include/xercesc/internal/XProtoType.hpp:
+
+/usr/local/include/xercesc/framework/XMLAttDef.hpp:
+
+/usr/local/include/xercesc/validators/datatype/DatatypeValidator.hpp:
+
+/usr/local/include/xercesc/util/KVStringPair.hpp:
+
+/usr/local/include/xercesc/util/regx/RegularExpression.hpp:
+
+/usr/local/include/xercesc/util/RefArrayVectorOf.hpp:
+
+/usr/local/include/xercesc/util/RefArrayVectorOf.c:
+
+/usr/local/include/xercesc/util/regx/Op.hpp:
+
+/usr/local/include/xercesc/util/RefVectorOf.hpp:
+
+/usr/local/include/xercesc/util/RefVectorOf.c:
+
+/usr/local/include/xercesc/util/regx/TokenFactory.hpp:
+
+/usr/local/include/xercesc/util/regx/Token.hpp:
+
+/usr/local/include/xercesc/util/Mutexes.hpp:
+
+/usr/local/include/xercesc/util/regx/BMPattern.hpp:
+
+/usr/local/include/xercesc/util/regx/OpFactory.hpp:
+
+/usr/local/include/xercesc/util/regx/RegxUtil.hpp:
+
+/usr/local/include/xercesc/validators/schema/SchemaSymbols.hpp:
+
+/usr/local/include/xercesc/framework/psvi/XSSimpleTypeDefinition.hpp:
+
+/usr/local/include/xercesc/framework/psvi/XSTypeDefinition.hpp:
+
+/usr/local/include/xercesc/framework/psvi/XSObject.hpp:
+
+/usr/local/include/xercesc/framework/psvi/XSConstants.hpp:
+
+/usr/local/include/xercesc/framework/ValidationContext.hpp:
+
+/usr/local/include/xercesc/util/NameIdPool.hpp:
+
+/usr/local/include/xercesc/util/NameIdPool.c:
+
+/usr/local/include/xercesc/framework/XMLValidityCodes.hpp:
+
+/usr/local/include/xercesc/framework/XMLPScanToken.hpp:
+
+/usr/local/include/xercesc/validators/common/Grammar.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/limits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/local/include/xercesc/framework/XMLElementDecl.hpp:
+
+/usr/local/include/xercesc/framework/XMLAttDefList.hpp:
+
+/usr/local/include/xercesc/framework/XMLEntityDecl.hpp:
+
+/usr/local/include/xercesc/framework/XMLNotationDecl.hpp:
+
+/usr/local/include/xercesc/sax/SAXException.hpp:
+
+../../../src/utils/common/TplConvert.h:
+
+/usr/include/c++/4.6/cmath:
+
+/usr/include/math.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_val.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_valf.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_vall.h:
+
+/usr/include/x86_64-linux-gnu/bits/inf.h:
+
+/usr/include/x86_64-linux-gnu/bits/nan.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathdef.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
+/usr/include/c++/4.6/climits:
+
+../../../src/utils/common/UtilExceptions.h:
+
+/usr/include/c++/4.6/stdexcept:
+
+../../../src/utils/common/StdDefs.h:
+
+../../../src/utils/common/MsgHandler.h:
+
+/usr/include/c++/4.6/vector:
+
+/usr/include/c++/4.6/bits/stl_construct.h:
+
+/usr/include/c++/4.6/bits/stl_uninitialized.h:
+
+/usr/include/c++/4.6/bits/stl_vector.h:
+
+/usr/include/c++/4.6/bits/stl_bvector.h:
+
+/usr/include/c++/4.6/bits/vector.tcc:
+
+SUMOSAXHandler.h:
+
+../../../src/utils/xml/GenericSAXHandler.h:
+
+/usr/include/c++/4.6/map:
+
+/usr/include/c++/4.6/bits/stl_tree.h:
+
+/usr/include/c++/4.6/bits/stl_map.h:
+
+/usr/include/c++/4.6/bits/stl_multimap.h:
+
+/usr/include/c++/4.6/stack:
+
+/usr/include/c++/4.6/deque:
+
+/usr/include/c++/4.6/bits/stl_deque.h:
+
+/usr/include/c++/4.6/bits/deque.tcc:
+
+/usr/include/c++/4.6/bits/stl_stack.h:
+
+/usr/include/c++/4.6/sstream:
+
+/usr/include/c++/4.6/bits/sstream.tcc:
+
+/usr/local/include/xercesc/sax2/Attributes.hpp:
+
+/usr/local/include/xercesc/sax2/DefaultHandler.hpp:
+
+/usr/local/include/xercesc/sax2/ContentHandler.hpp:
+
+/usr/local/include/xercesc/sax2/LexicalHandler.hpp:
+
+/usr/local/include/xercesc/sax2/DeclHandler.hpp:
+
+/usr/local/include/xercesc/sax/DTDHandler.hpp:
+
+/usr/local/include/xercesc/sax/EntityResolver.hpp:
+
+/usr/local/include/xercesc/sax/ErrorHandler.hpp:
+
+/usr/local/include/xercesc/sax/SAXParseException.hpp:
+
+../../../src/utils/common/StringBijection.h:
+
+../../../src/utils/xml/SUMOSAXAttributes.h:
+
+../../../src/utils/common/SUMOTime.h:
+
+../../../src/utils/common/UtilExceptions.h:
+
+XMLSubSys.h:

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd '/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/PerformanceMeasurement/texttesttmp/console.04Jan174744.21913/hello/Test'
+export PATH="/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/PerformanceMeasurement/texttesttmp/console.04Jan174744.21913/hello/Test:${PATH}"
+export TEXTTEST_ROOT='/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/PerformanceMeasurement/TargetApp'
+export TEXTTEST_SANDBOX='/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/PerformanceMeasurement/texttesttmp/console.04Jan174744.21913/hello/Test'
+export TEXTTEST_SANDBOX_ROOT='/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/PerformanceMeasurement/texttesttmp/console.04Jan174744.21913'
+exec time -p -o /carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/PerformanceMeasurement/texttesttmp/console.04Jan174744.21913/hello/Test/framework_tmp/unixperf python /carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/SharedFilesystem/PerformanceMeasurement/TargetApp/hello.py

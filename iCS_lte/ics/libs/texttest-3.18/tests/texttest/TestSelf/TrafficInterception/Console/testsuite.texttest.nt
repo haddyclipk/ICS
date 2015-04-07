@@ -1,0 +1,25 @@
+# Test suite
+
+# Make sure we can replay some matching traffic and it can work...
+ReplayTraffic
+
+# If no traffic file present and recording not requested, ignore traffic functionality
+RunWithoutTraffic
+
+# Make sure missing files work OK with traffic files
+MissingTrafficFileMarker
+
+# Check for repeated traffic where we don't get a response second time around
+NoResponseOnRepeat
+
+# Check the best-match approach can handle repeated but equal differences
+RepeatWithDifferences
+
+# We should prefer an argument to change than for it to disappear entirely
+DifferentOverMissing
+
+# Allow several different traffic programs at the same time, make sure we record them in the right order...
+ConcurrentTraffic
+
+# Make sure we can identify different sandboxes as the same, so we don't get confused
+MatchSandbox

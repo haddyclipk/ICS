@@ -1,0 +1,10 @@
+<-CMD:editor.py /some/path/file
+->FIL:file
+->OUT:Removing file file
+<-CMD:editor.py /some/path/subdir
+->FIL:subdir
+->OUT:Removing file file2
+Removing file file3
+Removing file subsubdir
+<-CMD:editor.py no_such_file
+->OUT:No such file no_such_file

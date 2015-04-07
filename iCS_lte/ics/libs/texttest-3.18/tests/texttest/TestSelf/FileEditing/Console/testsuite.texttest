@@ -1,0 +1,20 @@
+# Make sure we can reproduce the file edit when we run the test, so that it succeeds
+ReproduceFileEdit
+
+# Make sure we handle a versioned file_edits directory
+ReproduceVersioned
+
+# If we can't get the names to match exactly, do a best guess based on the start and end of the file
+NamesDontMatch
+
+# Make sure file info is correctly reset
+MultipleTests
+
+# If we've changed directory before running a program, chances are it's because it might write there...
+RecordCwdChanges
+
+# Make sure we don't utterly fall over if traffic file refers to files that aren't there
+FilesNotPresent
+
+# Check we don't pick up stuff listed in test_data_ignore
+IgnoreSomeEdits

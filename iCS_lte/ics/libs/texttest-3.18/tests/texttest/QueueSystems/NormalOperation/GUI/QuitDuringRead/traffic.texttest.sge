@@ -1,0 +1,6 @@
+<-SRV:TextTest slave server started on 10.67.7.94:44917
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/QuitDuringRead/texttesttmp/dynamic_gui.01Mar115135.1294/slavelogs; env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-Basic-SLEEP -w e -notify -m n -cwd -b y -V -o Test-Basic-SLEEP.log -e Test-Basic-SLEEP.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/QuitDuringRead/TargetApp -a sleep -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/QuitDuringRead/texttesttmp/dynamic_gui.01Mar115135.1294 -servaddr 10.67.7.94:57216""
+->OUT:Your job 7480 ("Test-Basic-SLEEP") has been submitted
+<-CMD:qdel 7480
+->OUT:geoff has registered the job 7480 for deletion
+<-SRV:Completed submission of all tests

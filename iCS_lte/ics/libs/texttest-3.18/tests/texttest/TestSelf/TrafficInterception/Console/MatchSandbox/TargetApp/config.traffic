@@ -1,0 +1,10 @@
+import_config_file:$STANDARD
+
+executable:$TEXTTEST_HOME/sandboxargs.py
+
+default_interface:console
+
+collect_traffic:some_program
+
+[run_dependent_text]
+traffic:{INTERNAL writedir}{REPLACE <texttest write dir>}

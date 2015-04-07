@@ -1,0 +1,2026 @@
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/c2c-stack/model/itetris-technologies.h /home/training/Desktop/ns3.18.1.lte/src/c2c-stack/model/itetris-technologies.h
+--- /home/training/Desktop/ns3181/org-intecs/src/c2c-stack/model/itetris-technologies.h	2014-06-18 03:41:41.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/c2c-stack/model/itetris-technologies.h	2014-11-27 01:43:33.000000000 -0800
+@@ -18,6 +18,7 @@
+  *
+  * Author: Ramon Bauza <rbauza@umh.es>
+  */
++
+ #ifndef ITETRIS_NET_DEVICES_H
+ #define ITETRIS_NET_DEVICES_H
+ 
+@@ -31,6 +32,7 @@ enum NetDeviceType {
+   UMTS = 3,
+   WIMAX = 4,
+   DVB = 5,
++  LTE_DEVICE = 6, 
+   DEV_UNDEF
+ };
+ 
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/inci/model/ns3-server.cc /home/training/Desktop/ns3.18.1.lte/src/inci/model/ns3-server.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/inci/model/ns3-server.cc	2014-06-18 03:40:16.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/inci/model/ns3-server.cc	2014-11-27 01:41:52.000000000 -0800
+@@ -357,7 +357,7 @@ Ns3Server::RunSimStep(int time)
+ 	if ( !(Simulator::IsFinished()) )  // IsFinished == true if no event to be scheduled anymore || Simulator::Stop reached
+ 	{
+ 		int eventCounter=0;
+-		while ( !(Simulator::IsFinished()) && (Seconds(time) > Simulator::Next ()) )
++		while ( !(Simulator::IsFinished()) && (Seconds(time) >= Simulator::Next ()) ) 
+ 		{
+ 			Simulator::RunOneEvent ();
+ 			eventCounter++;
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/iTETRISNodeManager.cc /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/iTETRISNodeManager.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/iTETRISNodeManager.cc	2014-06-18 03:39:52.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/iTETRISNodeManager.cc	2014-11-27 01:46:13.000000000 -0800
+@@ -162,7 +162,7 @@ iTETRISNodeManager::SetDefaultModule (st
+ void
+ iTETRISNodeManager::UpdateNodePosition (uint32_t nodeId, Vector position) 
+ {
+-  Ptr<Node> node = m_iTETRISNodes.Get(nodeId);  
++  Ptr<Node> node = m_iTETRISNodes.GetById(nodeId); 
+   Ptr<MobilityModel> mobModel = node->GetObject<MobilityModel> ();  
+   mobModel->SetPosition(position);  
+ }
+@@ -170,7 +170,7 @@ iTETRISNodeManager::UpdateNodePosition (
+ void
+ iTETRISNodeManager::UpdateNodePosition (uint32_t nodeId, const Vector &position, const float &speed, const float & heading, const std::string &laneId) 
+ {
+-  Ptr<Node> node = m_iTETRISNodes.Get(nodeId);  
++  Ptr<Node> node = m_iTETRISNodes.GetById(nodeId);   
+   Ptr<ItetrisMobilityModel> itetrisMobModel = node->GetObject<ItetrisMobilityModel> ();  
+   if (itetrisMobModel == NULL)
+     {
+@@ -185,11 +185,7 @@ Ptr<Node>
+ iTETRISNodeManager::GetItetrisNode (uint32_t nodeId)
+ {
+   Ptr<Node> node = NULL;
+-  if ( (nodeId <= (m_iTETRISNodes.GetN () - 1)) && (m_iTETRISNodes.GetN () > 0) )
+-    {
+-      node = m_iTETRISNodes.Get(nodeId); 
+-    }
+-  return (node);
++  return m_iTETRISNodes.GetById(nodeId);
+ }
+ 
+ Ptr<CommModuleInstaller> 
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-bs-installer.cc /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-bs-installer.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-bs-installer.cc	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-bs-installer.cc	2014-11-26 07:19:11.000000000 -0800
+@@ -0,0 +1,80 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author: Sendoa Vaz <svaz@cbt.es>
++ */
++
++#include "lte-bs-installer.h"
++
++NS_LOG_COMPONENT_DEFINE ("LteBsInstaller");
++
++namespace ns3
++{
++
++NS_OBJECT_ENSURE_REGISTERED (LteBsInstaller);
++
++TypeId LteBsInstaller::GetTypeId (void)
++{
++  static TypeId tid = TypeId ("ns3::LteBsInstaller")
++    .SetParent<Object> ()     
++    .AddConstructor<LteBsInstaller>()
++    ;
++  return tid;
++}
++
++LteBsInstaller::LteBsInstaller ()
++{
++
++}
++
++void
++LteBsInstaller::DoInstall (NodeContainer container, NetDeviceContainer * createdDevices) 
++{
++  NS_LOG_INFO ("*** LteBsInstaller ***");
++
++  uint32_t index = 0;
++
++  for (NodeContainer::Iterator it = container.Begin (); it != container.End (); it++)
++    {
++      
++      // Check if the base station has the object LteBsMgnt already installed  //TODO implement
++      Ptr<LteBsMgnt> lteBsMg = (*it)->GetObject <LteBsMgnt> ();
++      if (lteBsMg  == NULL)
++      {
++    	  Ptr<NetDevice> device = (*createdDevices).Get(index); 
++    	  lteBsMg = CreateObject <LteBsMgnt> ();
++    	  lteBsMg->SetNode(*it);
++    	  lteBsMg->SetNetDevice(device);
++    	  (*it)->AggregateObject(lteBsMg);
++    	  NS_LOG_INFO ("The object LteBsMgnt has been installed in the base station");
++      }
++
++      Ptr<IPCIUFacilities> facilities = (*it)->GetObject <IPCIUFacilities> ();
++      if (facilities == NULL)
++      {
++    	  IPCIUFacilitiesHelper facilitiesHelper;
++    	  facilitiesHelper.SetServiceListHelper(m_servListHelper);
++    	  facilitiesHelper.Install(*it);
++    	  NS_LOG_INFO ("The object IPCIUFacilities has been installed in the vehicle");
++      }
++
++      index++ ;
++    }
++    
++}
++
++} // namespace ns3
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-bs-installer.h /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-bs-installer.h
+--- /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-bs-installer.h	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-bs-installer.h	2014-11-27 01:44:38.000000000 -0800
+@@ -0,0 +1,50 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author: 
++ */
++
++#ifndef LTE_BS_INSTALLER_H
++#define LTE_BS_INSTALLER_H
++
++#include "lte-installer.h"
++#include "ns3/boolean.h"
++#include "ns3/lte-bs-mgnt.h"
++#include "ns3/lte-net-device.h"
++#include "ns3/iTETRISns3Facilities.h"
++#include "ns3/ip-base-sta-mgnt.h"
++#include "ns3/IPCIU-facilities-helper.h"
++#include "ns3/IPCIUFacilities.h"
++#include "ns3/log.h"
++
++namespace ns3
++{
++
++class LteBsInstaller : public LteInstaller
++{
++  public:
++    static TypeId GetTypeId (void);
++    LteBsInstaller ();  
++   private:
++     void DoInstall(NodeContainer container, NetDeviceContainer * createdDevices);
++
++};
++
++}
++
++#endif
++
++
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-installer.cc /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-installer.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-installer.cc	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-installer.cc	2014-11-27 01:44:45.000000000 -0800
+@@ -0,0 +1,298 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author:
++ */
++
++#include "lte-installer.h"
++#include "ns3/double.h"
++#include "ns3/string.h"
++#include "ns3/log.h"
++#include "ns3/lte-helper.h"
++// Added for reading xml files 
++#include <libxml/encoding.h>
++#include <libxml/xmlreader.h>
++#include "ns3/vehicle-scan-mngr.h"
++#include "ip-interface-list.h"
++#include "ns3/internet-stack-helper.h"
++#include "ns3/point-to-point-helper.h"
++#include "ns3/service-list-helper.h"
++#include "ns3/lte-net-device.h"
++#include "ns3/lte-bs-mgnt.h"
++#include "ns3/epc-helper.h" 
++#include "ns3/itetris-technologies.h"
++
++NS_LOG_COMPONENT_DEFINE ("LteInstaller");
++
++namespace ns3
++{
++
++Ipv4AddressHelper LteInstaller::m_ipAddressHelper;
++
++Ptr<LteHelper> LteInstaller::lteHelper;
++Ptr<EpcHelper> LteInstaller::epcHelper; 
++
++NodeContainer LteInstaller::enbNodeContainer;
++NetDeviceContainer LteInstaller::enbDeviceContainer;
++
++NS_OBJECT_ENSURE_REGISTERED (LteInstaller);
++
++TypeId LteInstaller::GetTypeId (void)
++{
++  static TypeId tid = TypeId ("ns3::LteInstaller")
++    .SetParent<Object> ()    
++     
++    ;
++  return tid;
++}
++    
++LteInstaller::LteInstaller () 
++{
++   m_lteAppHelper=NULL;
++   m_servListHelper = new ServiceListHelper ();
++   m_ipAddressHelper.SetBase ("10.3.0.0", "255.255.0.0");
++}
++
++LteInstaller::~LteInstaller()
++{ 
++  delete m_lteAppHelper;
++  delete m_servListHelper;  
++  m_lteAppHelper=NULL;  
++  m_servListHelper = NULL; 
++}
++
++
++void
++LteInstaller::Install (NodeContainer container) 
++{
++  if(lteHelper==NULL)
++    {
++      lteHelper = CreateObject<LteHelper> ();
++      epcHelper = CreateObject<EpcHelper> (); 
++      lteHelper->SetEpcHelper(epcHelper); 
++    } 
++
++  NetDeviceContainer createdDevices;
++  InternetStackHelper internet;  
++
++  if(m_nodeType=="enbNode")
++  {
++
++  createdDevices = lteHelper->InstallEnbDevice(container,m_nodeType);
++
++  Ptr<Node> pgw = epcHelper->GetPgwNode ();
++
++  Ptr<Node> remoteHost = container.Get(0);
++  internet.Install (remoteHost); 
++
++  PointToPointHelper p2ph;
++  p2ph.SetDeviceAttribute ("DataRate", DataRateValue (DataRate ("100Gb/s")));
++  p2ph.SetDeviceAttribute ("Mtu", UintegerValue (1500));
++  p2ph.SetChannelAttribute ("Delay", TimeValue (Seconds (0.010)));
++  NetDeviceContainer internetDevices = p2ph.Install(pgw, remoteHost);
++  
++  Ipv4InterfaceContainer internetIpIfaces = m_ipAddressHelper.Assign(internetDevices);
++  Ipv4Address remoteHostAddress = internetIpIfaces.GetAddress(1); 
++  Ptr<Ipv4StaticRouting> remoteHostStaticRouting = ipv4RoutingHelper.GetStaticRouting (remoteHost->GetObject<Ipv4> ());
++  remoteHostStaticRouting->AddNetworkRouteTo (Ipv4Address ("7.0.0.0"), Ipv4Mask ("255.0.0.0"), 1);
++
++  DoInstall(container, &createdDevices); 
++
++  enbNodeContainer.Add(container);
++  enbDeviceContainer.Add(createdDevices);            
++  } 
++
++  createdDevices = lteHelper->InstallUeDevice(container,m_nodeType);
++
++  internet.Install (container); 
++
++  Ipv4InterfaceContainer ueIpIface;
++  ueIpIface = epcHelper->AssignUeIpv4Address(createdDevices);
++  for (uint32_t u = 0; u < container.GetN (); ++u)
++  {
++	  Ptr<Node> ueNode = container.Get (u);
++	  // Set the default gateway for the UE
++	  Ptr<Ipv4StaticRouting> ueStaticRouting = ipv4RoutingHelper.GetStaticRouting (ueNode->GetObject<Ipv4> ());
++          ueStaticRouting->SetDefaultRoute (epcHelper->GetUeDefaultGatewayAddress (), 1);
++  }
++
++  DoInstall(container, &createdDevices); 
++
++  AddVehicles(enbNodeContainer, createdDevices);
++  lteHelper->Attach(createdDevices,enbDeviceContainer.Get(0));
++  AddInterfacesToIpInterfaceList(container);
++
++}
++
++
++void
++LteInstaller::Configure (std::string filename) 
++{
++  xmlTextReaderPtr reader = xmlNewTextReaderFilename(filename.c_str ());
++  if (reader == NULL)
++    {
++      NS_FATAL_ERROR ("Error at xmlReaderForFile");
++    }
++
++  NS_LOG_DEBUG ("Reading config file for LTE");
++
++  int rc;
++  rc = xmlTextReaderRead (reader);
++  while (rc > 0)
++    {
++      const xmlChar *tag = xmlTextReaderConstName(reader);
++      if (tag == 0)
++        {
++          NS_FATAL_ERROR ("Invalid value");
++        }
++
++      // LTEPhy type setting
++      if (std::string ((char*)tag) == "LtePhy")
++        {
++          xmlChar *nodeType = xmlTextReaderGetAttribute (reader, BAD_CAST "name");
++
++          m_nodeType=(char *)nodeType; 
++          xmlFree (nodeType);
++        }
++
++        // Applications
++      if (std::string ((char*)tag) == "application")
++        {
++          ProcessApplicationInstall (reader);
++        }
++
++      rc = xmlTextReaderRead (reader);
++    }
++  xmlFreeTextReader (reader);
++} 
++
++void 
++LteInstaller::AddInterfacesToIpInterfaceList (NodeContainer container)
++{
++int index=0;
++  for (NodeContainer::Iterator i = container.Begin (); i != container.End (); ++i)
++    {
++    // Check if the node has the object IpInterfaceList installed
++    Ptr<IpInterfaceList> interfaceList = (*i)->GetObject <IpInterfaceList> ();
++    if (interfaceList == NULL)
++      {
++        interfaceList = CreateObject <IpInterfaceList> ();
++        (*i)->AggregateObject (interfaceList);
++        NS_LOG_INFO ("The object IpInterfaceList has been attached to the node");
++      }
++      Ptr<Ipv4> ipStack = (*i)->GetObject <Ipv4> (); 
++      uint32_t index = ipStack->GetNInterfaces ();
++      bool res = interfaceList->AddIpInterface("Lte", ipStack->GetAddress (index-1,0));
++      NS_ASSERT_MSG (res, "LteInstaller::AddInterfacesToIpInterfaceList - The IP interface cannot be added to the IpInterfaceList");
++      NS_LOG_INFO ("IP address " << ipStack->GetAddress (index-1,0));
++      
++      index++;
++    }
++}
++
++
++void
++LteInstaller::AddVehicles(NodeContainer container,NetDeviceContainer netDevices)  
++{
++  for (NodeContainer::Iterator i = container.Begin (); i != container.End (); ++i)
++  {
++      for(NetDeviceContainer::Iterator iterator=netDevices.Begin();iterator!=netDevices.End();++iterator)
++      {	
++	(*i)->GetObject <LteBsMgnt> ()->AddVehicle(DynamicCast<LteNetDevice>(*iterator));
++      }
++      
++  }
++}
++
++
++//TODO Support for applications
++void
++LteInstaller::ProcessApplicationInstall (xmlTextReaderPtr reader) 
++{
++  int rc;
++  std::string appType, appName;
++
++  rc = xmlTextReaderRead (reader);
++  while (rc > 0)
++    {
++      const xmlChar *tag = xmlTextReaderConstName(reader);
++      if (tag == 0)
++	{
++	  NS_FATAL_ERROR ("Invalid value");
++	}
++
++      NS_LOG_DEBUG ("Tag read in ConfigurationFile=" << tag);
++
++       if (std::string ((char*)tag) == "LteApp")
++	{
++          appType = "LteApp";
++	  xmlChar *name = xmlTextReaderGetAttribute (reader, BAD_CAST "itetrisName");
++
++	  if (name != 0)
++	    {
++	      appName = std::string ((char*)name);
++	      m_lteAppHelper = new LTEAppHelper();
++	      NS_LOG_DEBUG ("LTE Application itetrisName = "<<std::string ((char*)name));
++	    }
++	  xmlChar *attribute = xmlTextReaderGetAttribute (reader, BAD_CAST "attribute");
++	  if (attribute != 0)
++	    {
++	      xmlChar *value = xmlTextReaderGetAttribute (reader, BAD_CAST "value");
++	      if (value != 0)
++		{
++		  if (m_lteAppHelper)
++		    {
++		      m_lteAppHelper->SetAttribute((char*)attribute,StringValue((char*)value));
++		      NS_LOG_DEBUG ("LTEApp attribute=" << attribute <<" value=" << value);
++		    }
++
++		    if(std::string((char*)value)=="BROADCAST"||std::string((char*)value)=="MULTICAST")
++		    {
++		      xmlChar *ip = xmlTextReaderGetAttribute (reader, BAD_CAST "ip");
++		      if (ip != 0)
++			{
++			  if (m_lteAppHelper)
++			    {
++			      m_lteAppHelper->SetAttribute((char*)attribute,StringValue((char*)ip));
++			      NS_LOG_DEBUG ("LTEApp attribute=" << attribute <<" value=" << ip);
++			    }
++
++
++			}
++			xmlFree (ip);
++		    }
++
++		}
++
++
++	      xmlFree (value);
++	    }
++	  xmlFree (name);
++	  xmlFree (attribute);
++	}
++      else if (std::string ((char*)tag) == "application")
++	{
++	      m_servListHelper->Add (m_lteAppHelper, appName);
++	      NS_LOG_DEBUG ("LteApp application with itetrisName="<<appName<<" has been added to the ServiceListHelper");
++	      m_lteAppHelper = NULL;
++	  return;
++	}
++      rc = xmlTextReaderRead (reader);
++    }
++}
++
++
++} // namespace ns3
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-installer.h /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-installer.h
+--- /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-installer.h	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-installer.h	2014-11-27 01:44:59.000000000 -0800
+@@ -0,0 +1,70 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author: Sendoa Vaz
++ */
++
++#ifndef LTE_INSTALLER_H
++#define LTE_INSTALLER_H
++
++#include "ns3/Lte-App-helper.h"
++#include "ns3/lte-helper.h"
++#include "ns3/simulator.h"
++#include "ns3/node-container.h"
++#include <libxml/encoding.h>
++#include <libxml/xmlreader.h>
++#include "ns3/ipv4-address-helper.h"
++#include "ns3/ipv4-static-routing-helper.h"
++#include "comm-module-installer.h"
++#include "ns3/service-list-helper.h"
++#include "ns3/epc-helper.h"
++
++namespace ns3
++{
++
++class LteInstaller : public CommModuleInstaller
++{
++  public:
++    static TypeId GetTypeId (void);
++    LteInstaller(void);
++    void Install (NodeContainer container); 
++    void Configure (std::string filename);
++    void AssignIpAddress(NetDeviceContainer devices);
++    void ProcessApplicationInstall (xmlTextReaderPtr reader);
++    ~LteInstaller();
++
++    static Ptr<LteHelper> lteHelper; 
++    static Ptr<EpcHelper> epcHelper; 
++  
++    static NodeContainer enbNodeContainer;
++    static NetDeviceContainer enbDeviceContainer;
++
++    std::string m_nodeType; 
++
++    LTEAppHelper* m_lteAppHelper;
++    static Ipv4AddressHelper m_ipAddressHelper;
++    ServiceListHelper* m_servListHelper;
++    Ipv4StaticRoutingHelper  ipv4RoutingHelper;
++
++    virtual void DoInstall (NodeContainer container, NetDeviceContainer * createdDevices) = 0; 
++    void AddVehicles(NodeContainer container,NetDeviceContainer netDevices);     
++    void AddInterfacesToIpInterfaceList (NodeContainer container);
++ 
++};
++
++}
++
++#endif
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-vehicle-installer.cc /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-vehicle-installer.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-vehicle-installer.cc	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-vehicle-installer.cc	2014-11-27 01:45:07.000000000 -0800
+@@ -0,0 +1,95 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author:  
++ */
++
++#include "lte-vehicle-installer.h"
++#include "ns3/IPCIU-facilities-helper.h"
++#include "ns3/IPCIUFacilities.h"
++#include "ns3/internet-stack-helper.h"
++ 
++NS_LOG_COMPONENT_DEFINE ("LteVehicleInstaller");
++
++namespace ns3
++{
++
++NS_OBJECT_ENSURE_REGISTERED (LteVehicleInstaller);
++
++TypeId LteVehicleInstaller::GetTypeId (void)
++{
++  static TypeId tid = TypeId ("ns3::LteVehicleInstaller")
++    .SetParent<Object> ()     
++    .AddConstructor<LteVehicleInstaller>()
++    ;
++  return tid;
++}
++ 
++void
++LteVehicleInstaller::DoInstall (NodeContainer container, NetDeviceContainer * createdDevices) 
++{
++  NS_LOG_INFO ("*** LteVehicleInstaller ***");
++
++  uint32_t index = 0;
++
++  for (NodeContainer::Iterator it = container.Begin (); it != container.End (); it++)
++    {
++      if (!(*it)->IsMobileNode ())
++        {
++          NS_LOG_INFO ("Node LTE defined as MobileNode");
++	  (*it)->SetMobileNode (true);
++        }
++
++      Ptr<NetDevice> device = (*createdDevices).Get(index);
++
++      // Check if the NetDevice has the object LteScanMngr already installed
++      Ptr<VehicleScanMngr> vehicleScanMg = device->GetObject <LteVehicleScanMngr> ();
++      if (vehicleScanMg == NULL)
++	{
++          vehicleScanMg = CreateObject <LteVehicleScanMngr> ();
++          vehicleScanMg->SetNetDevice (device);
++	  vehicleScanMg->SetNode (*it);	
++	  (*it)->AggregateObject (vehicleScanMg);
++          NS_LOG_INFO ("The object LteScanMngr has been attached to the NetDevice");
++        }
++
++      // Check if the vehicle has the object VehicleStaMgnt already installed
++      Ptr<VehicleStaMgnt> vehicleStaMg = (*it)->GetObject <VehicleStaMgnt> ();
++      if (vehicleStaMg == NULL)
++	{
++          vehicleStaMg = CreateObject <VehicleStaMgnt> ();
++          vehicleStaMg->SetNode (*it);
++          (*it)->AggregateObject (vehicleStaMg);
++          NS_LOG_INFO ("The object VehicleStaMgnt has been installed in the vehicle");
++        }
++      vehicleStaMg->AddIpTechnology ("Lte", device, vehicleScanMg);
++      
++      // Check if the vehicle has the Facilties already installed
++      Ptr<IPCIUFacilities> facilities = (*it)->GetObject <IPCIUFacilities> ();
++      if (facilities == NULL)
++      {
++    	  IPCIUFacilitiesHelper facilitiesHelper;
++    	  facilitiesHelper.SetServiceListHelper (m_servListHelper);
++    	  facilitiesHelper.Install (*it);
++    	  NS_LOG_INFO ("The object IPCIUFacilities has been installed in the vehicle");
++      }
++
++      index++ ;
++    }
++  
++}
++
++} // namespace ns3
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-vehicle-installer.h /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-vehicle-installer.h
+--- /home/training/Desktop/ns3181/org-intecs/src/inci-utils/model/lte-vehicle-installer.h	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/inci-utils/model/lte-vehicle-installer.h	2014-11-27 01:45:16.000000000 -0800
+@@ -0,0 +1,47 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author:  Sendoa Vaz
++ */
++
++#ifndef LTE_VEHICLE_INSTALLER_H
++#define LTE_VEHICLE_INSTALLER_H
++
++#include "lte-installer.h"
++#include "ns3/boolean.h"
++#include "ns3/log.h"
++#include "ns3/lte-net-device.h"
++#include "ns3/iTETRISns3Facilities.h"
++#include "ns3/lte-vehicle-scan-mngr.h"
++#include "ns3/vehicle-scan-mngr.h"
++#include "ns3/vehicle-sta-mgnt.h"
++
++namespace ns3
++{
++
++class LteVehicleInstaller : public LteInstaller
++{
++  public:
++    static TypeId GetTypeId (void);
++ 
++  private:
++     void DoInstall (NodeContainer container, NetDeviceContainer * createdDevices); 
++
++};
++
++}
++
++#endif
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/inci-utils/wscript /home/training/Desktop/ns3.18.1.lte/src/inci-utils/wscript
+--- /home/training/Desktop/ns3181/org-intecs/src/inci-utils/wscript	2014-06-18 03:39:52.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/inci-utils/wscript	2014-11-28 05:44:39.000000000 -0800
+@@ -42,6 +42,9 @@ def build(bld):
+         'model/wimax-installer.cc',
+         'model/wimax-bs-installer.cc',
+         'model/wimax-vehicle-installer.cc',
++        'model/lte-installer.cc', 
++	'model/lte-bs-installer.cc', 
++	'model/lte-vehicle-installer.cc', 
+         ]
+ 
+     headers = bld(features=['ns3header'])
+@@ -75,6 +78,9 @@ def build(bld):
+         'model/wimax-installer.h',
+         'model/wimax-bs-installer.h',
+         'model/wimax-vehicle-installer.h',
++	'model/lte-installer.h', 
++	'model/lte-bs-installer.h', 
++	'model/lte-vehicle-installer.h' 
+         ]
+ 
+     if bld.env['ENABLE_LIBXML2']:
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/internet/helper/internet-stack-helper.cc /home/training/Desktop/ns3.18.1.lte/src/internet/helper/internet-stack-helper.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/internet/helper/internet-stack-helper.cc	2014-06-18 03:40:44.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/internet/helper/internet-stack-helper.cc	2014-11-27 01:46:55.000000000 -0800
+@@ -471,8 +471,7 @@ InternetStackHelper::Install (Ptr<Node>
+ 
+       if (node->GetObject<Ipv4> () != 0)
+         {
+-          NS_FATAL_ERROR ("InternetStackHelper::Install (): Aggregating " 
+-                          "an InternetStack to a node with an existing Ipv4 object");
++          //NS_FATAL_ERROR ("InternetStackHelper::Install (): Aggregating " "an InternetStack to a node with an existing Ipv4 object");
+           return;
+         }
+ 
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/iTetrisApplications/helper/Lte-App-helper.cc /home/training/Desktop/ns3.18.1.lte/src/iTetrisApplications/helper/Lte-App-helper.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/iTetrisApplications/helper/Lte-App-helper.cc	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/iTetrisApplications/helper/Lte-App-helper.cc	2014-11-27 01:39:10.000000000 -0800
+@@ -0,0 +1,102 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author: Sendoa Vaz
++ */
++
++#include "Lte-App-helper.h"
++#include "ns3/Lte-app.h"
++#include "ns3/iTETRIS-Application.h"
++#include "ns3/names.h"
++#include "ns3/string.h"
++#include "ns3/lte-net-device.h"
++#include "ns3/log.h"
++#include "ns3/callback.h" 
++#include "ns3/inci-packet-list.h"
++#include "ns3/application-helper.h"
++NS_LOG_COMPONENT_DEFINE ("LTEAppHelper");
++
++namespace ns3 {
++
++LTEAppHelper::LTEAppHelper ()
++{
++  m_factory.SetTypeId("ns3::LteApp");
++}
++
++
++LTEAppHelper::~LTEAppHelper ()
++{
++}
++
++void
++LTEAppHelper::SetApplicationNodeType(std::string lteNodeType)
++{
++  m_nodeType=lteNodeType;
++}
++
++void
++LTEAppHelper::SetAttribute (std::string name, const AttributeValue &value)
++{
++  m_factory.Set (name, value);
++}
++
++ApplicationContainer
++LTEAppHelper::Install (Ptr<Node> node) const
++{
++  return ApplicationContainer (InstallPriv (node));
++}
++
++ApplicationContainer
++LTEAppHelper::Install (std::string nodeName) const
++{
++  Ptr<Node> node = Names::Find<Node> (nodeName);
++  return ApplicationContainer (InstallPriv (node));
++}
++
++ApplicationContainer
++LTEAppHelper::Install (NodeContainer c) const
++{
++  ApplicationContainer apps;
++  for (NodeContainer::Iterator i = c.Begin (); i != c.End (); i++)
++    {
++      apps.Add (InstallPriv (*i));
++    }
++
++  return apps;
++}
++
++Ptr<Application>
++LTEAppHelper::InstallPriv (Ptr<Node> node) const
++{
++  NS_LOG_INFO("[ns3][LTE-App Helper] install LTE-APP application on node " << node->GetId() <<" --------\n");
++  NS_LOG_INFO(m_factory.GetTypeId()<<" \n ");
++  
++  Ptr<iTETRISApplication> app = m_factory.Create<iTETRISApplication> ();
++  uint32_t app_index =node->AddApplication (app);
++  app->SetServiceIndex(app_index);
++  app->SetNode(node);
++  app->SetSockets();
++  app->SetServiceType (m_apptype);    
++  Ptr<InciPacketList> packetList = node->GetObject <InciPacketList> ();
++  // set the callback for the application to communicate to the inci when a packet is received at facilities level
++  app->SetReceiveCallback (MakeCallback (&InciPacketList::ReceiveFromApplication, packetList));
++ 
++  
++  return app;
++}
++
++} 
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/iTetrisApplications/helper/Lte-App-helper.h /home/training/Desktop/ns3.18.1.lte/src/iTetrisApplications/helper/Lte-App-helper.h
+--- /home/training/Desktop/ns3181/org-intecs/src/iTetrisApplications/helper/Lte-App-helper.h	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/iTetrisApplications/helper/Lte-App-helper.h	2014-11-27 01:39:56.000000000 -0800
+@@ -0,0 +1,92 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author:  Sendoa Vaz
++ */
++
++#ifndef LTE_APP_HELPER_H
++#define LTE_APP_HELPER_H
++
++#include "ns3/node-container.h"
++#include "ns3/application-container.h"
++#include "ns3/object-factory.h" 
++#include "ns3/application-helper.h"
++#include "ns3/net-device.h"
++
++namespace ns3 {
++
++/**
++
++ * This class creates one or multiple instances of ns3::LTE-App and associates
++ * it/them to one/multiple node(s).
++ *
++ */
++class LTEAppHelper :public ApplicationHelper
++{
++public:
++  /**
++   * Create a LTEAppHelper which is used to make life easier for people wanting to use LTE.
++   */
++  LTEAppHelper ();
++  
++  virtual ~LTEAppHelper ();
++  
++  void SetAttribute (std::string name, const AttributeValue &value);
++  
++  void SetApplicationNodeType(std::string lteNodeType);
++
++  /**
++   * Install LTE-App on each Node in the provided NodeContainer.
++   *
++   * \param nodes The NodeContainer containing all of the nodes on which the LTE-App has to be installed.
++   *
++   * \returns A list of LTE-App, one for each input node
++   */
++ ApplicationContainer Install (NodeContainer nodes) const;
++
++  /**
++   * Install LTE-App on the provided Node.  The Node is specified
++   * directly by a Ptr<Node>
++   *
++   * \param node The node to install LTE on.
++   *
++   * \returns An ApplicationContainer holding the LTE manager created.
++   */
++ ApplicationContainer Install (Ptr<Node> node) const;
++
++  /**
++   * Install LTE-App on the provided Node.  The Node is specified
++   * by a string that must have previously been associated with a Node using the
++   * Object Name Service.
++   *
++   * \param nodeName The node to install LTE on.
++   *
++   * \returns An ApplicationContainer holding the LTE created.
++   */
++  ApplicationContainer Install (std::string nodeName) const;
++
++private:
++ 
++  Ptr<Application> InstallPriv (Ptr<Node> node) const;
++  ObjectFactory m_factory;
++  std::string m_protocol;
++  std::string m_nodeType;
++};
++
++} 
++
++#endif 
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/iTetrisApplications/model/Lte-app.cc /home/training/Desktop/ns3.18.1.lte/src/iTetrisApplications/model/Lte-app.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/iTetrisApplications/model/Lte-app.cc	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/iTetrisApplications/model/Lte-app.cc	2014-11-27 01:39:48.000000000 -0800
+@@ -0,0 +1,405 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author:  Sendoa Vaz
++ */
++
++#include <fstream>
++#include <iostream>
++#include <fstream>
++#include <string>
++
++#include "Lte-app.h"
++#include "ns3/iTETRIS-Application.h"  
++#include "ns3/log.h"
++#include "ns3/node.h"
++#include "ns3/nstime.h"
++#include "ns3/data-rate.h"
++#include "ns3/random-variable.h"
++#include "ns3/simulator.h"
++#include "ns3/packet.h"
++#include "ns3/uinteger.h"
++#include "ns3/double.h"
++#include "ns3/trace-source-accessor.h"
++#include "ns3/ip-interface-list.h"
++#include "ns3/ipv4-address.h"
++#include "ns3/address-utils.h"
++#include "ns3/inet-socket-address.h"
++#include "ns3/socket.h"
++#include "ns3/socket-factory.h"
++#include "ns3/string.h"
++#include "ns3/itetris-types.h"
++#include "ns3/udp-socket.h"
++
++NS_LOG_COMPONENT_DEFINE ("LteApp");
++
++using namespace std;
++
++namespace ns3 {
++
++  
++NS_OBJECT_ENSURE_REGISTERED (LteApp);
++
++TypeId
++LteApp::GetTypeId (void)
++{
++  static TypeId tid = TypeId ("ns3::LteApp")
++    .SetParent<Application> ()
++    .AddConstructor<LteApp> ()
++    .AddAttribute ("Frequency", "The frequency in on state.",
++    		   DoubleValue (0),
++    		   MakeDoubleAccessor  (&LteApp::m_frequency),
++    		   MakeDoubleChecker<double> ())
++    .AddAttribute ("PacketSize", "The size of packets sent in on state",
++               UintegerValue (0),
++               MakeUintegerAccessor (&LteApp::m_packetSize),
++               MakeUintegerChecker<uint32_t> ())
++    .AddAttribute ("PortIP", "The port of the ip messages",   
++    		   UintegerValue (0),
++    		   MakeUintegerAccessor (&LteApp::m_portIP),     
++    		   MakeUintegerChecker<uint16_t> ())
++    .AddAttribute ("ApplicationType", " Determines the Transmission Mode used to transmit Data (AM,MULTICAST,BROADCAST,etc) ",     
++    		   StringValue ("UM-NON_FRAG"),
++    		   MakeStringAccessor (&LteApp::m_applicationType),     
++    		   MakeStringChecker())   
++    ;
++  return tid;
++}
++
++LteApp::LteApp()
++{    
++    m_IPv4socket = 0;    
++    m_portIP = 0;
++    m_packetSize = 0;
++    m_dataRate = 0;
++    m_frequency = 0;    
++    m_runningIP = false;
++    m_packetsSentIP = 0;
++    m_sendCountIP = 0;
++    m_recvCountIP = 0;
++    m_MessRegenerationTime = -1;
++    m_StartTime =0;
++    m_rndOffset = UniformVariable(0.0,0.999); 
++    m_destinationId=0;
++    m_applicationType="UM-NON_FRAG";
++    m_serviceIp=Ipv4Address("255.255.255.255");
++    m_broadcastIp=Ipv4Address("255.255.255.255");
++   
++}
++
++LteApp::~LteApp()
++{
++}
++
++void
++LteApp::DoDispose (void)
++{
++  NS_LOG_FUNCTION_NOARGS ();
++  m_IPv4socket = 0;
++  Application::DoDispose ();
++}
++
++void
++LteApp::StartApplication (void)
++{
++}
++
++
++void
++LteApp::ConfigureNode(Ipv4Address address)  
++{
++ uint32_t netDeviceNumber=m_node->GetNDevices();
++  Ipv4InterfaceAddress interface;
++  
++  for(uint32_t i=0;i<netDeviceNumber;i++)
++  {
++    if(DynamicCast<LteNetDevice>(m_node->GetDevice(i)))
++    {
++      if(DynamicCast<LteNetDevice>(m_node->GetDevice(i))->GetNodeType()=="ueNode")
++	{
++	  //For future implementation
++	}
++	else
++	{
++	  if(address==*(m_node->GetObject<LteBsMgnt>()->GetIpAddress(ID_BROADCAST)))	    	  
++	  {	    	   
++	    //For future implementation
++	  }
++	  else if(address.IsMulticast())
++	  {
++	    //..
++	  }	    
++	  else 
++	  {
++	    //..
++	  }
++	}
++    }   
++  }
++}
++
++void
++LteApp::UninstallFlowInNode()
++{
++  uint32_t netDeviceNumber=m_node->GetNDevices();
++  
++  for(uint32_t i=0;i<netDeviceNumber;i++)
++  {
++    if(DynamicCast<LteNetDevice>(m_node->GetDevice(i)))
++    {
++        if(DynamicCast<LteNetDevice>(m_node->GetDevice(i))->GetNodeType()=="ueNode")
++	{
++         //For future implementation
++	}
++	else
++	{ 
++         //For future implementation
++	}
++        
++    }
++  }
++}
++
++
++void
++LteApp::SetSockets (void)
++{
++  NS_LOG_INFO("\n");
++  NS_LOG_INFO("[ns3][LteApp]******************************* set sockets on node ****************************\n");
++
++  if (!m_IPv4socket)
++  {
++	//---------------- check iTETRIS ----------------------------;
++	NS_LOG_INFO("\n");
++	NS_LOG_INFO("[ns3][LteApp] Creating IP Socket of Type = UdpSocketFactory | Binds at PORT number = "<<m_portIP<<"\n");
++	//---------------- check iTETRIS ----------------------------
++
++	m_IPv4socket = Socket::CreateSocket (GetNode(), TypeId::LookupByName("ns3::UdpSocketFactory"));
++
++        InetSocketAddress local = InetSocketAddress (Ipv4Address::GetAny (), m_portIP);
++        m_IPv4socket->Bind (local);
++        m_IPv4socket->SetRecvCallback (MakeCallback(&LteApp::ReceiveIP, this));
++        NS_LOG_INFO("[ns3][LteApp]********* IP socket created and binded ***********\n");
++	        
++  }
++  else
++  {
++     NS_FATAL_ERROR ("[ns3][LteApp] creation attempt of an ip socket for LteApp that has already an ip socket active");
++         return;
++  }
++}
++
++
++void 
++LteApp::StopApplication(void)
++{
++}
++
++void 
++LteApp::StopTransmitting(void){
++  
++  //UninstallFlowInNode(); 
++  m_runningIP = false;
++
++    if (m_sendEventIP.IsRunning ())
++    {
++      Simulator::Cancel (m_sendEventIP);
++      NS_LOG_INFO("[ns3][LteApp] *******  STOP IP transmission on node " << GetNode()->GetId() <<"  while running *********\n");;
++    }
++  
++}
++
++
++void
++LteApp::FindNodeIdentifier(Ipv4Address address)
++{
++  uint32_t netDeviceNumber=m_node->GetNDevices();
++  
++  for(uint32_t i=0;i<netDeviceNumber;i++)
++  {
++    if(DynamicCast<LteNetDevice>(m_node->GetDevice(i)))
++    {
++      if(DynamicCast<LteNetDevice>(m_node->GetDevice(i))->GetNodeType()=="ueNode")
++	{
++	  //For future implementation
++	  break;
++	}
++	else
++	{
++	 //For future implementatio
++	  break;
++	}
++      
++      
++    }
++    
++   
++  }
++}
++
++void 
++LteApp::StartTransmitting(Ipv4Address address )
++{
++  NS_LOG_FUNCTION_NOARGS ();
++  m_runningIP = true;
++    
++  m_stepSequenceNumber=0;
++
++ /*if(m_applicationType!="BROADCAST"&&m_applicationType!="MULTICAST") 
++  {    
++    FindNodeIdentifier(address);
++  }*/
++  
++  
++  NS_LOG_INFO("[ns3][LteApp] ======NODE " << GetNode()->GetId() <<" Tx to address " << address<<" AppType "<< m_applicationType<<"  ===========\n");
++ 
++  //ConfigureNode(address); 
++
++  m_IPAddress = address;
++  Address destinationaddress = InetSocketAddress(m_IPAddress, m_portIP);
++  m_destinationaddress = destinationaddress;
++      
++  m_StartTime = (Simulator::Now()).GetSeconds ();
++   if (m_sendEventIP.IsRunning ())
++    {
++      Simulator::Cancel (m_sendEventIP);
++      NS_LOG_INFO("[ns3][LteApp]********* STOP current IP periodic transmission before transmitting a new message on node " << GetNode()->GetId() <<" *********\n");
++    }
++  InitializeINCIvariables();
++  DoSendIP(address,m_destinationaddress,m_MessRegenerationTime,m_StartTime);
++
++
++}
++
++void
++LteApp::DoSendIP(Ipv4Address address,Address destinationAddress,double messRegenerationTime,double startTime)
++{
++  Ptr<Packet> packet = Create<Packet> (m_packetSize);
++
++///////////////////////////////////////////////////////////////////////////////////////////////////////////
++  NS_LOG_INFO("\n");
++  NS_LOG_INFO("[ns3][LteApp] ======NODE " << GetNode()->GetId() <<": connection attempt to address " << address <<"   ===========\n");
++///////////////////////////////////////////////////////////////////////////////////////////////////////////
++  
++  m_IPv4socket->Connect (destinationAddress);
++  AddInciPacketTags(packet);
++    
++      
++  m_sendCountIP ;
++  
++///////////////////////////////////////////////////////////////////////////////////////////////////////////
++ NS_LOG_INFO("\n");  
++ NS_LOG_INFO("[ns3][LteApp] SENDING IP packet no. "<<m_sendCountIP<<" at "<<Simulator::Now ().GetSeconds ()<<" seconds | packet size = "<<packet->GetSize()<<" "<<Simulator::Now()<<"\n");
++///////////////////////////////////////////////////////////////////////////////////////////////////////////
++
++   m_IPv4socket->Send (packet);
++}
++
++void 
++LteApp::ReceiveIP (Ptr<Socket> socketip)
++{
++  Ptr<Packet> packet;
++  Address from;
++  while (packet = socketip->RecvFrom (from))
++    {
++      NS_LOG_INFO("[ns3][LteApp] Start Receiving - Call SocketIP -> RecvFrom()\n");;
++      if (InetSocketAddress::IsMatchingType (from))
++        {
++          InetSocketAddress address = InetSocketAddress::ConvertFrom (from);
++
++          RetrieveInciPacketTags (packet);
++
++          m_recvCountIP;
++
++         NS_LOG_INFO("[ns3][LteApp] SUCCESS: Receiving IP packet no. "<<m_recvCountIP<<" from " <<
++         address.GetIpv4()<< " at "<<Simulator::Now ().GetSeconds ()<<" seconds | IP packet size  = "<<packet->GetSize()<<" Bytes\n");
++         NS_LOG_INFO("[ns3][LteApp]========= SUCCESS : IP reception on node " << GetNode()->GetId() <<" On Time "<<Simulator::Now()<<" ==============\n");
++        }
++    }
++}
++
++void 
++LteApp::SendPacketIP (Ipv4Address address,Address destinationAddress,double messRegenerationTime,double startTime)
++{
++  if (m_sendEventIP.IsRunning ())
++    {
++      Simulator::Cancel (m_sendEventIP);
++      NS_LOG_INFO("[ns3][LteApp]********* STOP current IP periodic transmission " << GetNode()->GetId() <<" *********\n");
++    }
++   // always keep transmitting
++   if(messRegenerationTime < 0)
++   {       
++        DoSendIP(address,destinationAddress,messRegenerationTime,startTime);
++   }
++   else // otherwise only transmit if the time passed from the first transmission is less than the messageRegenerationTime fixed by the app
++      {
++            double now = (Simulator::Now()).GetSeconds();
++            double lifetime =  now - startTime;
++
++       if( lifetime <= messRegenerationTime){
++          DoSendIP(address,destinationAddress,messRegenerationTime,startTime);
++       }
++       else{
++          messRegenerationTime= -1;  
++       } 
++      } 
++}
++
++void 
++LteApp::ScheduleTxIP (Ipv4Address address,Address destinationAddress,double messRegenerationTime,double startTime)
++{
++  if (m_runningIP)
++    {
++	  m_dataRate = (m_packetSize * 8) * m_frequency;
++	  Time tNext (Seconds (m_packetSize * 8 / static_cast<double> (m_dataRate.GetBitRate ())));
++	  m_sendEventIP = Simulator::Schedule (tNext, &LteApp::SendPacketIP, this,address,destinationAddress,messRegenerationTime,startTime);
++    }
++   else
++   {
++        //---------------- check iTETRIS ----------------------------
++  NS_LOG_INFO("\n");
++  NS_LOG_INFO("[ns3][LteApp]*************  STOP IP transmission ON NODE  " << GetNode()->GetId() <<"***********\n");
++  //---------------- check iTETRIS ----------------------------
++   }
++}
++
++
++void 
++LteApp::SetMessRegenerationTime (double MessRegenerationTime)
++{
++   m_MessRegenerationTime=MessRegenerationTime;
++}
++
++void 
++LteApp::SetFrequency(double frequency)
++{
++  m_frequency = frequency;
++}
++
++void 
++LteApp::SetPacketSize (uint32_t packetSize)
++{
++  m_packetSize = packetSize;
++}
++
++void 
++LteApp::SetMsgLifeTime (uint8_t MsgLifeTime)
++{
++  m_MsgLifeTime = MsgLifeTime;
++}
++
++
++} 
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/iTetrisApplications/model/Lte-app.h /home/training/Desktop/ns3.18.1.lte/src/iTetrisApplications/model/Lte-app.h
+--- /home/training/Desktop/ns3181/org-intecs/src/iTetrisApplications/model/Lte-app.h	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/iTetrisApplications/model/Lte-app.h	2014-11-27 01:40:08.000000000 -0800
+@@ -0,0 +1,108 @@
++// iTetris INTECS
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright 2009-2010, CBT EU FP7 iTETRIS project
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author: Sendoa Vaz
++ */
++
++
++#ifndef LTE_APP_H
++#define LTE_APP_H
++
++#include <fstream>
++#include <iostream>
++#include <fstream>
++#include <string>
++#include "ns3/application.h"
++#include "ns3/ipv4-address.h"
++#include "ns3/event-id.h"
++#include "ns3/ptr.h"
++#include "ns3/data-rate.h"
++#include "ns3/traced-callback.h"
++#include "ns3/random-variable.h" 
++#include "ns3/address-utils.h"
++#include "ns3/inet-socket-address.h"
++#include "ns3/socket.h"
++#include "ns3/udp-socket.h"
++#include "ns3/socket-factory.h"
++#include "ns3/iTETRIS-Application.h"  
++#include "ns3/lte-net-device.h"  
++#include "ns3/lte-bs-mgnt.h"
++
++namespace ns3 {
++
++class LteApp : public iTETRISApplication
++{
++public:
++  static TypeId GetTypeId (void);
++
++  LteApp ();
++  virtual ~LteApp();
++
++  void SetSockets(void);      
++  void SetFrequency(double frequency);
++  void SetMessRegenerationTime (double MessRegenerationTime);
++  void SetMsgLifeTime (uint8_t MsgLifeTime);   
++  void SendPacketThroughSocket(Ptr<Socket> socket,Ptr<Packet> packet);
++  void StartTransmitting(Ipv4Address address);
++  
++  void StopTransmitting(void);
++  void SetPacketSize (uint32_t packetSize); 
++
++  void UninstallFlowInNode(); 
++  void ConfigureNode(Ipv4Address address); 
++  void FindNodeIdentifier(Ipv4Address address); 
++
++protected:
++  virtual void DoDispose (void);
++
++private:
++  virtual void StartApplication(void);
++  virtual void StopApplication(void);
++
++  void DoSendIP(Ipv4Address address,Address destinationAddress,double messRegenerationTime,double startTime);  
++  void SendPacketIP (Ipv4Address address,Address destinationAddress,double messRegenerationTime,double startTime);    
++  void ReceiveIP (Ptr<Socket> socketip);  
++  void ScheduleTxIP (Ipv4Address address,Address destinationAddress,double messRegenerationTime,double startTime);
++    
++  Ptr<Socket>     m_IPv4socket;       
++  uint16_t        m_portIP;      
++  uint32_t        m_packetSize;
++  DataRate        m_dataRate;  
++  EventId         m_sendEventIP;       
++  bool            m_runningIP;      
++  uint32_t        m_packetsSentIP;   
++  TypeId          m_firstSocketfactory;       
++  uint16_t        m_sendCountIP;
++  uint64_t        m_recvCountIP;
++  double          m_frequency;
++  double          m_MessRegenerationTime;
++  uint8_t         m_MsgLifeTime;
++  double          m_StartTime;
++  Ipv4Address     m_IPAddress;
++  Address         m_destinationaddress;  
++  RandomVariable  m_rndOffset;
++  uint32_t 	  m_destinationId;
++  std::string	  m_applicationType;
++  Ipv4Address     m_serviceIp;
++  Ipv4Address 	  m_broadcastIp;
++
++};
++
++} // namespace ns3
++
++#endif   /* LTE_APP_H  */
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/iTetrisApplications/wscript /home/training/Desktop/ns3.18.1.lte/src/iTetrisApplications/wscript
+--- /home/training/Desktop/ns3181/org-intecs/src/iTetrisApplications/wscript	2014-06-18 03:41:16.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/iTetrisApplications/wscript	2014-11-27 06:08:50.058297655 -0800
+@@ -11,6 +11,7 @@ def build(bld):
+         'model/CAM-send.cc',
+         'model/DENM-app.cc',
+         'model/Dvbh-app.cc',
++        'model/Lte-app.cc',
+         'model/iTETRIS-Application.cc',
+         'model/Umts-app.cc',
+         'model/wimax-app.cc',
+@@ -23,6 +24,7 @@ def build(bld):
+ 	'helper/application-helper.cc',
+         'helper/C2C-IP-helper.cc',
+ 	'helper/wimax-app-helper.cc',
++        'helper/Lte-App-helper.cc' 
+         ]
+ 
+     headers = bld(features='ns3header')
+@@ -34,6 +36,7 @@ def build(bld):
+         'model/CAM-send.h',
+         'model/DENM-app.h',
+         'model/Dvbh-app.h',
++        'model/Lte-app.h', 
+         'model/iTETRIS-Application.h',
+         'model/Umts-app.h',
+         'model/wimax-app.h',
+@@ -46,5 +49,6 @@ def build(bld):
+ 	'helper/application-helper.h',
+         'helper/C2C-IP-helper.h',
+ 	'helper/wimax-app-helper.h',
++        'helper/Lte-App-helper.h' 
+         ]
+ 
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/itetris-station-mgnt/model/lte-bs-mgnt.cc /home/training/Desktop/ns3.18.1.lte/src/itetris-station-mgnt/model/lte-bs-mgnt.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/itetris-station-mgnt/model/lte-bs-mgnt.cc	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/itetris-station-mgnt/model/lte-bs-mgnt.cc	2014-11-28 05:10:50.000000000 -0800
+@@ -0,0 +1,99 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ */
++#include "ns3/log.h"
++#include "lte-bs-mgnt.h"
++#include "ns3/lte-net-device.h"
++#include "ns3/addressing-support.h"
++#include "ns3/ipv4.h"
++
++NS_LOG_COMPONENT_DEFINE ("LteBsMgnt");
++
++namespace ns3 {
++
++NS_OBJECT_ENSURE_REGISTERED (LteBsMgnt);
++
++TypeId LteBsMgnt::GetTypeId (void)
++{
++  static TypeId tid = TypeId ("ns3::LteBsMgnt")
++    .SetParent<IpBaseStaMgnt> ()        
++    .AddConstructor<LteBsMgnt> ()
++    ;
++  return tid;
++}
++
++LteBsMgnt::~LteBsMgnt ()
++{
++  NS_LOG_FUNCTION_NOARGS ();
++}
++
++void
++LteBsMgnt::AddVehicle(Ptr<LteNetDevice> device)
++{
++        Ptr<Node> node=device->GetNode();
++       
++        uint32_t nodeId=node->GetId();
++       
++        Ptr<Ipv4> ipv4=node->GetObject<Ipv4>();
++        Ipv4InterfaceAddress iaddr = ipv4->GetAddress (1,0);  
++        Ipv4Address ipv4addr=iaddr.GetLocal(); 
++
++        vehicleMap[nodeId] = ipv4addr;  
++}
++
++Ipv4Address* 
++LteBsMgnt::GetIpAddress (uint32_t nodeId) const
++{
++        Ipv4Address* address = NULL;
++        if (nodeId == ID_BROADCAST)
++        {
++              address = GetIpBroadcastAddress ();
++        }
++        else
++        {
++            return &(vehicleMap[nodeId]);
++               
++        }
++
++  return (address); 
++}
++
++uint32_t 
++LteBsMgnt::GetNumberOfActiveConnections (void) const
++{
++  return (0);
++}
++
++uint32_t 
++LteBsMgnt::GetNumberOfRegisteredUsers (void) const
++{
++	return 0;
++}
++
++double
++LteBsMgnt::GetCoverageRange (void) const
++{
++	return 0.0;
++}
++
++void 
++LteBsMgnt::TriggerVehiclesScanning (void) const
++{  
++}
++
++} // namespace ns3
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/itetris-station-mgnt/model/lte-bs-mgnt.h /home/training/Desktop/ns3.18.1.lte/src/itetris-station-mgnt/model/lte-bs-mgnt.h
+--- /home/training/Desktop/ns3181/org-intecs/src/itetris-station-mgnt/model/lte-bs-mgnt.h	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/itetris-station-mgnt/model/lte-bs-mgnt.h	2014-11-28 05:11:02.000000000 -0800
+@@ -0,0 +1,53 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ */
++
++#ifndef LTE_BS_MGNT_H
++#define LTE_BS_MGNT_H
++
++#include "ns3/simulator.h"
++#include "ns3/lte-net-device.h"
++#include "ns3/object.h"
++#include "ns3/ip-base-sta-mgnt.h"
++#include <map>
++
++namespace ns3
++{
++/**
++ * The base class LteBsMgnt implements the IpBaseStaMgnfor the technology LTE
++ */
++class LteBsMgnt : public IpBaseStaMgnt
++{
++  public:
++    static TypeId GetTypeId (void);
++    virtual ~LteBsMgnt();
++    Ipv4Address* GetIpAddress (uint32_t nodeId) const;
++    uint32_t GetNumberOfActiveConnections (void) const;
++    uint32_t GetNumberOfRegisteredUsers (void) const;
++    double GetCoverageRange (void) const;
++
++    void AddVehicle(Ptr<LteNetDevice> device);
++    void TriggerVehiclesScanning (void) const;
++    
++    std::map<uint32_t, Ipv4Address> vehicleMap;
++
++};
++
++}
++
++#endif
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/itetris-station-mgnt/model/lte-vehicle-scan-mngr.cc /home/training/Desktop/ns3.18.1.lte/src/itetris-station-mgnt/model/lte-vehicle-scan-mngr.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/itetris-station-mgnt/model/lte-vehicle-scan-mngr.cc	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/itetris-station-mgnt/model/lte-vehicle-scan-mngr.cc	2014-11-27 02:19:18.000000000 -0800
+@@ -0,0 +1,53 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c) 
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author: Sendoa Vaz
++ */
++#include "ns3/log.h"
++#include "lte-vehicle-scan-mngr.h"
++#include "ns3/lte-net-device.h"
++#include "ns3/mobility-model.h"
++
++
++NS_LOG_COMPONENT_DEFINE ("LteVehicleScanMngr");
++
++namespace ns3 {
++
++NS_OBJECT_ENSURE_REGISTERED (LteVehicleScanMngr);
++
++TypeId LteVehicleScanMngr::GetTypeId (void)
++{
++  static TypeId tid = TypeId ("ns3::LteVehicleScanMngr")
++    .SetParent<Object> ()            
++    .AddConstructor<LteVehicleScanMngr> ()
++    ;
++  return tid;
++}
++
++LteVehicleScanMngr::~LteVehicleScanMngr ()
++{
++  NS_LOG_FUNCTION_NOARGS ();
++}
++
++Ptr<IpBaseStation> 
++LteVehicleScanMngr::GetBestServingBs (void)
++{  
++  Ptr<IpBaseStation> station = CreateObject<IpBaseStation> (); 
++  return (station);
++}
++
++} // namespace ns3
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/itetris-station-mgnt/model/lte-vehicle-scan-mngr.h /home/training/Desktop/ns3.18.1.lte/src/itetris-station-mgnt/model/lte-vehicle-scan-mngr.h
+--- /home/training/Desktop/ns3181/org-intecs/src/itetris-station-mgnt/model/lte-vehicle-scan-mngr.h	1969-12-31 16:00:00.000000000 -0800
++++ /home/training/Desktop/ns3.18.1.lte/src/itetris-station-mgnt/model/lte-vehicle-scan-mngr.h	2014-11-27 02:19:46.000000000 -0800
+@@ -0,0 +1,45 @@
++/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
++/*
++ * Copyright (c)
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License version 2 as
++ * published by the Free Software Foundation;
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
++ *
++ * Author: Sendoa Vaz
++ */
++
++#ifndef LTE_VEHICLE_SCAN_MNGR_H
++#define LTE_VEHICLE_SCAN_MNGR_H
++
++#include "ns3/object.h"
++#include "ns3/lte-net-device.h"
++#include "ns3/vehicle-scan-mngr.h"
++#include "ns3/simulator.h"
++
++namespace ns3
++{
++/**
++ * The base class WifiScanMngr implements the BaseStationScanMngr for the technology LTE
++ */
++class LteVehicleScanMngr : public VehicleScanMngr
++{
++  public:
++    static TypeId GetTypeId (void);
++    virtual ~LteVehicleScanMngr();
++    Ptr<IpBaseStation> GetBestServingBs (void);
++    
++};
++
++}
++
++#endif
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/itetris-station-mgnt/wscript /home/training/Desktop/ns3.18.1.lte/src/itetris-station-mgnt/wscript
+--- /home/training/Desktop/ns3181/org-intecs/src/itetris-station-mgnt/wscript	2014-06-18 03:41:39.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/itetris-station-mgnt/wscript	2014-11-28 06:01:39.671910563 -0800
+@@ -19,6 +19,8 @@ def build(bld):
+ 	'model/dvbh-bs-mgnt.cc',
+ 	'model/wimax-bs-mgnt.cc',
+ 	'model/wimax-vehicle-scan-mngr.cc',
++	'model/lte-vehicle-scan-mngr.cc',  
++	'model/lte-bs-mgnt.cc'
+         ]
+ 
+     headers = bld(features='ns3header')
+@@ -39,5 +41,7 @@ def build(bld):
+ 	'model/dvbh-vehicle-scan-mngr.h',
+         'model/wimax-bs-mgnt.h',
+ 	'model/wimax-vehicle-scan-mngr.h',
++        'model/lte-vehicle-scan-mngr.h',  
++	'model/lte-bs-mgnt.h'
+         ]
+ 
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/lte/helper/lte-helper.cc /home/training/Desktop/ns3.18.1.lte/src/lte/helper/lte-helper.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/lte/helper/lte-helper.cc	2014-06-18 03:35:40.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/lte/helper/lte-helper.cc	2014-11-27 02:20:54.000000000 -0800
+@@ -19,7 +19,6 @@
+  *         Giuseppe Piro <g.piro@poliba.it> (parts of the PHY & channel  creation & configuration copied from the GSoC 2011 code)
+  */
+ 
+-
+ #include "lte-helper.h"
+ #include <ns3/string.h>
+ #include <ns3/log.h>
+@@ -310,6 +309,37 @@ LteHelper::InstallEnbDevice (NodeContain
+       devices.Add (device);
+     }
+   return devices;
++}
++
++NetDeviceContainer 
++LteHelper::InstallEnbDevice (NodeContainer c,std::string nodeType) 
++{
++  NS_LOG_FUNCTION (this);
++  Initialize ();  // will run DoInitialize () if necessary
++  NetDeviceContainer devices;
++  for (NodeContainer::Iterator i = c.Begin (); i != c.End (); ++i)
++    {
++      Ptr<Node> node = *i;
++      Ptr<NetDevice> device = InstallSingleEnbDevice (node);
++      (DynamicCast<LteNetDevice>(device))->SetNodeType(nodeType);
++      devices.Add (device);
++    }
++  return devices;
++}
++
++NetDeviceContainer
++LteHelper::InstallUeDevice (NodeContainer c,std::string nodeType) 
++{
++  NS_LOG_FUNCTION (this);
++  NetDeviceContainer devices;
++  for (NodeContainer::Iterator i = c.Begin (); i != c.End (); ++i)
++    {
++      Ptr<Node> node = *i;
++      Ptr<NetDevice> device = InstallSingleUeDevice (node);
++      (DynamicCast<LteNetDevice>(device))->SetNodeType(nodeType);
++      devices.Add (device);
++    }
++  return devices;
+ }
+ 
+ NetDeviceContainer
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/lte/helper/lte-helper.h /home/training/Desktop/ns3.18.1.lte/src/lte/helper/lte-helper.h
+--- /home/training/Desktop/ns3181/org-intecs/src/lte/helper/lte-helper.h	2014-06-18 03:35:40.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/lte/helper/lte-helper.h	2014-11-27 02:21:02.000000000 -0800
+@@ -169,6 +169,7 @@ public:
+    * \return the NetDeviceContainer with the newly created devices
+    */
+   NetDeviceContainer InstallEnbDevice (NodeContainer c);
++  NetDeviceContainer InstallEnbDevice (NodeContainer c,std::string nodeType); 
+ 
+   /**
+    * create a set of UE devices
+@@ -178,6 +179,7 @@ public:
+    * \return the NetDeviceContainer with the newly created devices
+    */
+   NetDeviceContainer InstallUeDevice (NodeContainer c);
++  NetDeviceContainer InstallUeDevice (NodeContainer c,std::string nodeType); 
+ 
+   /**
+    * Attach a set of UE devices to a single eNB device
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/lte/model/lte-net-device.cc /home/training/Desktop/ns3.18.1.lte/src/lte/model/lte-net-device.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/lte/model/lte-net-device.cc	2014-06-18 03:37:26.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/lte/model/lte-net-device.cc	2014-11-27 02:21:43.000000000 -0800
+@@ -287,4 +287,18 @@ LteNetDevice::Receive (Ptr<Packet> p)
+ }
+ 
+ 
++std::string 
++LteNetDevice::GetNodeType()
++{
++  return m_nodeType;
++}
++
++
++void 
++LteNetDevice::SetNodeType(std::string type_)
++{
++ m_nodeType=type_; 
++   
++}
++
+ }
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/lte/model/lte-net-device.h /home/training/Desktop/ns3.18.1.lte/src/lte/model/lte-net-device.h
+--- /home/training/Desktop/ns3181/org-intecs/src/lte/model/lte-net-device.h	2014-06-18 03:37:25.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/lte/model/lte-net-device.h	2014-11-27 02:21:50.000000000 -0800
+@@ -79,6 +79,8 @@ public:
+   virtual void SetPromiscReceiveCallback (PromiscReceiveCallback cb); 
+   virtual bool SendFrom (Ptr<Packet> packet, const Address& source, const Address& dest, uint16_t protocolNumber);
+   virtual bool SupportsSendFrom (void) const;
++  std::string GetNodeType(); 
++  void SetNodeType(std::string type_); 
+ 
+   /** 
+    * receive a packet from the lower layers in order to forward it to the upper layers
+@@ -96,7 +98,8 @@ private:
+   LteNetDevice & operator= (const LteNetDevice &);
+ 
+   Ptr<Node> m_node;
+-
++  std::string m_nodeType;
++  
+   TracedCallback<> m_linkChangeCallbacks;
+ 
+   uint32_t m_ifIndex;
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/lte/model/lte-rlc-um.cc /home/training/Desktop/ns3.18.1.lte/src/lte/model/lte-rlc-um.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/lte/model/lte-rlc-um.cc	2014-06-18 03:37:24.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/lte/model/lte-rlc-um.cc	2014-11-27 02:24:13.000000000 -0800
+@@ -89,12 +89,14 @@ LteRlcUm::DoTransmitPdcpPdu (Ptr<Packet>
+     {
+       /** Store arrival time */
+       RlcTag timeTag (Simulator::Now ());
++      p->RemovePacketTag(timeTag); 
+       p->AddPacketTag (timeTag);
+ 
+       /** Store PDCP PDU */
+ 
+       LteRlcSduStatusTag tag;
+       tag.SetStatus (LteRlcSduStatusTag::FULL_SDU);
++      p->RemovePacketTag(tag); 
+       p->AddPacketTag (tag);
+ 
+       NS_LOG_LOGIC ("Tx Buffer: New packet added");
+@@ -346,7 +348,10 @@ LteRlcUm::DoNotifyTxOpportunity (uint32_
+     {
+       NS_LOG_LOGIC ("Adding SDU/segment to packet, length = " << (*it)->GetSize ());
+ 
+-      packet->AddAtEnd (*it);
++      if(!packet->GetSize()) 
++       packet = (*it)->Copy(); 
++      else 
++       packet->AddAtEnd (*it); 
+       it++;
+     }
+ 
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/lte/model/lte-ue-phy.cc /home/training/Desktop/ns3.18.1.lte/src/lte/model/lte-ue-phy.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/lte/model/lte-ue-phy.cc	2014-06-18 03:37:24.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/lte/model/lte-ue-phy.cc	2014-11-27 02:23:11.000000000 -0800
+@@ -135,8 +135,7 @@ LteUePhy::LteUePhy (Ptr<LteSpectrumPhy>
+   m_ueCphySapProvider = new MemberLteUeCphySapProvider<LteUePhy> (this);
+   m_macChTtiDelay = UL_PUSCH_TTIS_DELAY;
+   
+-  NS_ASSERT_MSG (Simulator::Now ().GetNanoSeconds () == 0,
+-                 "Cannot create UE devices after simulation started");
++  //NS_ASSERT_MSG (Simulator::Now ().GetNanoSeconds () == 0, "Cannot create UE devices after simulation started");
+   Simulator::ScheduleNow (&LteUePhy::SubframeIndication, this, 1, 1);
+   Simulator::Schedule (m_ueMeasurementsFilterPeriod, &LteUePhy::ReportUeMeasurements, this);
+ 
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/network/helper/node-container.cc /home/training/Desktop/ns3.18.1.lte/src/network/helper/node-container.cc
+--- /home/training/Desktop/ns3181/org-intecs/src/network/helper/node-container.cc	2014-06-18 03:38:32.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/network/helper/node-container.cc	2014-11-27 02:25:16.000000000 -0800
+@@ -17,6 +17,7 @@
+  *
+  * Author: Mathieu Lacage <mathieu.lacage@sophia.inria.fr>
+  */
++
+ #include "node-container.h"
+ #include "ns3/node-list.h"
+ #include "ns3/names.h"
+@@ -89,6 +90,21 @@ NodeContainer::Get (uint32_t i) const
+ {
+   return m_nodes[i];
+ }
++Ptr<Node> 
++NodeContainer::GetById (uint32_t id) const
++{ 
++  Ptr<Node> node;
++  for(NodeContainer::Iterator it = m_nodes.begin(); it != m_nodes.end(); ++it)
++  {
++        node=(*it);
++        if (node->GetId() == id)
++	{
++                return node;
++	}
++  }
++  return NULL;
++}
++
+ void 
+ NodeContainer::Create (uint32_t n)
+ {
+diff -rupN /home/training/Desktop/ns3181/org-intecs/src/network/helper/node-container.h /home/training/Desktop/ns3.18.1.lte/src/network/helper/node-container.h
+--- /home/training/Desktop/ns3181/org-intecs/src/network/helper/node-container.h	2014-06-18 03:38:32.000000000 -0700
++++ /home/training/Desktop/ns3.18.1.lte/src/network/helper/node-container.h	2014-11-27 02:25:09.000000000 -0800
+@@ -17,6 +17,7 @@
+  *
+  * Author: Mathieu Lacage <mathieu.lacage@sophia.inria.fr>
+  */
++
+ #ifndef NODE_CONTAINER_H
+ #define NODE_CONTAINER_H
+ 
+@@ -224,6 +225,9 @@ public:
+    */
+   Ptr<Node> Get (uint32_t i) const;
+ 
++  //it returns a node from a nodeid
++  Ptr<Node> GetById (uint32_t id) const; 
++
+   /**
+    * \brief Create n nodes and append pointers to them to the end of this 
+    * NodeContainer.
+@@ -288,7 +292,7 @@ public:
+   static NodeContainer GetGlobal (void);
+ 
+ private:
+-  std::vector<Ptr<Node> > m_nodes;
++  std::vector<Ptr<Node> > m_nodes; 
+ };
+ 
+ } // namespace ns3

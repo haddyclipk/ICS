@@ -1,0 +1,10 @@
+Console
+
+# Suite of tests for recording and replaying traffic in a simple client/server system
+ClientServer
+
+# Check we can intercept and replay interactions with a python module
+PythonModules
+
+# Tests for third-party programs that also get killed by the SUT
+KillCommands

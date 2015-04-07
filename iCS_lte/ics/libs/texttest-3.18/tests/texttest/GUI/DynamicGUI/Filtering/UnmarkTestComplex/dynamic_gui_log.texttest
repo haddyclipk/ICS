@@ -1,0 +1,1298 @@
+Enabling entry completion, using matching 1
+Adding entry completion '<default>' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 28Jan13:37:34)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan13:37:34'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator, 68% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 28Jan13:37:34.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 3 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 4 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 5 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (white) | (white)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 5 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (LightGoldenrod1) | (LightGoldenrod1)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (LightGoldenrod1) | (LightGoldenrod1)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (LightGoldenrod1) | (LightGoldenrod1)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 0.2, text '1 of 5 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (white) | (white)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (LightGoldenrod1) | (LightGoldenrod1)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (LightGoldenrod1) | (LightGoldenrod1)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (LightGoldenrod1) | (LightGoldenrod1)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 0.4, text '2 of 5 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (white) | (white)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (LightGoldenrod1) | (LightGoldenrod1)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (LightGoldenrod1) | (LightGoldenrod1)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (LightGoldenrod1) | (LightGoldenrod1)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 0.6, text '3 of 5 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (white) | (white)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (LightGoldenrod1) | (LightGoldenrod1)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (LightGoldenrod1) | (LightGoldenrod1)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (LightGoldenrod1) | (LightGoldenrod1)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Failed (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 0.8, text '4 of 5 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | (white)
+->     success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | (white)
+->     success (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | (white)
+->     success (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | (white)
+->     success (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Failed (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 5 tests completed at 28Jan13:37:35'
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'show test suite' event created with arguments 'suite'
+
+Expanded row in Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (DarkSeaGreen2) | (DarkSeaGreen2)
+
+'select tests in category' event created with arguments 'output different'
+Selecting all 2 tests in category output different
+Marking 2 tests as selected
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+
+Child visibility changed in Notebook with tabs: Test , Status , Selection , Run Info
+
+'mark the selected tests' event created with arguments ''
+Adding entry completion 'Checked' ...
+Adding entry completion 'Checked at 28Jan13:37:34' ...
+
+---------- Dialog 'Mark the selected tests' ----------
+Default widget is 'gtk-ok'
+'Brief text:'
+Text entry (set to 'Checked')
+'Free text:'
+Text entry (set to 'Checked at 28Jan13:37:34')
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+------------------------------------------------------
+
+'enter free text =' event created with arguments 'Nothing that needs filtering'
+Edited 'Free text' Text entry (set to 'Nothing that needs filtering')
+
+'press ok' event created with arguments ''
+
+Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (orange) | Checked (orange)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (DarkSeaGreen2) | (DarkSeaGreen2)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Marked (orange,bold) | 1 (orange,bold) | Check box (checked)
+->   Checked (orange,bold) | 1 (orange,bold) | Check box (checked)
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (orange) | Checked (orange)
+->   complex_fail2 (orange) | Checked (orange)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (DarkSeaGreen2) | (DarkSeaGreen2)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file1 different (white) | 0 (white) | Check box (checked)
+->     file2 different (white) | 0 (white) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file4 different (white) | 0 (white) | Check box (checked)
+->     output different (white) | 0 (white) | Check box (checked)
+->       Group 1 (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Marked (orange,bold) | 2 (orange,bold) | Check box (checked)
+->   Checked (orange,bold) | 2 (orange,bold) | Check box (checked)
+Adding entry completion 'free_text' ...
+Adding entry completion 'Nothing that needs filtering' ...
+
+Changing GUI status to: 'Performed 'Mark the selected tests' on 2 tests.'
+
+'set test selection to' event created with arguments 'complex_fail2'
+
+Column titles changed in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: complex__fail2 , Details
+-> Comparison Files (bold)
+->   file1.hello (salmon) | (salmon)
+->   file2.hello (salmon) | (salmon)
+->   file3.hello (salmon) | (salmon)
+->   file4.hello (salmon) | (salmon)
+->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in file1 ----------
+1c1
+< Nothing in file1 ... or
+---
+> Nothing in file1 ...
+---------- Differences in file2 ----------
+1c1
+< Nothing in file2 ... indeed!
+---
+> Nothing in file2 ...
+---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in file4 ----------
+1c1
+< Nothing in file4 ... yet ...
+---
+> Nothing in file4 ...
+---------- Differences in output ----------
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+---------- New result in errors ----------
+===============================
+
+'set test selection to' event created with arguments 'simple_fail2,complex_fail1,success'
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+
+Updated : File Tree with columns: Sample from 3 tests , Details
+-> Comparison Files (bold)
+->   file1.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file3.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in errors ----------
+===============================
+
+'mark the selected tests' event created with arguments ''
+
+---------- Dialog 'Mark the selected tests' ----------
+Default widget is 'gtk-ok'
+'Brief text:'
+Text entry (set to 'Checked')
+'Free text:'
+Text entry (set to 'Nothing that needs filtering')
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+------------------------------------------------------
+
+'enter brief text =' event created with arguments 'Marked2'
+Edited 'Brief text' Text entry (set to 'Marked2')
+
+'press ok' event created with arguments ''
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (orange) | Marked2 (orange)
+->   complex_fail1 (orange) | Checked (orange)
+->   complex_fail2 (orange) | Checked (orange)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (DarkSeaGreen2) | (DarkSeaGreen2)
+
+Updated : File Tree with columns: Sample from 3 tests , Details
+-> Comparison Files (bold)
+->   file1.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file3.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- New result in errors ----------
+===============================
+
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (orange) | Marked2 (orange)
+->   complex_fail1 (orange) | Marked2 (orange)
+->   complex_fail2 (orange) | Checked (orange)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (DarkSeaGreen2) | (DarkSeaGreen2)
+
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (orange) | Marked2 (orange)
+->   complex_fail1 (orange) | Marked2 (orange)
+->   complex_fail2 (orange) | Checked (orange)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (orange) | Marked2 (orange)
+Adding entry completion 'Marked2' ...
+
+Changing GUI status to: 'Performed 'Mark the selected tests' on 3 tests.'
+
+'set test selection to' event created with arguments 'complex_fail1'
+
+Column titles changed in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+
+Updated : File Tree with columns: complex__fail1 , Details
+-> Comparison Files (bold)
+->   file1.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file3.hello (salmon) | (salmon)
+->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in output ----------
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+---------- New result in errors ----------
+===============================
+
+'set test selection to' event created with arguments 'complex_fail2'
+
+Updated : File Tree with columns: complex__fail2 , Details
+-> Comparison Files (bold)
+->   file1.hello (salmon) | (salmon)
+->   file2.hello (salmon) | (salmon)
+->   file3.hello (salmon) | (salmon)
+->   file4.hello (salmon) | (salmon)
+->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in file1 ----------
+1c1
+< Nothing in file1 ... or
+---
+> Nothing in file1 ...
+---------- Differences in file2 ----------
+1c1
+< Nothing in file2 ... indeed!
+---
+> Nothing in file2 ...
+---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in file4 ----------
+1c1
+< Nothing in file4 ... yet ...
+---
+> Nothing in file4 ...
+---------- Differences in output ----------
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+---------- New result in errors ----------
+===============================
+
+'unmark the selected tests' event created with arguments ''
+
+No longer greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (orange) | Marked2 (orange)
+->   complex_fail1 (orange) | Marked2 (orange)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (orange) | Marked2 (orange)
+
+Updated : File Tree with columns: complex__fail2 , Details
+-> Comparison Files (bold)
+->   file1.hello (salmon) | (salmon)
+->   file2.hello (salmon) | (salmon)
+->   file3.hello (salmon) | (salmon)
+->   file4.hello (salmon) | (salmon)
+->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in file1 ----------
+1c1
+< Nothing in file1 ... or
+---
+> Nothing in file1 ...
+---------- Differences in file2 ----------
+1c1
+< Nothing in file2 ... indeed!
+---
+> Nothing in file2 ...
+---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in file4 ----------
+1c1
+< Nothing in file4 ... yet ...
+---
+> Nothing in file4 ...
+---------- Differences in output ----------
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+---------- New result in errors ----------
+===============================
+
+Changing GUI status to: 'Performed 'Unmark the selected tests' on HELLO test-case complex_fail2.'
+
+'set test selection to' event created with arguments 'simple_fail1'
+
+Updated : File Tree with columns: simple__fail1 , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file1.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file3.hello (salmon) | (salmon)
+->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+===============================
+
+'mark the selected tests' event created with arguments ''
+
+---------- Dialog 'Mark the selected tests' ----------
+Default widget is 'gtk-ok'
+'Brief text:'
+Text entry (set to 'Marked2')
+'Free text:'
+Text entry (set to 'Nothing that needs filtering')
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+------------------------------------------------------
+
+'enter brief text =' event created with arguments 'Marked3'
+Edited 'Brief text' Text entry (set to 'Marked3')
+
+'press ok' event created with arguments ''
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (orange) | Marked3 (orange)
+->   simple_fail2 (orange) | Marked2 (orange)
+->   complex_fail1 (orange) | Marked2 (orange)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (orange) | Marked2 (orange)
+
+Updated : File Tree with columns: simple__fail1 , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file1.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file3.hello (salmon) | (salmon)
+->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+===============================
+Adding entry completion 'Marked3' ...
+
+Changing GUI status to: 'Performed 'Mark the selected tests' on HELLO test-case simple_fail1.'
+
+'set test selection to' event created with arguments 'simple_fail2,complex_fail1'
+
+Column titles changed in Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+
+Updated : File Tree with columns: Sample from 2 tests , Details
+-> Comparison Files (bold)
+->   file1.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file3.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- New result in errors ----------
+===============================
+
+'unmark the selected tests' event created with arguments ''
+
+No longer greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (orange) | Marked3 (orange)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (orange) | Marked2 (orange)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (orange) | Marked2 (orange)
+
+Updated : File Tree with columns: Sample from 2 tests , Details
+-> Comparison Files (bold)
+->   file1.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file3.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in errors ----------
+===============================
+
+Updated : Test Tree with columns: Tests: 2/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (orange) | Marked3 (orange)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (orange) | Marked2 (orange)
+
+Changing GUI status to: 'Performed 'Unmark the selected tests' on 2 tests.'
+
+'view options for' event created with arguments 'Status'
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+-> Succeeded (white) | 0 (white) | Check box (checked)
+-> Marked (orange,bold) | 2 (orange,bold) | Check box (checked)
+->   Checked (white) | 0 (white) | Check box (checked)
+->   Marked2 (orange,bold) | 1 (orange,bold) | Check box (checked)
+->   Marked3 (orange,bold) | 1 (orange,bold) | Check box (checked)
+
+'select tests in category' event created with arguments ''
+Marking 0 tests as selected
+
+Greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+
+Child visibility changed in Notebook with tabs: Status , Selection , Run Info
+
+'set test selection to' event created with arguments 'complex_fail1'
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: complex__fail1 , Details
+-> Comparison Files (bold)
+->   file1.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file3.hello (salmon) | (salmon)
+->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in output ----------
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+---------- New result in errors ----------
+===============================
+
+'mark the selected tests' event created with arguments ''
+
+---------- Dialog 'Mark the selected tests' ----------
+Default widget is 'gtk-ok'
+'Brief text:'
+Text entry (set to 'Marked3')
+'Free text:'
+Text entry (set to 'Nothing that needs filtering')
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+------------------------------------------------------
+
+'enter brief text =' event created with arguments 'Marked4'
+Edited 'Brief text' Text entry (set to 'Marked4')
+
+'press ok' event created with arguments ''
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 1/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (orange) | Marked3 (orange)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (orange) | Marked4 (orange)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (orange) | Marked2 (orange)
+
+Updated : File Tree with columns: complex__fail1 , Details
+-> Comparison Files (bold)
+->   file1.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file2.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   file3.hello (salmon) | (salmon)
+->   file4.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+-> New Files (bold)
+->   errors.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test was marked by the user :
+Nothing that needs filtering
+
+ORIGINAL STATE:
+Test FAILED :
+ ---------- Differences in file3 ----------
+1c1
+< Something in file3: Whitespace
+---
+> Nothing in file3 ...
+---------- Differences in output ----------
+2,3d1
+< 
+< By the way, åäöÅÄÖ.
+---------- New result in errors ----------
+===============================
+Adding entry completion 'Marked4' ...
+
+Changing GUI status to: 'Performed 'Mark the selected tests' on HELLO test-case complex_fail1.'
+
+'view options for' event created with arguments 'Status'
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+-> Succeeded (white) | 0 (white) | Check box (checked)
+-> Marked (orange,bold) | 3 (orange,bold) | Check box (checked)
+->   Checked (white) | 0 (white) | Check box (checked)
+->   Marked2 (orange,bold) | 1 (orange,bold) | Check box (checked)
+->   Marked3 (orange,bold) | 1 (orange,bold) | Check box (checked)
+->   Marked4 (orange,bold) | 1 (orange,bold) | Check box (checked)
+
+'select tests in category' event created with arguments 'Marked'
+Selecting all 3 tests in category Marked
+Marking 3 tests as selected
+
+Column titles changed in Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+
+'unmark the selected tests' event created with arguments ''
+
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (orange) | Marked3 (orange)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (orange) | Marked4 (orange)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (DarkSeaGreen2) | (DarkSeaGreen2)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Marked (orange,bold) | 2 (orange,bold) | Check box (checked)
+->   Checked (white) | 0 (white) | Check box (checked)
+->   Marked2 (white) | 0 (white) | Check box (checked)
+->   Marked3 (orange,bold) | 1 (orange,bold) | Check box (checked)
+->   Marked4 (orange,bold) | 1 (orange,bold) | Check box (checked)
+
+No longer greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (orange) | Marked4 (orange)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (DarkSeaGreen2) | (DarkSeaGreen2)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Marked (orange,bold) | 1 (orange,bold) | Check box (checked)
+->   Checked (white) | 0 (white) | Check box (checked)
+->   Marked2 (white) | 0 (white) | Check box (checked)
+->   Marked3 (white) | 0 (white) | Check box (checked)
+->   Marked4 (orange,bold) | 1 (orange,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 3/5 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   simple_fail1 (DarkSeaGreen2) | file3 different (salmon)
+->   simple_fail2 (salmon) | errors new (salmon)
+->   complex_fail1 (salmon) | output different(+) (salmon)
+->   complex_fail2 (salmon) | output different(+) (salmon)
+->   suite (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->     success (DarkSeaGreen2) | (DarkSeaGreen2)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file1 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file2 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     file3 different (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     file4 different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Marked (white) | 0 (white) | Check box (checked)
+->   Checked (white) | 0 (white) | Check box (checked)
+->   Marked2 (white) | 0 (white) | Check box (checked)
+->   Marked3 (white) | 0 (white) | Check box (checked)
+->   Marked4 (white) | 0 (white) | Check box (checked)
+
+Changing GUI status to: 'Performed 'Unmark the selected tests' on 3 tests.'
+
+'select tests in category' event created with arguments ''
+Marking 0 tests as selected
+
+Greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+
+Child visibility changed in Notebook with tabs: Status , Selection , Run Info
+
+'quit' event created with arguments ''

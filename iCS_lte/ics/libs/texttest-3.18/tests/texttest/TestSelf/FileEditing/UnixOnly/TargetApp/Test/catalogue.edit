@@ -1,0 +1,8 @@
+The following new files/directories were created:
+<Test Directory>
+----writedir
+--------deadlink
+--------dirlink
+--------link
+--------subdir
+------------file

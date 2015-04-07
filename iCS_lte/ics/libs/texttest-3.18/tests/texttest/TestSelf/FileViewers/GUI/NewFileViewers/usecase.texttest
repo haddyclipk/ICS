@@ -1,0 +1,8 @@
+wait for completion of test actions
+set file selection to newout.hello
+view actions for file newout.hello
+show properties of selected files
+press close
+set file selection to output.hello
+view actions for file output.hello
+quit

@@ -1,0 +1,7 @@
+
+[Reported by geoff at 31Mar10:22:09]
+search_string:file2
+search_file:catalogue
+full_description:Apparently Windows bug in python, see discussion in http://groups.google.com/group/comp.lang.python/browse_thread/thread/24793aa5f28bcf07/9a02ffa7b13e774a?lnk=raot
+brief_description:subprocess problem
+internal_error:1

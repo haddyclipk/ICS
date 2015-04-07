@@ -1,0 +1,18 @@
+Using Application TRAFFIC
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case Test
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case Test (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case Test FAILED : new results in traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- New result in traffic ----------
+<-PYT:import mymodule
+<-PYT:mymodule.__path__
+->RET:raise exceptions.AttributeError("'module' object has no attribute '__path__'")
+<-PYT:mymodule.__all__
+->RET:['getValue', 'value']
+<-PYT:mymodule.value
+->RET:2
+<-PYT:mymodule.getValue()
+->RET:1
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

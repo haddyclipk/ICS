@@ -1,0 +1,14 @@
+Using Application CONC
+Running CONC test-suite TargetApp
+  Running CONC test-case Test
+Comparing differences for CONC test-suite TargetApp
+  Comparing differences for CONC test-case Test (on catalogue.conc,errors.conc,output.conc,traffic.conc)
+  CONC test-case Test FAILED : differences in output,traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- Differences in output ----------
+1d0
+< Sleeping for 100 seconds...
+---------- Differences in traffic ----------
+2d1
+< ->OUT:Sleeping for 100 seconds...
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

@@ -1,0 +1,11 @@
+# Test for collecting core in interactive mode
+InteractiveCrash
+
+# ...and in batch mode
+BatchCrash
+
+# Check what happens when interpretcore.py doesn't do as expected
+CoreInterpretFailure
+
+# Check what happens if we save a crashed test and then it no longer crashes
+MissingStacktrace

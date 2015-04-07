@@ -1,0 +1,1 @@
+interpreter:coverage -x ${TEXTTEST_CHECKOUT}/pyusecase/bin/pyusecase -l config -i gtk

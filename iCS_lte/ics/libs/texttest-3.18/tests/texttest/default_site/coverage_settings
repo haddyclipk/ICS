@@ -1,0 +1,11 @@
+# Version for coverage
+# This is set up to run locally on UNIX, you'll need
+# to tweak it to run it anywhere else.
+# To do this, copy this file to a directory site/siteconfig and edit.
+# -p should be used if running the tests in parallel
+# On Windows you'll need to use python <full_path_to_coverage>
+interpreter:coverage -x ${TEXTTEST_CHECKOUT}/pyusecase/bin/pyusecase -l config -i console
+
+[run_dependent_text]
+traffic:coverage -x {REPLACE }
+[end]

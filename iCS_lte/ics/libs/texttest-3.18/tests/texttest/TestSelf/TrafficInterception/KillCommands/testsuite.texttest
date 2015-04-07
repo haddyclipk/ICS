@@ -1,0 +1,5 @@
+# Should be able to replay process kills on any platform
+Replay
+
+# Recording process kills only works on UNIX
+UnixOnly

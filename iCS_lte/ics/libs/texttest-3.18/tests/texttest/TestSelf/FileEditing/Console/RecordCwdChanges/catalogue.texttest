@@ -1,0 +1,10 @@
+The following new files/directories were created:
+<Test Directory>
+----TargetApp
+--------Test
+------------traffic.edit
+------------file_edits
+----------------tmpdir
+--------------------file
+--------------------sideeffect
+----texttesttmp

@@ -1,0 +1,7 @@
+# Ordered list of tests in test suite. Add as appropriate
+
+# Check we can re-record traffic from the command line to a traffic file
+RecordCmdLine
+
+# Make sure we can find our way in a traffic file with funny things in it...
+ReplayBadTraffic

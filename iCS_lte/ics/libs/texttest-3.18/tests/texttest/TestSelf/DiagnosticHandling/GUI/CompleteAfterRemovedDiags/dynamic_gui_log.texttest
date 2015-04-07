@@ -1,0 +1,247 @@
+Enabling entry completion, using matching 1
+Adding entry completion 'nodiag' ...
+Adding entry completion 'withdiag' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing DIAG.nodiag,DIAG.withdiag (started at 28Jan12:07:34)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan12:07:34'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator, 68% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 28Jan12:07:34.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (white) | (white)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (LightGoldenrod1) | (LightGoldenrod1)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (LightGoldenrod1) | (LightGoldenrod1)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (LightGoldenrod1) | (LightGoldenrod1)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 0.5, text '1 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (DarkSeaGreen2) | first missing(+) (salmon)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     first missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     second missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     third missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (DarkSeaGreen2) | first missing(+) (salmon)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     first missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     second missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     third missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | (white)
+->   TestAlwaysDiag (DarkSeaGreen2) | first missing(+) (salmon)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     first missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     second missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     third missing (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test TestAlwaysDiag version nodiag to complete' occurred, proceeding.
+Expected application event 'test TestAlwaysDiag version withdiag to start' occurred, proceeding.
+
+'set test selection to' event created with arguments 'TestAlwaysDiag under TargetApp (diag.nodiag)'
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: TestAlwaysDiag , Details
+-> Comparison Files (bold)
+->   errors.diag (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.diag (DarkSeaGreen2) | (DarkSeaGreen2)
+-> Missing Files (bold)
+->   first.diag (salmon) | (salmon)
+->   second.diag (salmon) | (salmon)
+->   third.diag (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Missing result in first ----------
+[ firstdiag ] INFO: Some information
+[ firstdiag ] DEBUG: Some debug stuff
+---------- Missing result in second ----------
+[ seconddiag ] INFO: Some information
+---------- Missing result in third ----------
+[ thirddiag ] INFO: Some information
+===============================
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving DIAG.nodiag test-case TestAlwaysDiag : first, no version'
+
+Changing GUI status to: 'Saving DIAG.nodiag test-case TestAlwaysDiag : second, no version'
+
+Changing GUI status to: 'Saving DIAG.nodiag test-case TestAlwaysDiag : third, no version'
+
+Waiting for application event 'completion of test actions' to occur.
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   TestAlwaysDiag (DarkSeaGreen2) | (DarkSeaGreen2)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : File Tree with columns: TestAlwaysDiag , Details
+-> Comparison Files (bold)
+->   errors.diag (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.diag (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test succeeded
+(Saved at 12:07)
+===============================
+
+Changing GUI status to: 'Saved 1 tests.'
+
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   TestAlwaysDiag (DarkSeaGreen2) | (DarkSeaGreen2)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (LightGoldenrod1) | (LightGoldenrod1)
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 28Jan12:07:41'
+
+Updated : Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+-> TargetApp (diag.nodiag) (white,bold) | All 1 tests successful (DarkSeaGreen2)
+->   TestAlwaysDiag (DarkSeaGreen2) | (DarkSeaGreen2)
+-> TargetApp (diag.withdiag) (white,bold) | (white)
+->   TestAlwaysDiag (DarkSeaGreen2) | first new(+) (salmon)
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set test selection to' event created with arguments 'TestAlwaysDiag under TargetApp (diag.withdiag)'
+
+No longer greyed out : _Save
+
+Updated : File Tree with columns: TestAlwaysDiag , Details
+-> Comparison Files (bold)
+->   errors.diag (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.diag (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   first.diag (salmon) | (salmon)
+->   second.diag (salmon) | (salmon)
+->   third.diag (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in first ----------
+[ firstdiag ] INFO: Some information
+[ firstdiag ] DEBUG: Some debug stuff
+---------- New result in second ----------
+[ seconddiag ] INFO: Some information
+---------- New result in third ----------
+[ thirddiag ] INFO: Some information
+===============================
+
+'quit' event created with arguments ''
+Adding entry completion 'free_text' ...

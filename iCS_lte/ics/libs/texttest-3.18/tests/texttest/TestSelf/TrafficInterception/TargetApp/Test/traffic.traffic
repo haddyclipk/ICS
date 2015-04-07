@@ -1,0 +1,13 @@
+<-CMD:firstcall.py -a -b -c "hello | goodbye"
+->OUT:firstcall.py called with 5 arguments
+The time is now Tue Jun 10 11:54:09 2008
+->EXC:1
+<-CMD:firstcall.py -a -b -c "hello | goodbye"
+->OUT:firstcall.py called with 5 arguments
+The time is now Tue Jun 10 11:54:09 2008
+->EXC:1
+<-CMD:cd /users/geoff/texttesttmp/dynamic_gui.10Jun115407.14719/traffic/Test/tmpdir; env 'MY_ENV_VAR=value' secondcall.py -c -x
+->OUT:The current working directory is tmpdir
+The process ID is 14735
+->ERR:secondcall.py called with ['-c', '-x'] as arguments
+MY_ENV_VAR = 'value'

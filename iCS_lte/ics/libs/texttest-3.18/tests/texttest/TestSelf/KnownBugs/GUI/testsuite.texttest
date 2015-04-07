@@ -1,0 +1,26 @@
+# Test for GUI
+ReportBug
+
+# Make sure we can change the bug colour by changing the "failure" entry
+ChangeBugColour
+
+# Check bugzilla files appear correctly
+ViewInStaticGUI
+
+# Check that trying to save a test with a known bug generates a warning, but lets us do it if we persist.
+SaveKnownBug
+
+# Make sure we can correctly report bugs from the GUI
+CreateNewReport
+
+# Check we can also create in tests for unreported bugs. Also check we preserve values for the next submission.
+CreateNewDescription
+
+# Check for various error responses
+ReportingErrors
+
+# Check the GUI responds correctly to tests succeeding and then going known-bug...
+TriggerOnSuccess
+
+# Tests that reconnect
+Reconnect

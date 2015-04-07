@@ -1,0 +1,1 @@
+<-CMD:xterm -bg black -fg white -T "Basic (output.hello)" -e tail -f /carm/proj/texttest-tmp/geoff/texttest.26Mar103436.6006/texttest/TestSelf/RunningTests/GUI/OtherOperations/FollowFileByDefault/texttesttmp/console.26Mar103437.6009/hello/Suite1/Basic/output.hello

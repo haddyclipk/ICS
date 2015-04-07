@@ -1,0 +1,4 @@
+import_config_file:$STANDARD
+
+# This is wrong now, but make sure it doesn't blow up...
+interactive_action_module:cvs

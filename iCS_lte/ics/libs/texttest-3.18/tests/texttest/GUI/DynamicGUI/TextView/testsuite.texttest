@@ -1,0 +1,14 @@
+# Test the failure_diaplay_priority option
+DisplayPriority
+
+# Stored result has Latin-1 encoding, which is also the encoding we run with
+UnicodeEncoding
+
+# Stored file has Latin-1 encoding but locale encoding is utf-8
+UnicodeEncodingFailing
+
+# Test contains Latin-1 characters, but there is no default encoding (e.g. LANG=C)
+NoEncoding
+
+# Check sensible things appear in the Run Info tab
+RunInfo

@@ -1,0 +1,20 @@
+Using Application TRAFFIC
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case TestExtraArgs
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case TestExtraArgs (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case TestExtraArgs FAILED : differences in traffic
+  View details(v), Save(s) or continue(any other key)?
+---------- Differences in traffic ----------
+1c1
+< <-CMD:firstcall.py -a -b -c "hello & goodbye"
+---
+> <-CMD:firstcall.py -a -b -c "hello | goodbye"
+5,6c5,7
+< <-CMD:firstcall.py -a -b -c "hello goodbye"
+< ->OUT:Shouldn't match this one!
+---
+> <-CMD:firstcall.py -a -b -c "hello | goodbye"
+> ->OUT:firstcall.py called with 5 arguments
+> The time is now Tue Jun 10 11:54:09 2008
+  Save(s) or continue(any other key)?

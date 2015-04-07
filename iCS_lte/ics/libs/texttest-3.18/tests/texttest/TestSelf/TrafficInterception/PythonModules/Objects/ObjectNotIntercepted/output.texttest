@@ -1,0 +1,14 @@
+Using Application TRAFFIC
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case Test
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case Test (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case Test FAILED : new results in traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- New result in traffic ----------
+<-PYT:import mymodule
+<-PYT:mymodule.get_date1()
+->RET:datetime.date(2010, 5, 4)
+<-PYT:mymodule.get_date2()
+->RET:datetime.date(2010, 4, 24)
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

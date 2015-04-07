@@ -1,0 +1,9 @@
+wait for all tests to be read
+set test selection to AddMovie under TargetApp (gui)
+view options for Running
+view sub-options for running : Recording
+choose auto-replay in dynamic gui
+record use-case
+wait for replay GUI to be closed
+view options for Test
+quit

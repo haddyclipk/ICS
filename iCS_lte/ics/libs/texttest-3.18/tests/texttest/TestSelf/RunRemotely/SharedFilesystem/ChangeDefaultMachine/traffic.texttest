@@ -1,0 +1,2 @@
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.18Aug145501.17072/texttest/TestSelf/RunRemotely/SharedFilesystem/ChangeDefaultMachine/texttesttmp/console.18Aug145506.17087/hello/Test; rsh placerville '"/carm/proj/texttest-tmp/geoff/texttest.18Aug145501.17072/texttest/TestSelf/RunRemotely/SharedFilesystem/ChangeDefaultMachine/texttesttmp/console.18Aug145506.17087/hello/Test/run_test.sh"'
+->OUT:Hello /nfs/vm/texttest-tmp/geoff/texttest.18Aug145501.17072/texttest/TestSelf/RunRemotely/SharedFilesystem/ChangeDefaultMachine/texttesttmp/console.18Aug145506.17087/hello/Test

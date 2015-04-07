@@ -1,0 +1,21 @@
+Using Application DIAG, version java.tmp.dummy
+Running DIAG.java.tmp.dummy test-suite TargetApp
+  Running DIAG.java.tmp.dummy test-case TestWithDiag
+Comparing differences for DIAG.java.tmp.dummy test-suite TargetApp
+  Comparing differences for DIAG.java.tmp.dummy test-case TestWithDiag (on errors.diag,first.diag.tmp.dummy,output.diag,second.diag.tmp,third.diag)
+  DIAG.java.tmp.dummy test-case TestWithDiag FAILED : new results in third, differences in first,second
+  View details(v), Save Version java.tmp.dummy(1), Save Version java.tmp(2), Save Version java.dummy(3), Save Version java(4), Save Version tmp.dummy(5), Save Version tmp(6), Save Version dummy(7), Save(s) or continue(any other key)?
+---------- Differences in first ----------
+1c1,2
+< Dummy file
+---
+> INFO - Some information
+> DEBUG - Some debug stuff
+---------- Differences in second ----------
+1c1
+< [ seconddiag ] INFO: Some information
+---
+> INFO - Some information
+---------- New result in third ----------
+INFO - Some information
+  Save Version java.tmp.dummy(1), Save Version java.tmp(2), Save Version java.dummy(3), Save Version java(4), Save Version tmp.dummy(5), Save Version tmp(6), Save Version dummy(7), Save(s) or continue(any other key)?

@@ -1,0 +1,25 @@
+The following new files/directories were created:
+<Test Directory>
+----TargetApp
+--------Game9952
+------------S03_copy
+----------------output.dip
+----texttesttmp
+--------static_gui.30Apr164206.30934
+------------dynamic_run1
+----------------errors.log
+----------------gui_select
+----------------output.log
+
+The following existing files/directories changed their contents:
+<Test Directory>
+----TargetApp
+--------Game9952
+------------testsuite.dip
+
+The following existing files/directories were deleted:
+<Test Directory>
+----TargetApp
+--------Game9952
+------------S03
+----------------output.dip

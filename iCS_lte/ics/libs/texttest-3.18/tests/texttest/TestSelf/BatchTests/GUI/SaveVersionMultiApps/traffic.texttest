@@ -1,0 +1,60 @@
+<-PYT:import smtplib
+<-PYT:smtplib.SMTP()
+->RET:Instance('SMTP', 'smtp1')
+<-PYT:smtp1.connect('localhost')
+->RET:(220, 'granville.carmen.se ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:20:28 +0100')
+<-PYT:smtp1.sendmail('geoff@localhost', ['tom', 'dick', 'harry'], '''From: geoff@localhost
+To: tom,dick,harry
+Subject: 09Feb2010 HELLO batch : 2 tests : 2 FAILED
+
+HELLO batch.1 : 1 tests : 1 FAILED
+HELLO batch.2 : 1 tests : 1 FAILED
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+HELLO batch.1 : 1 tests : 1 FAILED
+
+The following tests FAILED : 
+In HELLO.batch.1 test-suite TargetApp:
+  - HELLO.batch.1 test-case BothDiff : errors different(+)
+
+
+HELLO batch.2 : 1 tests : 1 FAILED
+
+The following tests FAILED : 
+In HELLO.batch.2 test-suite TargetApp:
+  - HELLO.batch.2 test-case BothDiff : errors different(+)
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+HELLO batch.1 : 1 tests : 1 FAILED
+
+
+Detailed information for the tests that FAILED follows...
+--------------------------------------------------------
+TEST FAILED on granville : HELLO.batch.1 test-case BothDiff (under BothDiff)
+---------- Differences in errors ----------
+0a1
+> Error text
+---------- Differences in output ----------
+0a1
+> Hello World!
+
+---------------------------------------------------------------------------------
+HELLO batch.2 : 1 tests : 1 FAILED
+
+
+Detailed information for the tests that FAILED follows...
+--------------------------------------------------------
+TEST FAILED on granville : HELLO.batch.2 test-case BothDiff (under BothDiff)
+---------- Differences in errors ----------
+0a1
+> Error text
+---------- Differences in output ----------
+0a1
+> Hello World!
+
+''')
+->RET:{}
+<-PYT:smtp1.quit()

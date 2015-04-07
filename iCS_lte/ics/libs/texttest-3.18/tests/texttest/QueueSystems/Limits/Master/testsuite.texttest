@@ -1,0 +1,9 @@
+# Check that ^C kills LSF jobs
+KillTest
+
+# Check what happens when test hits queue system limits for cpu time /run time
+CpuLimit
+RunLimit
+
+# Check for correct behaviour on receiving SIGUSR2
+NightjobTerminate

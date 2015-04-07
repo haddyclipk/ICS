@@ -1,0 +1,15 @@
+Using Application EDIT
+Running EDIT test-suite TargetApp
+  Running EDIT test-case Test
+Comparing differences for EDIT test-suite TargetApp
+  Comparing differences for EDIT test-case Test (on catalogue.edit,editedfile.edit,editedfile2.edit,errors.edit,output.edit,traffic.edit)
+  EDIT test-case Test FAILED : new results in traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- New result in traffic ----------
+<-CMD:editor.py file
+->OUT:Editing file file
+->FIL:file
+<-CMD:editor.py file2
+->OUT:Editing file file2
+  Save Version rectraffic(1), Save(s) or continue(any other key)?
+  Saving EDIT test-case Test 

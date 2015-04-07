@@ -1,0 +1,4 @@
+I wrote a file in /some/path/preamble/console.19May170622.3202/appdir/path/to/my/test today.
+And on Windows, I wrote one called C:\DOCUME~1\myname\desktop\app.20jun143332.3495\path\to\my\test as well.
+I set a variable file=/preamble/console.19May170622.3202/app/path/to/my/test
+And quoted it a bit "/home/texttesttmp/console.19May144643.85453/path/to/my/test".

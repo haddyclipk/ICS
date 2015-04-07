@@ -1,0 +1,7 @@
+Using Application ENV
+Running ENV test-suite TargetApp
+  Running ENV test-suite Suite1
+    Running ENV test-case Test1
+Comparing differences for ENV test-suite TargetApp
+  Comparing differences for ENV test-suite Suite1
+    Comparing differences for ENV test-case Test1 - SUCCESS! (on errors.env,output.env)

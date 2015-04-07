@@ -1,0 +1,10 @@
+wait for completion of test actions
+show test suite TargetApp (dip.extra)
+show test suite TargetApp (dip)
+set test selection to S01.99 under TargetApp (dip),A01 under TargetApp (dip),S01.99 under TargetApp (dip.extra)
+set file selection to output.dip
+set test selection to A01 under TargetApp (dip)
+set file selection to output.dip
+show properties of selected files
+press close
+quit

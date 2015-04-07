@@ -1,0 +1,17 @@
+# Ordered list of tests in test suite. Add as appropriate
+
+
+# Record the traffic sent
+Record
+
+# Make sure we can replay the clientserver traffic appropriately
+ReplayServer
+
+# Make sure we reset everything properly...
+ReplayServer2Tests
+
+# Lack of server contact at the start should mean TextTest taking on the role of server itself
+ReplayClient
+
+# Check we can transform the traffic using a script
+ModifyTraffic

@@ -1,0 +1,21 @@
+The following new files/directories were created:
+<Test Directory>
+----TargetApp
+--------complex_fail1
+------------errors.hello
+--------complex_fail2
+------------errors.hello
+----texttesttmp
+
+The following existing files/directories changed their contents:
+<Test Directory>
+----TargetApp
+--------complex_fail1
+------------file3.hello
+------------output.hello
+--------complex_fail2
+------------file1.hello
+------------file2.hello
+------------file3.hello
+------------file4.hello
+------------output.hello

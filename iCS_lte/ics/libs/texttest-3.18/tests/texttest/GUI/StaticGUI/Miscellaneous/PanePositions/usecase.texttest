@@ -1,0 +1,9 @@
+wait for all tests to be read
+drag vertical pane separator so left half uses 31% of the space
+set test selection to S02
+drag horizonal pane separator so top half uses 16% of the space
+view options for Selection
+enter test names containing = x
+select indicated tests
+set test selection to S04
+quit

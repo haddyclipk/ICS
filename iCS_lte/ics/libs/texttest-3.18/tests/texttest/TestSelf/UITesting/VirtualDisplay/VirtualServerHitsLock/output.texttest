@@ -1,0 +1,16 @@
+Using Application DISP
+Tests will run with DISPLAY variable set to :3.0
+Running DISP test-suite TargetApp
+  Running DISP test-case Test
+Comparing differences for DISP test-suite TargetApp
+  Comparing differences for DISP test-case Test (on errors.disp,output.disp)
+  DISP test-case Test FAILED : differences in output
+  View details(v), Save(s) or continue(any other key)?
+---------- Differences in output ----------
+1c1
+< Using display :3979.0
+---
+> Using display :3.0
+  Save(s) or continue(any other key)?
+Killing Xvfb process 23280
+Process had already terminated

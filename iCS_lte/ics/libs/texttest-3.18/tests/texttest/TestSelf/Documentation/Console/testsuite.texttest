@@ -1,0 +1,17 @@
+# Run the -help option
+TextualHelp
+
+# Check we don't get a stack trace if we ask for help and there aren't any apps
+HelpNoApps
+
+# Get the documentation of the command line
+CommandLineOptions
+
+# Get the documentation of the environment variables
+EnvironmentVariables
+
+# Generate the config file info
+ConfigFileEntries
+
+# documentation for the various scripts we use
+PluginScripts

@@ -1,0 +1,28 @@
+The following new files/directories were created:
+<Test Directory>
+----texttesttmp
+--------console.26Mar152546.4871
+------------edit
+----------------Test
+--------------------catalogue.edit
+--------------------errors.edit
+--------------------output.edit
+--------------------traffic.edit
+--------------------framework_tmp
+------------------------catalogue.editcmp
+------------------------catalogue.editorigcmp
+------------------------errors.editcmp
+------------------------errors.editorigcmp
+------------------------output.editcmp
+------------------------output.editorigcmp
+------------------------teststate
+------------------------traffic.editcmp
+------------------------traffic.editorigcmp
+--------------------traffic_intercepts
+------------------------editor.py
+--------------------writedir
+------------------------deadlink
+------------------------dirlink
+------------------------link
+------------------------subdir
+----------------------------file

@@ -1,0 +1,426 @@
+Enabling entry completion, using matching 1
+Adding entry completion '<default>' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing PERF (started at 28Jan13:37:33)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan13:37:36'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator, 68% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 28Jan13:37:36.' , Image 'throbber_inactive.png'
+---------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (white) | (white)
+->   Failures (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 3 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (white) | (white)
+->   Failures (white) | (white)
+->   FailuresCurrBelowLimit (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 4 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (white) | (white)
+->   Failures (white) | (white)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (LightGoldenrod1) | (LightGoldenrod1)
+->   Failures (white) | (white)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (LightGoldenrod1) | (LightGoldenrod1)
+->   Failures (white) | (white)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (LightGoldenrod1) | (LightGoldenrod1)
+->   Failures (white) | (white)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 0.25, text '1 of 4 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (white) | (white)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (LightGoldenrod1) | (LightGoldenrod1)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (LightGoldenrod1) | (LightGoldenrod1)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (LightGoldenrod1) | (LightGoldenrod1)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Progress bar set to fraction 0.5, text '2 of 4 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (DarkSeaGreen2) | 100% faster (salmon)
+->   FailuresCurrBelowLimit (white) | (white)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Performance differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     Faster (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (DarkSeaGreen2) | 100% faster (salmon)
+->   FailuresCurrBelowLimit (LightGoldenrod1) | (LightGoldenrod1)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Performance differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     Faster (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (DarkSeaGreen2) | 100% faster (salmon)
+->   FailuresCurrBelowLimit (LightGoldenrod1) | (LightGoldenrod1)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Performance differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     Faster (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (DarkSeaGreen2) | 100% faster (salmon)
+->   FailuresCurrBelowLimit (LightGoldenrod1) | (LightGoldenrod1)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Performance differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     Faster (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 0.75, text '3 of 4 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (DarkSeaGreen2) | 100% faster (salmon)
+->   FailuresCurrBelowLimit (DarkSeaGreen2) | 150% slower (salmon)
+->   FailuresZeroTime (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Performance differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     Faster (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     Slower (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (DarkSeaGreen2) | 100% faster (salmon)
+->   FailuresCurrBelowLimit (DarkSeaGreen2) | 150% slower (salmon)
+->   FailuresZeroTime (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Performance differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     Faster (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     Slower (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (DarkSeaGreen2) | 100% faster (salmon)
+->   FailuresCurrBelowLimit (DarkSeaGreen2) | 150% slower (salmon)
+->   FailuresZeroTime (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Performance differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     Faster (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     Slower (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (DarkSeaGreen2) | 100% faster (salmon)
+->   FailuresCurrBelowLimit (DarkSeaGreen2) | 150% slower (salmon)
+->   FailuresZeroTime (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Performance differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     Faster (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     Slower (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 4 tests completed at 28Jan13:37:40'
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (DarkSeaGreen2) | 100% faster (salmon)
+->   FailuresCurrBelowLimit (DarkSeaGreen2) | 150% slower (salmon)
+->   FailuresZeroTime (DarkSeaGreen2) | infinitely slower (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->   Performance differences (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     Faster (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     Infinitely slower (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     Slower (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set test selection to' event created with arguments 'Failures'
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Failures , Details
+-> Comparison Files (bold)
+->   errors.perf (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.perf (DarkSeaGreen2) | (DarkSeaGreen2)
+->   performance.perf (salmon) | 100% faster (salmon)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test ran faster :
+---------- Differences in performance(faster) ----------
+1,2c1
+< CPU time   :       10.0 sec. on sedom
+< Real time  :       18.2 sec.
+---
+> Total Performance  :      5.0 seconds on juliaca
+===============================
+
+'select file' event created with arguments 'performance.perf'
+Adding entry completion 'free_text' ...
+Starting graphical difference comparison using 'tkdiff':
+-- original file : /carm/proj/texttest-tmp/geoff/texttest.28Jan133716.2284/texttest.gui/TestSelf/PerformanceTests/GUI/RegisterFailure/TargetApp/Failures/performance.perf
+--  current file : /carm/proj/texttest-tmp/geoff/texttest.28Jan133716.2284/texttest.gui/TestSelf/PerformanceTests/GUI/RegisterFailure/texttesttmp/dynamic_gui.28Jan133733.30022/perf/Failures/performance.perf
+
+Waiting for application event 'the graphical diff program to terminate' to occur.
+
+Changing GUI status to: 'Started "tkdiff performance.perf performance.perf" in background (from test Failures).'
+
+Expected application event 'the graphical diff program to terminate' occurred, proceeding.
+
+'save results with non-default settings' event created with arguments ''
+
+---------- Dialog 'Saving 1 tests' ----------
+Default widget is 'gtk-save'
+'Version to save:'
+Text entry
+'Version(s) to save previous results as:'
+Text entry
+Check button 'Replace successfully compared files also'
+.....'Save'......
+Radio button 'Average performance'
+Radio button 'Exact performance' (checked)
+---------------
+Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+---------------------------------------------
+
+'choose average performance for save' event created with arguments ''
+Toggled Radio button 'Average performance' (checked)
+Toggled Radio button 'Exact performance'
+
+'choose exact performance for save' event created with arguments ''
+Toggled Radio button 'Average performance'
+Toggled Radio button 'Exact performance' (checked)
+
+'press ok' event created with arguments ''
+
+Changing GUI status to: 'Saving PERF test-case Failures : performance(faster), no version'
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 1/4 selected, none hidden , Details
+-> TargetApp (perf) (white,bold) | (white)
+->   Success (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Failures (DarkSeaGreen2) | (DarkSeaGreen2)
+->   FailuresCurrBelowLimit (DarkSeaGreen2) | 150% slower (salmon)
+->   FailuresZeroTime (DarkSeaGreen2) | infinitely slower (salmon)
+
+Updated : File Tree with columns: Failures , Details
+-> Comparison Files (bold)
+->   errors.perf (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.perf (DarkSeaGreen2) | (DarkSeaGreen2)
+->   performance.perf (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test succeeded
+(Saved at 13:37)
+===============================
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'quit' event created with arguments ''

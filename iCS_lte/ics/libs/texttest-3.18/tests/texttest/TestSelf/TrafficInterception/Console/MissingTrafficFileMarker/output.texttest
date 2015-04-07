@@ -1,0 +1,7 @@
+Using Application TRAFFIC, version version
+Running TRAFFIC.version test-suite TargetApp
+  Running TRAFFIC.version test-case TestNoTraffic
+Comparing differences for TRAFFIC.version test-suite TargetApp
+  Comparing differences for TRAFFIC.version test-case TestNoTraffic (on errors.traffic,output.traffic)
+  TRAFFIC.version test-case TestNoTraffic FAILED : differences in output
+  View details(v), Save Version version(1), Save(s) or continue(any other key)?

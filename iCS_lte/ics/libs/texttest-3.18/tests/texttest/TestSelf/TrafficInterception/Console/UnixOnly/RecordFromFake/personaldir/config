@@ -1,0 +1,7 @@
+link_test_path:firstcall.py
+link_test_path:secondcall.py
+
+# Only intercept secondcall.py, on Windows the cwd takes precedence and breaks the functionality
+# secondcall.py is called from a different directory and doesn't encounter the problem
+collect_traffic:{CLEAR firstcall.py}
+

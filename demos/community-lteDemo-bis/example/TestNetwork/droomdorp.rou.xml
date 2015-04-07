@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+
+<!-- generated on 06/11/09 15:29:19 by SUMO duarouter Version 0.10.3
+<configuration>
+
+   <input>
+      <net-file>droomdorp.net.xml</net-file>
+      <trip-defs>droomdorp.trip.xml</trip-defs>
+   </input>
+
+   <output>
+      <output-file>droomdorp.rou.xml</output-file>
+   </output>
+
+</configuration>
+-->
+
+<routes>
+ <vtype id="ambulance" accel="0.8" decel="4.5" sigma="0.5" length="12" maxspeed="170"/>
+   <vtypeDistribution id="dist">
+      <vtype id="type1" accel="1.0" decel="4.5" sigma="0.5" length="12" maxspeed="9" probability="0.00"/>
+      <vtype class="passenger" id="type2" accel="2.0" decel="4.5" sigma="0.5" length="6.5" maxspeed="40" minGap="1.5" probability="1.00" guiShape="passenger/hatchback" />"
+   </vtypeDistribution>
+
+   <vehicle id="1-4" type="dist" depart="1" repno="100" period="72">
+      <route edges="xp1west_out-xp1west xp1west-xp1west_turn xp1west_turn-xp1 xp1-xp2turn xp2turn-xp2 xp2-xp2south xp2south-xp2south_out"/>
+   </vehicle>
+   <vehicle id="1-5" type="dist" depart="1" repno="100" period="72">
+      <route edges="xp1west_out-xp1west xp1west-xp1west_turn xp1west_turn-xp1 xp1-xp2turn xp2turn-xp2 xp2-xp2north xp2north-xp2north_out"/>
+   </vehicle>
+   <vehicle id="1-6" type="dist" depart="1" repno="800" period="7">
+      <route edges="xp1west_out-xp1west xp1west-xp1west_turn xp1west_turn-xp1 xp1-xp2turn xp2turn-xp2 xp2-xp2east xp2east-xp2east_out"/>
+   </vehicle>
+   <vehicle id="2-1" type="dist" depart="1" repno="50" period="144">
+      <route edges="xp1south_out-xp1south xp1south-xp1south_turn xp1south_turn-xp1 xp1-xp1west xp1west-xp1west_out"/>
+   </vehicle>
+   <vehicle id="2-3" type="dist" depart="1" repno="50" period="144">
+      <route edges="xp1south_out-xp1south xp1south-xp1south_turn xp1south_turn-xp1 xp1-xp1north xp1north-xp1north_out"/>
+   </vehicle>
+   <vehicle id="2-6" type="dist" depart="1" repno="100" period="72">
+      <route edges="xp1south_out-xp1south xp1south-xp1south_turn xp1south_turn-xp1 xp1-xp2turn xp2turn-xp2 xp2-xp2east xp2east-xp2east_out"/>
+   </vehicle>
+   <vehicle id="3-1" type="dist" depart="1" repno="50" period="144">
+      <route edges="xp1north_out-xp1north xp1north-xp1north_turn xp1north_turn-xp1 xp1-xp1west xp1west-xp1west_out"/>
+   </vehicle>
+   <vehicle id="3-2" type="dist" depart="1" repno="50" period="144">
+      <route edges="xp1north_out-xp1north xp1north-xp1north_turn xp1north_turn-xp1 xp1-xp1south xp1south-xp1south_out"/>
+   </vehicle>
+   <vehicle id="3-6" type="dist" depart="1" repno="100" period="72">
+      <route edges="xp1north_out-xp1north xp1north-xp1north_turn xp1north_turn-xp1 xp1-xp2turn xp2turn-xp2 xp2-xp2east xp2east-xp2east_out"/>
+   </vehicle>
+   <vehicle id="4-1" type="dist" depart="1" repno="100" period="72">
+      <route edges="xp2south_out-xp2south xp2south-xp2south_turn xp2south_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1west xp1west-xp1west_out"/>
+   </vehicle>
+   <vehicle id="4-5" type="dist" depart="1" repno="50" period="144">
+      <route edges="xp2south_out-xp2south xp2south-xp2south_turn xp2south_turn-xp2 xp2-xp2north xp2north-xp2north_out"/>
+   </vehicle>
+   <vehicle id="4-6" type="dist" depart="1" repno="50" period="144">
+      <route edges="xp2south_out-xp2south xp2south-xp2south_turn xp2south_turn-xp2 xp2-xp2east xp2east-xp2east_out"/>
+   </vehicle>
+   <vehicle id="5-1" type="dist" depart="1" repno="100" period="72">
+      <route edges="xp2north_out-xp2north xp2north-xp2north_turn xp2north_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1west xp1west-xp1west_out"/>
+   </vehicle>
+   <vehicle id="5-4" type="dist" depart="1" repno="50" period="144">
+      <route edges="xp2north_out-xp2north xp2north-xp2north_turn xp2north_turn-xp2 xp2-xp2south xp2south-xp2south_out"/>
+   </vehicle>
+   <vehicle id="5-6" type="dist" depart="1" repno="50" period="144">
+      <route edges="xp2north_out-xp2north xp2north-xp2north_turn xp2north_turn-xp2 xp2-xp2east xp2east-xp2east_out"/>
+   </vehicle>
+   <vehicle id="6-1" type="dist" depart="1" repno="800" period="7">
+      <route edges="xp2east_out-xp2east xp2east-xp2east_turn xp2east_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1west xp1west-xp1west_out"/>
+   </vehicle>
+   <vehicle id="6-2" type="dist" depart="1" repno="100" period="72">
+      <route edges="xp2east_out-xp2east xp2east-xp2east_turn xp2east_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1south xp1south-xp1south_out"/>
+   </vehicle>
+   <vehicle id="6-3" type="dist" depart="1" repno="100" period="72">
+      <route edges="xp2east_out-xp2east xp2east-xp2east_turn xp2east_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1north xp1north-xp1north_out"/>
+   </vehicle>
+   <vehicle id="6-4" type="dist" depart="1" repno="50" period="144">
+      <route edges="xp2east_out-xp2east xp2east-xp2east_turn xp2east_turn-xp2 xp2-xp2south xp2south-xp2south_out"/>
+   </vehicle>
+   <vehicle id="6-5" type="dist" depart="1" repno="50" period="144">
+      <route edges="xp2east_out-xp2east xp2east-xp2east_turn xp2east_turn-xp2 xp2-xp2north xp2north-xp2north_out"/>
+   </vehicle>
+   <vehicle id="AMBULANCE" type="ambulance" depart="1" repno="80" period="100" color="1,0,0">
+      <route edges="xp2north_out-xp2north xp2north-xp2north_turn xp2north_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1west xp1west-xp1west_out"/>
+   </vehicle>
+</routes>

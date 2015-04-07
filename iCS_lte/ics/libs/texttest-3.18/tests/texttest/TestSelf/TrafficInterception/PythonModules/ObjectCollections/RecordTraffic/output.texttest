@@ -1,0 +1,26 @@
+Using Application TRAFFIC
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case Test
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case Test (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case Test FAILED : differences in output,traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- Differences in output ----------
+1c1
+< Rover says Woof Woof!
+---
+> Rover says Woof!
+7c7
+< BadAnimal Exception: Don't milk the dog, silly!
+---
+> BadAnimal Exception: Don't milk the dog!
+---------- Differences in traffic ----------
+5c5
+< ->RET:'Woof Woof!'
+---
+> ->RET:'Woof!'
+27c27
+< ->RET:"Don't milk the dog, silly!"
+---
+> ->RET:"Don't milk the dog!"
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

@@ -1,0 +1,6 @@
+<-SRV:TextTest slave server started on 10.67.7.95:51246
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge/QueueSystems/ErrorHandling/Console/JobStaysPending/texttesttmp/sleep.killing.01Mar115127.3694/slavelogs; env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-Basic-SLEEP.killing -w e -notify -m n -cwd -b y -V -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge/QueueSystems/ErrorHandling/Console/JobStaysPending/TargetApp -a sleep.killing -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge/QueueSystems/ErrorHandling/Console/JobStaysPending/texttesttmp/sleep.killing.01Mar115127.3694 -servaddr 10.67.7.95:50375 -b short_local""
+->OUT:Your job 1 (stupid) has been submitted.
+<-SRV:Completed submission of all tests
+<-CMD:qdel 1
+->OUT:somebody has deleted job 1

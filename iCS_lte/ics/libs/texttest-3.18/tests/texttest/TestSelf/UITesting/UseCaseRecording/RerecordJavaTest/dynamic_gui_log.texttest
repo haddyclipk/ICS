@@ -1,0 +1,175 @@
+Enabling entry completion, using matching 1
+Adding entry completion 'java' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing VideoStore.java under /carm/proj/texttest-tmp/geoff/texttest.29Mar113258.20541/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordJavaTest/TargetApp/source_with_pyc (started at 29Mar11:36:15)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+...........
+
+Showing Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+
+------------------------------ (vertical pane separator, 77% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 29Mar11:36:18.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------------
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (gui.java) (white,bold) | (white)
+->   AddMovie (white) | (white)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (gui.java) (white,bold) | (white)
+->   AddMovie (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (gui.java) (white,bold) | (white)
+->   AddMovie (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (gui.java) (white,bold) | (white)
+->   AddMovie (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 29Mar11:36:22'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (gui.java) (white,bold) | (white)
+->   AddMovie (salmon) | output different(+) (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     usecase different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+Only one test found, selecting AddMovie
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: AddMovie , Details
+-> Comparison Files (bold)
+->   errors.gui (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.gui (salmon) | (salmon)
+->   usecase.gui (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1d0
+< Started the video store. The process ID is 20480
+3,11c2
+< ---------- Window 'The Video Store' ----------
+< Focus widget is 'GtkEntry'
+< 'New Movie Name  ' , Text entry , Button 'Add'
+< 
+< Showing GtkTreeView with columns: Movie Name
+< ----------------------------------------------
+< 
+< 'set new movie name to' event created with arguments 'Star Wars'
+< Edited 'GtkEntry' Text entry (set to 'Star Wars')
+---
+> 'set new movie name to' event created with arguments 'Chariots of Fire'
+14,17c5
+< Adding movie 'Star Wars'. There are now 1 movies.
+< 
+< Updated : GtkTreeView with columns: Movie Name
+< -> Star Wars
+---
+> Adding movie 'Chariots of Fire'. There are now 1 movies.
+---------- Differences in usecase ----------
+1c1
+< set new movie name to Star Wars
+---
+> set new movie name to Chariots of Fire
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'save results with non-default settings' event created with arguments ''
+Adding entry completion 'java.recusecase' ...
+Adding entry completion 'recusecase' ...
+
+---------- Dialog 'Saving 1 tests' ----------
+Default widget is 'gtk-save'
+'Version to save:'
+Text entry (set to 'java') (drop-down list containing ['java.recusecase', 'java', 'recusecase', ''])
+'Version(s) to save previous results as:'
+Text entry
+Check button 'Replace successfully compared files also'
+---------------
+Button 'gtk-save' (Stock image 'gtk-save') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+---------------------------------------------
+
+'press ok' event created with arguments ''
+
+Changing GUI status to: 'Saving VideoStore.java test-case AddMovie : output, version java'
+
+Changing GUI status to: 'Saving VideoStore.java test-case AddMovie : usecase, version java'
+Adding entry completion 'free_text' ...
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (gui.java) (white,bold) | All 1 tests successful (DarkSeaGreen2)
+
+Current page changed in Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (white) | 0 (white) | Check box (checked)
+->   Differences (white) | 0 (white) | Check box (checked)
+->     output different (white) | 0 (white) | Check box (checked)
+->     usecase different (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+->   Saved (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'quit' event created with arguments ''

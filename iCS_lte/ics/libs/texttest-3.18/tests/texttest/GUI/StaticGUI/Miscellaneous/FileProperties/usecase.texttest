@@ -1,0 +1,23 @@
+wait for all tests to be read
+set test selection to S01.99
+view actions for file output.dip
+show properties of selected files
+press close
+set test selection to A01
+view actions for file output.dip
+show properties of selected files
+press close
+set test selection to Game9952
+view actions for file testsuite.dip
+show properties of selected files
+press close
+set file selection to testsuite.dip,testsuite.dip.small
+view actions for file testsuite.dip
+show properties of selected files
+press close
+set test selection to S01.99,A01
+run selected tests
+wait for dynamic GUI to be closed
+view options for Running
+view sub-options for running : Advanced
+quit

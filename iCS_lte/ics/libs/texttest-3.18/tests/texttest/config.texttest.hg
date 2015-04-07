@@ -1,0 +1,13 @@
+base_version:bzr
+base_version:vcs
+base_version:gui
+
+collect_traffic:hg
+
+link_test_path:.hg
+link_test_path:.hgignore
+link_test_path:{CLEAR .bzr}
+
+[run_dependent_text]
+# Because of the softlink workaround...
+traffic:hg status -A .*/TargetApp{REPLACE hg status -A <test write dir>/TargetApp}

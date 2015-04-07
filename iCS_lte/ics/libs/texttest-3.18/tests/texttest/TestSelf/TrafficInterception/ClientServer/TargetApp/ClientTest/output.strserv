@@ -1,0 +1,9 @@
+Sent to server: Here is a string
+Got reply: Length was 17
+
+Sent to server: Here is a longer string
+Got reply: Length was 24
+
+Sent to server: terminate
+Got reply: Exiting...
+

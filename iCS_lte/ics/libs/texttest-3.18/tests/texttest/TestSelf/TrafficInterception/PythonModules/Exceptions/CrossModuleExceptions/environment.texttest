@@ -1,0 +1,2 @@
+PYTHONPATH:$PYTHONPATH:$TEXTTEST_SANDBOX/TargetApp/importdir_with_pyc
+

@@ -1,0 +1,9 @@
+import_config_file:$STANDARD
+
+executable:${TEXTTEST_HOME}/source_with_pyc/sleeps.py
+
+default_interface:console
+
+create_catalogues:true
+
+collect_traffic:sleep

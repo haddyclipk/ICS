@@ -1,0 +1,9 @@
+<-SRV:TextTest slave server started on 10.67.7.96:36631
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.lsf/QueueSystems/ErrorHandling/Console/SlaveCrashNoReport/texttesttmp/sleep.killing.01Mar115150.5768/slavelogs; env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' bsub -J Test-Basic-SLEEP.killing -u nobody -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.lsf/QueueSystems/ErrorHandling/Console/SlaveCrashNoReport/TargetApp -a sleep.killing -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.lsf/QueueSystems/ErrorHandling/Console/SlaveCrashNoReport/texttesttmp/sleep.killing.01Mar115150.5768 -servaddr 10.67.7.96:40838 -b short_local""
+->FIL:sleep.killing.02Jun105522.29337
+->OUT:Job <1> is submitted to queue <bad_machine_queue>.
+<-SRV:Completed submission of all tests
+<-CMD:bkill -s USR1 1
+->ERR:Job <1>: No matching job found
+<-CMD:bjobs -a -l 1
+->OUT:Some random accounting info

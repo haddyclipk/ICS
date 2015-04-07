@@ -1,0 +1,5 @@
+<-PYT:import tempfile
+<-PYT:tempfile.gettempdir()
+->RET:'/users/geoff/tmp'
+<-PYT:tempfile.tempdir
+->RET:'/users/other/tmp'

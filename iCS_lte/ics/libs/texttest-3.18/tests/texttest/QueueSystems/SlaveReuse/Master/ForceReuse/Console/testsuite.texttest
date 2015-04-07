@@ -1,0 +1,17 @@
+# Once we've hit the supposed capacity of the grid, don't submit any more tests, but wait for reuse to occur
+ReuseOnlyBeyondCapacity
+
+# We should fulfil resource requirements before respecting capacity...
+ResourcesOverReuse
+
+# Make sure we don't submit slaves so they can't clear their environment, otherwise reuse suffers
+ClearEnvironment
+
+# Make sure we can handle reusing a job even when the implied checkout changes
+CheckoutChange
+
+# See what happens if we've submitted more than the capacity of the grid, no jobs report, and then we terminate
+CancelBeyondCapacity
+
+# If we hit the capacity of the grid and are still reading tests, make sure that we continue!
+SlowReadBeyondCapacity

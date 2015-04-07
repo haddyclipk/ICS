@@ -1,0 +1,16 @@
+Using Application TRAFFIC
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case Test
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case Test (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case Test FAILED : new results in errors,output,traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- New result in errors ----------
+---------- New result in output ----------
+---------- New result in traffic ----------
+<-PYT:import tempfile
+<-PYT:tempfile.gettempprefix({'quotestring': """This one
+has a ' in it""", 'string': u'''This
+is a large unicode string'''})
+->RET:raise exceptions.TypeError('gettempprefix() takes no arguments (1 given)')
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

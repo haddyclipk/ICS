@@ -1,0 +1,5 @@
+Using Application EDIT
+Running EDIT test-suite TargetApp
+  Running EDIT test-case NameMismatch
+Comparing differences for EDIT test-suite TargetApp
+  Comparing differences for EDIT test-case NameMismatch - SUCCESS! (on catalogue.edit,editedfile.edit,editedfile2.edit,editedfile3.edit,errors.edit,output.edit,traffic.edit)

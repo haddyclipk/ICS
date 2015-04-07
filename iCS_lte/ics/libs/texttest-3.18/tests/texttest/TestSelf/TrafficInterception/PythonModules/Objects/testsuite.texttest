@@ -1,0 +1,23 @@
+# Check we can replay a recorded response from a Python module
+ReplayTraffic
+
+# Check we can replay a recorded response from a Python module
+RecordTraffic
+
+# Check we don't store object instances across tests
+RecordTwoTests
+
+# If we return e.g. datetime.datetime we shouldn't be intercepting it
+ObjectNotIntercepted
+
+# Check we can call methods in objects that are attributes of the module
+ObjectAsAttribute
+
+# Check we can read attributes of attributes
+CompositeAttribute
+
+# Check we can assign attributes to stored objects
+AttributeAssignment
+
+# What happens if objects that can't be reconstructed are passed as arguments
+UnusableObjectArgs

@@ -1,0 +1,8 @@
+import_config_file:$STANDARD
+
+default_interface:console
+
+executable:$TEXTTEST_ROOT/myscript.py
+
+collect_traffic_py_module:mymodule
+collect_traffic_use_threads:false

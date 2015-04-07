@@ -1,0 +1,9 @@
+
+[Reported by geoff at 02Feb14:58:19]
+search_string:geoff
+search_file:errors
+execution_hosts:fake_machine1
+trigger_on_absence:1
+trigger_on_success:1
+full_description:Not mentioning geoff enough
+brief_description:No geoff

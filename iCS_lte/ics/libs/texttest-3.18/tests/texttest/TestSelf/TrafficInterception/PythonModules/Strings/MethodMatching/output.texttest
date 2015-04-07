@@ -1,0 +1,15 @@
+Using Application TRAFFIC, version bad
+Running TRAFFIC.bad test-suite TargetApp
+  Running TRAFFIC.bad test-case Test
+Comparing differences for TRAFFIC.bad test-suite TargetApp
+  Comparing differences for TRAFFIC.bad test-case Test (on errors.traffic,output.traffic,traffic.traffic.bad)
+  TRAFFIC.bad test-case Test FAILED : differences in traffic
+  View details(v), Save Version bad(1), Save(s) or continue(any other key)?
+---------- Differences in traffic ----------
+1a2,3
+> <-PYT:tempfile.gettempdir()
+> ->RET:'/users/geoff/tmp'
+4,5d5
+< <-PYT:tempfile.gettempdir("some args")
+< ->RET:'/users/geoff/tmp'
+  Save Version bad(1), Save(s) or continue(any other key)?

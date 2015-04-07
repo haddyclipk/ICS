@@ -1,0 +1,2 @@
+[run_dependent_text]
+*:0x[0-9a-fA-F]*{REPLACE <pointer>}

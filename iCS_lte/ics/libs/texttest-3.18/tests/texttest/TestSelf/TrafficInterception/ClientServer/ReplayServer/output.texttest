@@ -1,0 +1,5 @@
+Using Application STRSERV
+Running STRSERV test-suite TargetApp
+  Running STRSERV test-case ServerTest
+Comparing differences for STRSERV test-suite TargetApp
+  Comparing differences for STRSERV test-case ServerTest - SUCCESS! (on errors.strserv,output.strserv,traffic.strserv)

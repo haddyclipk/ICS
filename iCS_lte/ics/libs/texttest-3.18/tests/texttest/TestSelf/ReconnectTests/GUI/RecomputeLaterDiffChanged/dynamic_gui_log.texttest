@@ -1,0 +1,109 @@
+Enabling entry completion, using matching 1
+Adding entry completion '<default>' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing HELLO (started at 27Jan14:54:11)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Jan14:54:11'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator, 68% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 27Jan14:54:12.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Test (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 27Jan14:54:12'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Test (salmon) | output different (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+Only one test found, selecting Test
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'recompute test status, including progress information if appropriate' event created with arguments ''
+Adding entry completion 'free_text' ...
+
+Changing GUI status to: 'Rereading configuration for HELLO ...'
+
+Changing GUI status to: 'Recomputing status of HELLO test-case Test ...'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (hello) (white,bold) | (white)
+->   Test (salmon) | output different (salmon)
+
+Updated : File Tree with columns: Test , Details
+-> Comparison Files (bold)
+->   errors.hello (DarkSeaGreen2) | (DarkSeaGreen2)
+->   output.hello (salmon) | (salmon)
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in output ----------
+1,2c1
+< The Original File is Changed
+< 
+---
+> Hello World!
+===============================
+
+Changing GUI status to: 'Recomputed status of 1 test.'
+
+'quit' event created with arguments ''

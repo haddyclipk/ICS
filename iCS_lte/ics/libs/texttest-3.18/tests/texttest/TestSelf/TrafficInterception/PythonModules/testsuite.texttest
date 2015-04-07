@@ -1,0 +1,14 @@
+# Test for basic interception of time.asctime, no args, returns string
+Strings
+
+# Use logging module, somewhat more advanced as we have to fiddle with objects
+Objects
+
+# Check we can handle standard collections containing objects
+ObjectCollections
+
+# Check we can capture exceptions that are thrown and replay them
+Exceptions
+
+# tests for only intercepting certain calls to a module
+PartialInterception

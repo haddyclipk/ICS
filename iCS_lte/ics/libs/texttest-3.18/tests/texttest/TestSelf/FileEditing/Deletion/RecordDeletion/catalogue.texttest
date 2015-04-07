@@ -1,0 +1,15 @@
+The following new files/directories were created:
+<Test Directory>
+----texttesttmp
+
+The following existing files/directories changed their contents:
+<Test Directory>
+----TargetApp
+--------Test
+------------traffic.edit
+------------file_edits
+----------------file.TEXTTEST_DELETION
+----------------subdir
+--------------------file2.TEXTTEST_DELETION
+--------------------file3.TEXTTEST_DELETION
+--------------------subsubdir.TEXTTEST_DELETION

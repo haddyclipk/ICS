@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd ~/'.texttest/tmp/self_test.04Jan174745.19206/hello/Test'
+export PATH=~/".texttest/tmp/self_test.04Jan174745.19206/hello/Test:${PATH}"
+export TEXTTEST_ROOT='/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/TargetApp'
+export TEXTTEST_SANDBOX=~/'.texttest/tmp/self_test.04Jan174745.19206/hello/Test'
+export TEXTTEST_SANDBOX_ROOT=~/'.texttest/tmp/self_test.04Jan174745.19206'
+echo "kill $$" > kill_test.sh
+exec python ~/.texttest/tmp/self_test.04Jan174745.19206/system_under_test/hello.py

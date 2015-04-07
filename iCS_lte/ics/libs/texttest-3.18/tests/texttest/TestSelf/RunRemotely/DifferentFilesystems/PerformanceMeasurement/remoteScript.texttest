@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd ~/'.texttest/tmp/console.04Jan174745.19209/hello/Test'
+export PATH=~/".texttest/tmp/console.04Jan174745.19209/hello/Test:${PATH}"
+export TEXTTEST_ROOT='/carm/proj/texttest-tmp/geoff/texttest.04Jan174723.29651/texttest/TestSelf/RunRemotely/DifferentFilesystems/PerformanceMeasurement/TargetApp'
+export TEXTTEST_SANDBOX=~/'.texttest/tmp/console.04Jan174745.19209/hello/Test'
+export TEXTTEST_SANDBOX_ROOT=~/'.texttest/tmp/console.04Jan174745.19209'
+echo "kill $$" > kill_test.sh
+exec time -p -o ~/.texttest/tmp/console.04Jan174745.19209/hello/Test/framework_tmp/unixperf python ~/.texttest/tmp/console.04Jan174745.19209/system_under_test/hello.py

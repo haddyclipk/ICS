@@ -1,0 +1,166 @@
+Enabling entry completion, using matching 1
+Adding entry completion '<default>' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing SLEEP (started at 28Jan13:57:07)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+...........
+
+Showing Test Tree with columns: Tests: 0/2 selected, all hidden , Details
+
+------------------------------ (vertical pane separator, 77% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 28Jan13:57:07.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------
+
+Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (white) | (white)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (white) | (white)
+->   Basic2 (white) | (white)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (grey80) | PEND (grey80)
+->   Basic2 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (grey80) | PEND (grey80)
+->   Basic2 (grey80) | PEND (grey80)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (grey80,bold) | 2 (grey80,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (grey80) | PEND (grey80)
+->   Basic2 (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (LightGoldenrod1) | (LightGoldenrod1)
+->   Basic2 (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 2 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (LightGoldenrod1) | (LightGoldenrod1)
+->   Basic2 (LightGoldenrod1) | RUN (juliaca) (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (LightGoldenrod1) | RUN (juliaca) (LightGoldenrod1)
+->   Basic2 (LightGoldenrod1) | RUN (juliaca) (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 2 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (LightGoldenrod1) | RUN (juliaca) (LightGoldenrod1)
+->   Basic2 (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (LightGoldenrod1) | (LightGoldenrod1)
+->   Basic2 (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 2 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 0.5, text '1 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (LightGoldenrod1) | (LightGoldenrod1)
+->   Basic2 (salmon) | errors new(+) (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 28Jan13:57:08'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Basic2 (salmon) | errors new(+) (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'quit' event created with arguments ''
+Adding entry completion 'output' ...

@@ -1,0 +1,637 @@
+iTETRIS ITS COOPERATIVE DEMO APP LOG FILE
+===============================
+[Tue Apr  7 03:19:49 2015] [INFO] APP --> [ApplicationLogic] RequestReceiveSubscription() Node ID 5000 subscribing to an APP_MSG_RECEIVE subscription at time -1
+[Tue Apr  7 03:19:50 2015] [INFO] APP --> [ApplicationLogic] RequestReceiveSubscription() Node ID 2 subscribing to an APP_MSG_RECEIVE subscription at time 1
+[Tue Apr  7 03:19:52 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:52 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 1 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:52 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:53 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 2 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:53 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:53 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 3 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:53 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:54 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 4 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:54 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:54 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 5 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:54 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:54 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 6 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:54 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:55 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 7 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:55 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:55 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 8 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:55 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:56 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 9 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:56 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:56 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 10 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:56 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:57 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 11 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:57 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:57 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 12 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:57 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:57 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 13 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:57 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:58 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 14 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:58 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:58 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 15 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:58 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:59 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 16 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:59 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:19:59 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 17 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:19:59 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:00 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 18 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:00 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:00 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 19 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:00 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:01 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 20 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:01 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:01 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 21 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:01 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:02 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 22 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:02 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:02 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 23 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:02 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:02 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 24 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:02 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:03 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 25 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:03 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:03 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 26 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:03 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:04 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 27 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:04 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:05 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 28 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:05 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:05 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 29 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:05 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:06 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 30 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:06 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:06 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 31 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:06 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:06 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 32 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:06 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:07 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 33 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:07 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:07 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 34 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:07 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:08 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 35 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:08 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:08 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 36 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:08 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:08 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 37 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:08 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:09 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 38 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:09 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:09 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 39 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:09 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:10 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 40 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:10 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:10 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 41 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:10 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:10 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 42 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:10 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:11 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 43 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:11 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:11 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 44 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:11 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:12 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 45 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:12 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:12 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 46 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:12 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:13 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 47 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:13 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:13 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 48 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:13 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:13 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 49 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:13 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:14 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 50 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:14 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:14 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 51 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:14 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:15 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 52 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:15 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:15 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 53 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:15 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:15 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 54 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:15 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:16 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 55 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:16 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:16 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 56 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:16 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:17 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 57 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:17 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:17 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 58 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:17 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:17 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 59 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:17 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:18 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 60 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:18 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:18 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 61 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:18 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:19 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 62 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:19 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:19 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 63 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:19 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:19 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 64 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:19 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:20 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 65 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:20 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:20 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 66 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:20 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:21 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 67 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:21 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:21 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 68 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:21 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:21 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 69 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:21 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:22 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 70 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:22 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:22 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 71 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:22 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:23 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 72 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:23 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:23 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 73 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:23 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:23 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 74 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:23 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:24 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 75 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:24 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:24 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 76 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:24 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:25 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 77 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:25 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:25 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 78 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:25 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:25 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 79 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:25 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:26 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 80 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:26 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:26 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 81 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:26 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:27 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 82 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:27 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:27 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 83 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:27 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:27 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 84 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:27 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:28 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 85 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:28 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:28 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 86 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:28 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:29 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 87 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:29 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:29 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 88 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:29 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:30 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 89 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:30 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:30 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 90 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:30 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:30 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 91 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:30 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:31 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 92 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:31 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:31 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 93 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:31 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:32 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 94 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:32 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:32 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 95 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:32 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:32 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 96 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:32 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:33 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 97 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:33 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:33 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 98 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:33 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:34 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 99 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:34 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:34 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 100 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:34 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:34 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 101 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:34 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:35 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 102 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:35 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:35 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 103 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:35 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:36 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 104 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:36 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:36 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 105 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:36 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:36 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 106 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:36 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:37 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 107 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:37 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:37 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 108 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:37 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:38 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 109 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:38 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:38 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 110 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:38 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:38 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 111 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:38 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:39 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 112 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:39 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:39 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 113 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:39 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:40 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 114 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:40 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:40 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 115 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:40 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:40 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 116 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:40 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:41 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 117 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:41 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:41 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 118 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:41 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:42 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 119 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:42 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:42 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 120 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:42 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:43 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 121 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:43 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:43 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 122 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:43 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:43 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 123 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:43 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:44 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 124 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:44 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:44 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 125 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:44 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:45 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 126 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:45 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:45 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 127 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:45 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:45 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 128 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:45 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:46 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 129 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:46 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:46 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 130 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:46 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:47 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 131 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:47 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:47 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 132 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:47 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:48 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 133 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:48 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:48 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 134 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:48 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:48 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 135 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:48 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:49 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 136 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:49 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:49 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 137 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:49 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:50 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 138 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:50 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:50 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 139 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:50 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:50 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 140 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:50 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:51 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 141 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:51 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:51 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 142 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:51 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:52 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 143 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:52 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:52 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 144 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:52 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:52 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 145 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:52 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:53 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 146 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:53 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:53 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 147 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:53 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:54 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 148 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:54 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:54 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 149 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:54 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:54 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 150 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:54 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:55 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 151 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:55 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:55 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 152 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:55 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:56 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 153 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:56 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:56 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 154 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:56 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:56 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 155 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:56 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:57 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 156 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:57 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:57 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 157 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:57 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:58 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 158 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:58 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:58 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 159 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:58 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:58 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 160 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:58 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:59 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 161 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:59 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:20:59 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 162 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:20:59 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:00 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 163 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:00 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:00 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 164 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:00 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:00 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 165 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:00 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:01 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 166 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:01 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:01 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 167 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:01 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:02 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 168 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:02 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:02 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 169 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:02 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:02 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 170 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:02 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:03 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 171 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:03 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:03 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 172 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:03 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:04 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 173 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:04 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:04 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 174 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:04 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:05 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 175 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:05 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:05 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 176 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:05 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:05 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 177 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:05 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:06 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 178 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:06 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:06 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 179 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:06 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:07 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 180 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:07 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:07 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 181 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:07 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:07 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 182 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:07 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:08 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 183 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:08 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:08 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 184 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:08 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:09 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 185 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:09 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:09 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 186 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:09 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:09 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 187 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:09 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:10 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 188 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:10 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:10 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 189 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:10 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:11 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 190 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:11 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:11 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 191 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:11 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:11 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 192 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:11 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:12 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 193 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:12 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:12 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 194 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:12 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:13 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 195 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:13 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:13 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 196 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:13 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:13 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 197 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:13 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:14 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 198 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:14 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:14 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 199 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:14 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:15 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 200 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:15 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:15 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 201 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:15 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:15 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 202 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:15 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:16 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 203 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:16 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:16 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 204 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:16 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:17 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 205 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:17 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:17 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 206 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:17 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:17 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 207 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:17 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:18 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 208 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:18 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:18 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 209 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:18 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:19 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 210 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:19 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:19 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 211 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:19 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:19 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 212 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:19 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:20 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 213 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:20 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:20 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 214 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:20 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:21 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 215 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:21 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:21 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 216 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:21 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:21 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 217 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:21 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:22 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 218 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:22 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:22 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 219 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:22 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:23 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 220 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:23 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:23 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 221 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:23 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:23 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 222 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:23 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:24 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 223 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:24 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:24 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 224 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:24 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:25 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 225 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:25 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:25 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 226 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:25 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:25 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 227 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:25 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:26 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 228 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:26 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:26 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 229 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:26 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:27 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 230 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:27 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:27 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 231 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:27 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:27 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 232 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:27 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:28 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 233 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:28 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:29 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 234 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:29 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:29 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 235 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:29 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:30 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 236 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:30 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:30 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 237 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:30 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:31 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 238 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:31 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:31 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 239 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:31 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:31 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 240 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:31 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:32 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 241 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:32 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:32 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 242 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:32 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:33 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 243 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:33 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:33 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 244 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:33 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:33 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 245 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:33 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:34 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 246 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:34 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:34 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 247 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:34 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:35 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 248 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:35 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:35 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 249 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:35 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:35 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 250 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:35 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:36 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 251 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:36 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:36 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 252 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:36 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:37 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 253 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:37 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:37 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 254 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:37 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:37 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 255 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:37 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:38 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 256 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:38 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:38 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 257 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:38 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:39 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 258 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:39 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:39 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 259 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:39 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:39 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 260 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:39 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:40 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 261 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:40 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:40 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 262 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:40 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:41 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 263 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:41 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:41 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 264 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:41 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:41 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 265 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:41 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:42 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 266 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:42 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:42 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 267 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:42 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:43 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 268 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:43 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:43 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 269 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:43 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:43 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 270 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:43 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:44 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 271 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:44 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:44 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 272 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:44 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:45 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 273 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:45 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:45 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 274 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:45 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:45 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 275 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:45 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:46 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 276 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:46 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:46 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 277 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:46 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:47 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 278 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:47 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:47 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 279 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:47 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:47 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 280 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:47 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:48 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 281 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:48 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:48 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 282 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:48 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:49 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 283 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:49 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:49 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 284 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:49 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:49 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 285 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:49 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:50 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 286 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:50 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:50 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 287 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:50 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:51 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 288 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:51 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:51 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 289 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:51 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:51 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 290 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:51 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:52 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 291 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:52 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:52 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 292 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:52 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:53 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 293 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:53 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:53 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 294 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:53 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:53 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 295 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:53 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:54 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 296 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:54 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:54 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 297 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:54 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:55 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 298 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:55 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:55 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 299 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:55 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:55 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 300 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:55 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:56 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 301 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:56 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:56 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 302 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:56 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:57 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 303 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:57 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:57 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 304 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:57 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:57 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 305 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:57 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:58 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 306 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:58 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:58 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 307 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:58 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:59 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 308 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:59 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:21:59 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 309 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:21:59 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:22:00 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 310 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:22:00 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:22:00 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 311 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:22:00 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:22:00 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 312 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:22:00 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:22:01 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 313 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:22:01 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:22:01 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 314 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:22:01 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:22:02 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 315 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:22:02 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 
+[Tue Apr  7 03:22:02 2015] [INFO] APP --> [ApplicationLogic] CheckForRequiredSubscriptions() Message 316 is changed status from kToBeScheduled to kScheduled
+[Tue Apr  7 03:22:02 2015] [INFO] APP --> [ApplicationLogic] SendBackExecutionResults() creating new messages for ID 5000 for vehicles... ID 2 with new speed 4.59163e-41 Message is now kToBeScheduled 

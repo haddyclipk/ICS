@@ -1,0 +1,25 @@
+<nodes>
+    <node id="xp1" x="-210.0" y="0.0" type="traffic_light" />
+    <node id="xp1turn" x="-85.0" y="0.0" />
+    <node id="xp1west_turn" x="-335.0" y="0" />
+    <node id="xp1west" x="-500.0" y="0.0" />
+    <node id="xp1west_out" x="-501.0" y="0.0" />
+    <node id="xp1north_turn" x="-210.0" y="125.0" />
+    <node id="xp1north" x="-210.0" y="250.0" />
+    <node id="xp1north_out" x="-210.0" y="251.0" />
+    <node id="xp1south_turn" x="-210.0" y="-125.0" />
+    <node id="xp1south" x="-210.0" y="-250.0" />
+    <node id="xp1south_out" x="-210.0" y="-251.0" />
+
+    <node id="xp2" x="210.0" y="0.0" type="traffic_light" />
+    <node id="xp2turn" x="85.0" y="0.0" />
+    <node id="xp2east_turn" x="335.0" y="0" />
+    <node id="xp2east" x="+500.0" y="0.0" />
+    <node id="xp2east_out" x="+501.0" y="0.0" />
+    <node id="xp2north_turn" x="210.0" y="125.0" />
+    <node id="xp2north" x="+210.0" y="250.0" />
+    <node id="xp2north_out" x="+210.0" y="251.0" />
+    <node id="xp2south_turn" x="210.0" y="-125.0" />
+    <node id="xp2south" x="+210.0" y="-250.0" />
+    <node id="xp2south_out" x="+210.0" y="-251.0" />
+</nodes>

@@ -1,0 +1,20 @@
+Using Application EDIT
+WARNING: The test NameMismatch could not be found.
+Please check the file at /carm/proj/texttest-tmp/geoff/texttest.05Mar151358.14743/texttest/TestSelf/FileEditing/Deletion/ReproduceDeletion/TargetApp/testsuite.edit
+Running EDIT test-suite TargetApp
+  Running EDIT test-case Test
+Comparing differences for EDIT test-suite TargetApp
+  Comparing differences for EDIT test-case Test (on catalogue.edit,errors.edit,output.edit,traffic.edit)
+  EDIT test-case Test FAILED : differences in traffic
+  View details(v), Save(s) or continue(any other key)?
+---------- Differences in traffic ----------
+1c1
+< <-CMD:editor.py /some/path/file
+---
+> <-CMD:editor.py /nfs/vm/texttest-tmp/geoff/texttest.05Mar151358.14743/texttest/TestSelf/FileEditing/Deletion/ReproduceDeletion/texttesttmp/console.05Mar151359.14748/edit/Test/file
+4c4
+< <-CMD:editor.py /some/path/subdir
+---
+> <-CMD:editor.py /nfs/vm/texttest-tmp/geoff/texttest.05Mar151358.14743/texttest/TestSelf/FileEditing/Deletion/ReproduceDeletion/texttesttmp/console.05Mar151359.14748/edit/Test/subdir
+  Save(s) or continue(any other key)?
+  Saving EDIT test-case Test 

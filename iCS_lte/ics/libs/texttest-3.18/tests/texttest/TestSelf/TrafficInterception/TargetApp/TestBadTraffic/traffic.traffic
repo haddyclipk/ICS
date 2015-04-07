@@ -1,0 +1,14 @@
+<-CMD:some_nonsense
+->ERR:don't be silly
+<-CMD:firstcall.py -a -b -c "hello | goodbye" and some other arguments
+->OUT:firstcall.py called with 5 arguments
+The time is now Mon Aug 28 12:28:33 2006
+->EXC:1
+<-CMD:firstcall.py -a -b -c "hello | goodbye" and some different arguments
+->OUT:firstcall.py called with 5 arguments
+The time is now Mon Aug 28 12:28:34 2006
+->EXC:1
+<-CMD:secondcall.py -c -x -and some other arguments
+->OUT:The process ID is 8351
+->ERR:secondcall.py called with ['-c', '-x'] as arguments
+MY_ENV_VAR = 'value'

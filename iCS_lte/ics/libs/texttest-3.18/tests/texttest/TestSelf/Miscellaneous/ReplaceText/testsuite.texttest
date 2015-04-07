@@ -1,0 +1,11 @@
+# Update text in all tests without running them
+NormalString
+
+# Update text using a regular expression
+RegularExpression
+
+# Check we can use file expansions in ReplaceText
+FileExpansion
+
+# Make sure it works with a version
+VersionedFile

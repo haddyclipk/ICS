@@ -1,0 +1,8 @@
+<-PYT:import logging
+<-PYT:logging.getLogger('''Some Multiline
+Logger''')
+->RET:Instance('Logger', 'logger1')
+<-PYT:logger1.getEffectiveLevel()
+->RET:20
+<-PYT:logger1.nonsense
+->RET:raise exceptions.AttributeError("Logger instance has no attribute 'nonsense'")

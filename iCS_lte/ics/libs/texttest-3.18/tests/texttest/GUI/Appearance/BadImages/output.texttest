@@ -1,0 +1,3 @@
+WARNING: Failed to create icons for the status throbber:
+Didn't like the look of image 'throbber_inactive.png'
+As a result, the throbber will be disabled.

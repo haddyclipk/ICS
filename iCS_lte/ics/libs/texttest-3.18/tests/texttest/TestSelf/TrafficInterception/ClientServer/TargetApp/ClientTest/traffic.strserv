@@ -1,0 +1,6 @@
+<-CLI:Here is a string
+->SRV:Length was 17
+<-CLI:Here is a longer string
+->SRV:Length was 24
+<-CLI:terminate
+->SRV:Exiting...

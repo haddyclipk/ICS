@@ -1,0 +1,5 @@
+Using Application VideoStore, version java, checkout /carm/proj/texttest-tmp/geoff/texttest.02Jun134524.952/texttest/TestSelf/UITesting/UseCaseRecording/RerecordJavaTest/TargetApp/source_with_pyc
+Running VideoStore.java test-suite TargetApp
+  Running VideoStore.java test-case AddMovie
+Comparing differences for VideoStore.java test-suite TargetApp
+  Comparing differences for VideoStore.java test-case AddMovie (on errors.gui,output.gui,usecase.gui)

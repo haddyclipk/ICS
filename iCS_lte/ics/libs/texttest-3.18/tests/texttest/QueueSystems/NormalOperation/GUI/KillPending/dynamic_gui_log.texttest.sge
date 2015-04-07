@@ -1,0 +1,141 @@
+Enabling entry completion, using matching 1
+Adding entry completion '<default>' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing SLEEP (started at 22Feb10:00:10)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 22Feb10:00:16'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator, 68% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 22Feb10:00:16.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (white) | (white)
+->   Basic2 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (grey80) | PEND (grey80)
+->   Basic2 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (grey80) | PEND (grey80)
+->   Basic2 (grey80) | PEND (grey80)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (grey80,bold) | 2 (grey80,bold) | Check box (checked)
+
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test Basic to become pending' occurred, proceeding.
+Expected application event 'test Basic2 to become pending' occurred, proceeding.
+
+'set test selection to' event created with arguments 'Basic,Basic2'
+
+No longer greyed out : _Kill
+
+Column titles changed in Test Tree with columns: Tests: All 2 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Sample from 2 tests , Details
+-> Temporary Files
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Job pending in SGE
+===============================
+
+'kill selected tests' event created with arguments ''
+Adding entry completion 'output' ...
+
+Changing GUI status to: 'Killing 2 tests ...'
+Killing SLEEP test-case Basic2
+Killing SLEEP test-case Basic
+
+Waiting for application event 'completion of test actions' to occur.
+
+Changing GUI status to: 'Performed 'Kill selected tests' on 2 tests.'
+
+Progress bar set to fraction 0.5, text '1 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (grey80) | PEND (grey80)
+->   Basic2 (salmon) | cancelled pending job at 10:00 (salmon)
+
+Greyed out : _Kill
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 22Feb10:00:20'
+
+Updated : Test Tree with columns: Tests: All 2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (salmon) | cancelled pending job at 10:00 (salmon)
+->   Basic2 (salmon) | cancelled pending job at 10:00 (salmon)
+
+Updated : File Tree with columns: Sample from 2 tests , Details
+
+========== Text Info ==========
+Test were cancelled before starting :
+Test job 7480 was cancelled (while still pending in SGE) at 10:00
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'view options for' event created with arguments 'Status'
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     cancelled pending job at 10:00 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+
+'quit' event created with arguments ''

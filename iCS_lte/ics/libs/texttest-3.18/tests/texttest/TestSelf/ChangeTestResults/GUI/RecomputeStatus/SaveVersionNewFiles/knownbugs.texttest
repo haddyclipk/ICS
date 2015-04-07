@@ -1,0 +1,6 @@
+
+[Reported by geoff at 26Jan10:29:40]
+search_string:original file.*output.dip$
+search_file:dynamic_gui_log
+bug_system:bugzilla
+bug_id:12543

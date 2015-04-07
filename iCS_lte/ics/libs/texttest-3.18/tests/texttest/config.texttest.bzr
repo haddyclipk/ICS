@@ -1,0 +1,13 @@
+base_version:vcs
+base_version:gui
+
+collect_traffic:bzr
+# Bazaar loads this internally
+collect_traffic_py_module:{CLEAR xmlrpclib}
+
+link_test_path:.bzr
+link_test_path:.bzrignore
+
+[run_dependent_text]
+# Because of the softlink workaround...
+traffic:bzr add .*/TargetApp{REPLACE bzr add <test write dir>/TargetApp}

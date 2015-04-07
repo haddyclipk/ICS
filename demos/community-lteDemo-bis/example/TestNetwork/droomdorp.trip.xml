@@ -1,0 +1,29 @@
+<tripdefs>
+
+<tripdef id="1-4" depart="1" from="xp1west_out-xp1west" to="xp2south_out-xp2south" period="72" repno="100" />
+<tripdef id="1-5" depart="1" from="xp1west_out-xp1west" to="xp2north_out-xp2north" period="72" repno="100" />
+<tripdef id="1-6" depart="1" from="xp1west_out-xp1west" to="xp2east_out-xp2east" period="9" repno="800" />
+
+<tripdef id="2-1" depart="1" from="xp1south_out-xp1south" to="xp1west_out-xp1west" period="144" repno="50" />
+<tripdef id="2-3" depart="1" from="xp1south_out-xp1south" to="xp1north_out-xp1north" period="144" repno="50" />
+<tripdef id="2-6" depart="1" from="xp1south_out-xp1south" to="xp2east_out-xp2east" period="72" repno="100" />
+
+<tripdef id="3-1" depart="1" from="xp1north_out-xp1north" to="xp1west_out-xp1west" period="144" repno="50" />
+<tripdef id="3-2" depart="1" from="xp1north_out-xp1north" to="xp1south_out-xp1south" period="144" repno="50" />
+<tripdef id="3-6" depart="1" from="xp1north_out-xp1north" to="xp2east_out-xp2east" period="72" repno="100" />
+
+<tripdef id="4-1" depart="1" from="xp2south_out-xp2south" to="xp1west_out-xp1west" period="72" repno="100" />
+<tripdef id="4-5" depart="1" from="xp2south_out-xp2south" to="xp2north_out-xp2north" period="144" repno="50" />
+<tripdef id="4-6" depart="1" from="xp2south_out-xp2south" to="xp2east_out-xp2east" period="144" repno="50" />
+
+<tripdef id="5-1" depart="1" from="xp2north_out-xp2north" to="xp1west_out-xp1west" period="72" repno="100" />
+<tripdef id="5-4" depart="1" from="xp2north_out-xp2north" to="xp2south_out-xp2south" period="144" repno="50" />
+<tripdef id="5-6" depart="1" from="xp2north_out-xp2north" to="xp2east_out-xp2east" period="144" repno="50" />
+
+<tripdef id="6-1" depart="1" from="xp2east_out-xp2east" to="xp1west_out-xp1west" period="9" repno="800" />
+<tripdef id="6-2" depart="1" from="xp2east_out-xp2east" to="xp1south_out-xp1south" period="72" repno="100" />
+<tripdef id="6-3" depart="1" from="xp2east_out-xp2east" to="xp1north_out-xp1north" period="72" repno="100" />
+<tripdef id="6-4" depart="1" from="xp2east_out-xp2east" to="xp2south_out-xp2south" period="144" repno="50" />
+<tripdef id="6-5" depart="1" from="xp2east_out-xp2east" to="xp2north_out-xp2north" period="144" repno="50" />
+
+</tripdefs>

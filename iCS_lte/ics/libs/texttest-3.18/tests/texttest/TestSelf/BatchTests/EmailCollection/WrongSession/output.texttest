@@ -1,0 +1,11 @@
+Using Application FAKE
+Collecting batch files locally...
+Found file called batchreport.fake.empty
+WARNING: Found truncated or old format batch report (batchreport.fake.empty) - could not parse result correctly.
+Found file called batchreport.fake.cas
+Found file called batchreport.fake.dip
+Found file called batchreport.fake.dip.interr
+Creating batch report for application FAKE ...
+done.
+Generating web pages...
+Completed web page generation.

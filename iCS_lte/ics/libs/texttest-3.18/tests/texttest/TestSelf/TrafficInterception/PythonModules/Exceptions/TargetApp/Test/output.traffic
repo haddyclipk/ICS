@@ -1,0 +1,6 @@
+Caught exception: No module named no_such_module
+Caught exception: 'module' object doesn't REALLY have an attribute 'no_such_method', stupid!
+Caught exception: basicConfig() takes exactly 0 non-keyword arguments (1 given)
+Caught exception: No such site, you wally!
+URLError: <urlopen error (-2, 'Now you're really getting on my nerves!')>
+

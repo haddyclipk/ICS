@@ -1,0 +1,16 @@
+<-PYT:import logging
+<-PYT:import no_such_module
+->RET:raise exceptions.ImportError('No module named no_such_module')
+<-PYT:logging.no_such_method
+->RET:raise exceptions.AttributeError("'module' object doesn't REALLY have an attribute 'no_such_method', stupid!")
+<-PYT:logging.basicConfig('argument', faking=True)
+->RET:raise exceptions.TypeError('basicConfig() takes exactly 0 non-keyword arguments (1 given)')
+<-PYT:import urllib2
+<-PYT:urllib2.urlopen('foo://no.such.site')
+->RET:raise Instance('URLError', 'urlerror1')
+<-PYT:urlerror1.args
+->RET:('No such site, you wally!',)
+<-PYT:urllib2.urlopen('foo://another.no.such.site')
+->RET:raise Instance('URLError', 'urlerror2')
+<-PYT:urlerror2.__str__()
+->RET:"<urlopen error (-2, 'Now you're really getting on my nerves!')>"

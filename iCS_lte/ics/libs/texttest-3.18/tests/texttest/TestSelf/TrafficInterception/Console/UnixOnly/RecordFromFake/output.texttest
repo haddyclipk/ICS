@@ -1,0 +1,43 @@
+Using Application TRAFFIC
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case Test
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case Test (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case Test FAILED : differences in errors,output,traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- Differences in errors ----------
+1,2d0
+< secondcall.py called with ['-c', '-x'] as arguments
+< MY_ENV_VAR = 'value'
+---------- Differences in output ----------
+2,8c2,5
+< firstcall.py called with 5 arguments
+< The time is now Tue Jun 10 11:54:09 2008
+< firstcall exited with status 1
+< firstcall.py called with 5 arguments
+< The time is now Tue Jun 10 11:54:09 2008
+< The current working directory is tmpdir
+< The process ID is 14735
+---
+> Called fake firstcall.py
+> firstcall exited with status 0
+> Called fake firstcall.py
+> Called fake secondcall.py
+---------- Differences in traffic ----------
+1,8d0
+< <-CMD:firstcall.py -a -b -c "hello | goodbye"
+< ->OUT:firstcall.py called with 5 arguments
+< The time is now Tue Jun 10 11:54:09 2008
+< ->EXC:1
+< <-CMD:firstcall.py -a -b -c "hello | goodbye"
+< ->OUT:firstcall.py called with 5 arguments
+< The time is now Tue Jun 10 11:54:09 2008
+< ->EXC:1
+10,13c2
+< ->OUT:The current working directory is tmpdir
+< The process ID is 14735
+< ->ERR:secondcall.py called with ['-c', '-x'] as arguments
+< MY_ENV_VAR = 'value'
+---
+> ->OUT:Called fake secondcall.py
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

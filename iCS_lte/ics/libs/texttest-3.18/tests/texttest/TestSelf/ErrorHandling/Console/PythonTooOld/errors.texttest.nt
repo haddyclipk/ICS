@@ -1,0 +1,2 @@
+Could not start TextTest due to Python version problems :
+TextTest master requires at least Python 2.5.1: found version 2.3.4.

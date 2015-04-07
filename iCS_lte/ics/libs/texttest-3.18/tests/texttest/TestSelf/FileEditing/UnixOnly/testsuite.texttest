@@ -1,0 +1,8 @@
+# We record symbolic links as files with special names for now as CVS can't handle them
+RecordSymLink
+
+# And try to get it again
+ReproduceSymLink
+
+# Make sure we can pick up file edits that happen after the program in question has returned. In UnixOnly because completely failed to make a test that worked on Windows due to Python bugs in the area.
+AsynchronousEdits

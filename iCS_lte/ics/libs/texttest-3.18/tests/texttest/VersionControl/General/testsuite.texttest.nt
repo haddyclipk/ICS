@@ -1,0 +1,5 @@
+# Disabled log tests as they require being able to intercept
+# datetime, which is a builtin module on Windows
+Diff
+Admin
+Miscellaneous

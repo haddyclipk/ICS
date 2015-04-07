@@ -1,0 +1,6 @@
+wait for completion of test actions
+set test selection to Two,Three
+view actions for test Three
+rerun selected tests
+wait for rerun GUI to be closed
+quit

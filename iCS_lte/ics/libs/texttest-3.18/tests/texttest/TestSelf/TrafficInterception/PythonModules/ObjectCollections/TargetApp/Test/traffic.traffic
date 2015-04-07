@@ -1,0 +1,27 @@
+<-PYT:import collectionfinder
+<-PYT:collectionfinder.get_named_animals()
+->RET:{'Rover': Instance('Dog', 'dog1'), 'Daisy': NewStyleInstance('Cow', 'cow1')}
+<-PYT:dog1.speak()
+->RET:'Woof Woof!'
+<-PYT:cow1.speak()
+->RET:'Moo!'
+<-PYT:collectionfinder.get_animal_tuple()
+->RET:(NewStyleInstance('Cow', 'cow2'), Instance('Dog', 'dog2'))
+<-PYT:cow2.sizeCompare(dog2)
+->RET:'Cows are bigger than Dogs'
+<-PYT:collectionfinder.Dog()
+->RET:Instance('Dog', 'dog3')
+<-PYT:dog3.inPack([cow2, dog2, dog3])
+->RET:True
+<-PYT:collectionfinder.get_animals()
+->RET:[NewStyleInstance('Cow', 'cow3'), Instance('Dog', 'dog4')]
+<-PYT:cow3.__repr__()
+->RET:'<collectionfinder.Cow object at 0x2b9d51228790>'
+<-PYT:dog4.__repr__()
+->RET:'A dog'
+<-PYT:cow3.milk()
+->RET:'Milking'
+<-PYT:dog4.milk()
+->RET:raise Instance('BadAnimal', 'badanimal1')
+<-PYT:badanimal1.__str__()
+->RET:"Don't milk the dog, silly!"

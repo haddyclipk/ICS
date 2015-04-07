@@ -1,0 +1,16 @@
+Using Application HELLO
+Reconnecting to test results in directory /carm/proj/texttest-tmp/geoff/texttest.18Jul152210.20148/texttest/TestSelf/ReconnectTests/Console/MultipleRuns/texttesttmp/dynamic_gui.12Apr152326.93532/hello
+Using Application HELLO, version 13Apr104321
+Reconnecting to test results in directory /carm/proj/texttest-tmp/geoff/texttest.18Jul152210.20148/texttest/TestSelf/ReconnectTests/Console/MultipleRuns/texttesttmp/hello.13Apr104321.3824/hello
+Using Application HELLO, version 13Apr104723
+Reconnecting to test results in directory /carm/proj/texttest-tmp/geoff/texttest.18Jul152210.20148/texttest/TestSelf/ReconnectTests/Console/MultipleRuns/texttesttmp/hello.13Apr104723.834/hello
+Using Application HELLO, version 13Apr105512
+Reconnecting to test results in directory /carm/proj/texttest-tmp/geoff/texttest.18Jul152210.20148/texttest/TestSelf/ReconnectTests/Console/MultipleRuns/texttesttmp/dynamic_gui.13Apr105512.5743/hello
+Reconnecting to HELLO test-suite TargetApp
+  Reconnecting to HELLO test-case Test (state success)
+Reconnecting to HELLO.13Apr104321 test-suite TargetApp
+  Reconnecting to HELLO.13Apr104321 test-case Test (state success)
+Reconnecting to HELLO.13Apr104723 test-suite TargetApp
+  Reconnecting to HELLO.13Apr104723 test-case Test (state success)
+Reconnecting to HELLO.13Apr105512 test-suite TargetApp
+  Reconnecting to HELLO.13Apr105512 test-case Test (state success)

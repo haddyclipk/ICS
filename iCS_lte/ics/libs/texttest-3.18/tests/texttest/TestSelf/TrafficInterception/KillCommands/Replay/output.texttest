@@ -1,0 +1,5 @@
+Using Application CONC
+Running CONC test-suite TargetApp
+  Running CONC test-case Test
+Comparing differences for CONC test-suite TargetApp
+  Comparing differences for CONC test-case Test - SUCCESS! (on catalogue.conc,errors.conc,output.conc,traffic.conc)

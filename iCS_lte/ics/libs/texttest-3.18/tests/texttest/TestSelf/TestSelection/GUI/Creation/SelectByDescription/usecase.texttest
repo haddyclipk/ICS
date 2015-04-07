@@ -1,0 +1,11 @@
+wait for all tests to be read
+enter descriptions containing = first
+select indicated tests
+enter app names containing = h[a-z]l[a-z]+o
+enter descriptions containing = second
+activate from descriptions containing
+enter app names containing = h[a-z]ll[a-z]+o
+activate from app names containing
+enter app names containing = h[a-z]ll[a-z]+
+activate from app names containing
+quit

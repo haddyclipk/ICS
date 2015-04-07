@@ -1,0 +1,17 @@
+Using Application EDIT
+Running EDIT test-suite TargetApp
+  Running EDIT test-case NoFiles
+Comparing differences for EDIT test-suite TargetApp
+  Comparing differences for EDIT test-case NoFiles (on catalogue.edit,errors.edit,output.edit,traffic.edit)
+  EDIT test-case NoFiles FAILED : differences in traffic
+  View details(v), Save(s) or continue(any other key)?
+---------- Differences in traffic ----------
+2d1
+< ->FIL:file
+5d3
+< ->FIL:file2
+8d5
+< ->FIL:writedir
+11d7
+< ->FIL:file.edit_2
+  Save(s) or continue(any other key)?

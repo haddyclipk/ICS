@@ -1,0 +1,6 @@
+import_config_file:$STANDARD
+
+executable:$TEXTTEST_HOME/source/runsystem.py
+
+[run_dependent_text]
+*:[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*:[0-9]*{REPLACE <host:port>}

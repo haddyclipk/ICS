@@ -1,0 +1,13 @@
+Using Application STRSERV
+Running STRSERV test-suite TargetApp
+  Running STRSERV test-case ServerTest
+Comparing differences for STRSERV test-suite TargetApp
+  Comparing differences for STRSERV test-case ServerTest (on errors.strserv,output.strserv,traffic.strserv)
+  STRSERV test-case ServerTest FAILED : differences in traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- Differences in traffic ----------
+4c4
+< <-SRV:Length was 24
+---
+> <-SRV:Length was 23
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

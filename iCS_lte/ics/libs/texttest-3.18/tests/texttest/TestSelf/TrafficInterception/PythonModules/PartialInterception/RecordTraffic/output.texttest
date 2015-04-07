@@ -1,0 +1,26 @@
+Using Application TRAFFIC
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case Test
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case Test (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case Test FAILED : differences in output,traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- Differences in output ----------
+1c1
+< Fake method answer
+---
+> Real method answer
+3c3
+< Fake static method answer
+---
+> Real static method answer
+---------- Differences in traffic ----------
+2c2
+< ->RET:'Fake method answer'
+---
+> ->RET:'Real method answer'
+4c4
+< ->RET:'Fake static method answer'
+---
+> ->RET:'Real static method answer'
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

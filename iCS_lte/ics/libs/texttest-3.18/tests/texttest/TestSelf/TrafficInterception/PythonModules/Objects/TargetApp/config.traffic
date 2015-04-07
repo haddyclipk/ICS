@@ -1,0 +1,7 @@
+import_config_file:$STANDARD
+
+default_interface:console
+
+executable:$TEXTTEST_ROOT/loglevel.py
+
+collect_traffic_py_module:logging

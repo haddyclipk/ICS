@@ -1,0 +1,21 @@
+Using Application TRAFFIC
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case TestRepeatDiffs
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case TestRepeatDiffs (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case TestRepeatDiffs FAILED : differences in traffic
+  View details(v), Save(s) or continue(any other key)?
+---------- Differences in traffic ----------
+1c1
+< <-CMD:firstcall.py -a -wrong -c "hello | goodbye"
+---
+> <-CMD:firstcall.py -a -b -c "hello | goodbye"
+5c5
+< <-CMD:firstcall.py -a -wrong -c "hello | goodbye"
+---
+> <-CMD:firstcall.py -a -b -c "hello | goodbye"
+8,10d7
+< <-CMD:firstcall.py -a -silly -c "hello | goodbye"
+< ->ERR:Don't be silly!
+< ->EXC:1
+  Save(s) or continue(any other key)?

@@ -1,0 +1,9 @@
+Using Application HELLO
+WARNING: The test NoSuchTest could not be found.
+Please check the file at /carm/proj/texttest-tmp/geoff/texttest.24Jun164121.8608/texttest/TestSelf/EmptyTestSuites/GUI/CmdLineDynamicGUI/TargetApp/SuiteWithBadTest/testsuite.hello
+Running HELLO test-suite TargetApp
+  Running HELLO test-suite SuiteWithTest
+    Running HELLO test-case Test
+Comparing differences for HELLO test-suite TargetApp
+  Comparing differences for HELLO test-suite SuiteWithTest
+    Comparing differences for HELLO test-case Test - SUCCESS! (on errors.hello,output.hello)

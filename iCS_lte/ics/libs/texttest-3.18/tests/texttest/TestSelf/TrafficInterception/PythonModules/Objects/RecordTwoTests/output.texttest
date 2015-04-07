@@ -1,0 +1,36 @@
+Using Application TRAFFIC
+Using Application TRAFFIC, version copy_1
+Running TRAFFIC test-suite TargetApp
+  Running TRAFFIC test-case Test
+Comparing differences for TRAFFIC test-suite TargetApp
+  Comparing differences for TRAFFIC test-case Test (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC test-case Test FAILED : differences in output,traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- Differences in output ----------
+1c1
+< 2
+---
+> 3
+---------- Differences in traffic ----------
+6c6
+< ->RET:20
+---
+> ->RET:30
+  Save Version rectraffic(1), Save(s) or continue(any other key)?
+Running TRAFFIC.copy_1 test-suite TargetApp
+  Running TRAFFIC.copy_1 test-case Test
+Comparing differences for TRAFFIC.copy_1 test-suite TargetApp
+  Comparing differences for TRAFFIC.copy_1 test-case Test (on errors.traffic,output.traffic,traffic.traffic)
+  TRAFFIC.copy_1 test-case Test FAILED : differences in output,traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- Differences in output ----------
+1c1
+< 2
+---
+> 3
+---------- Differences in traffic ----------
+6c6
+< ->RET:20
+---
+> ->RET:30
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

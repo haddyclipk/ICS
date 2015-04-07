@@ -1,0 +1,5 @@
+# Check we can replay a recorded response from a Python module
+ReplayTraffic
+
+# Check we can replay a recorded response from a Python module
+RecordTraffic

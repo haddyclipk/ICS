@@ -1,0 +1,2 @@
+Could not start TextTest master GUI due to PyGTK GUI library problems :
+TextTest master GUI requires at least PyGTK 2.10.0: found version 2.2.0

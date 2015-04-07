@@ -1,0 +1,2 @@
+# Static GUI should still start when we give paths that doesn't exist
+BadAbsolutePath

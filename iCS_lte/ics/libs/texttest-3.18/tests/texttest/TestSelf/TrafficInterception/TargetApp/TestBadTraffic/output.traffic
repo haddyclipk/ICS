@@ -1,0 +1,7 @@
+In syscalls.py now
+firstcall.py called with 5 arguments
+The time is now Mon Aug 28 12:28:33 2006
+firstcall exited with status 1
+firstcall.py called with 5 arguments
+The time is now Mon Aug 28 12:28:34 2006
+The process ID is 8351

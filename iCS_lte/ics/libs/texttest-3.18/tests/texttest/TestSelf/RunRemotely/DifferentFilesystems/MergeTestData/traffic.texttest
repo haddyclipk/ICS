@@ -1,0 +1,11 @@
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p '~/".texttest/tmp/console.18Aug145554.17450/system_under_test"'
+<-CMD:rsync -e /usr/bin/ssh -azLp /carm/proj/texttest-tmp/geoff/texttest.18Aug145501.17072/texttest/TestSelf/RunRemotely/DifferentFilesystems/MergeTestData/TargetApp/describedir.py 'testnet-s16:~/".texttest/tmp/console.18Aug145554.17450/system_under_test/describedir.py"'
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p '~/".texttest/tmp/console.18Aug145554.17450/hello/Test"'
+<-CMD:rsync -e /usr/bin/ssh -azLp /carm/proj/texttest-tmp/geoff/texttest.18Aug145501.17072/texttest/TestSelf/RunRemotely/DifferentFilesystems/MergeTestData/texttesttmp/console.18Aug145554.17450/hello/Test/datadir 'testnet-s16:~/".texttest/tmp/console.18Aug145554.17450/hello/Test"'
+<-CMD:rsync -e /usr/bin/ssh -azLp /carm/proj/texttest-tmp/geoff/texttest.18Aug145501.17072/texttest/TestSelf/RunRemotely/DifferentFilesystems/MergeTestData/texttesttmp/console.18Aug145554.17450/hello/Test/run_test.sh 'testnet-s16:~/".texttest/tmp/console.18Aug145554.17450/hello/Test"'
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.18Aug145501.17072/texttest/TestSelf/RunRemotely/DifferentFilesystems/MergeTestData/texttesttmp/console.18Aug145554.17450/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 '~/".texttest/tmp/console.18Aug145554.17450/hello/Test/run_test.sh"'
+->OUT:datadir/file1 : 
+datadir/file2 : test
+datadir/file3 : 
+<-CMD:rsync -e /usr/bin/ssh -azLp 'testnet-s16:~/".texttest/tmp/console.18Aug145554.17450/hello/Test"/*' /carm/proj/texttest-tmp/geoff/texttest.18Aug145501.17072/texttest/TestSelf/RunRemotely/DifferentFilesystems/MergeTestData/texttesttmp/console.18Aug145554.17450/hello/Test
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf ~/.texttest/tmp/console.18Aug145554.17450

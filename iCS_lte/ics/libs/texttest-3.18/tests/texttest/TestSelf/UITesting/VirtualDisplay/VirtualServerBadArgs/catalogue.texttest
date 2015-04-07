@@ -1,0 +1,16 @@
+The following new files/directories were created:
+<Test Directory>
+----texttesttmp
+--------console.14Jan151602.30161
+------------Xvfb
+----------------Xvfb.gewoia.30164
+----------------Xvfb.gewoia.30166
+----------------Xvfb.gewoia.30168
+----------------Xvfb.gewoia.30170
+----------------Xvfb.gewoia.30172
+------------disp
+----------------Test
+--------------------errors.disp
+--------------------output.disp
+--------------------framework_tmp
+------------------------teststate

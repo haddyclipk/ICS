@@ -1,0 +1,11 @@
+
+import datetime
+
+origdate = datetime.date
+
+class MyDate(origdate):
+    @classmethod
+    def today(klass):
+        return origdate(2010, 5, 5)
+
+datetime.date = MyDate

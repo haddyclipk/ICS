@@ -1,0 +1,148 @@
+Enabling entry completion, using matching 1
+Adding entry completion '1' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/AddTwoApps/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/AddTwoApps/log' ...
+Adding entry completion 'site' ...
+Adding entry completion 'personal' ...
+Adding entry completion 'all' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest static GUI : management of tests' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'Edit' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+    ----
+  _Select (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
+  Refresh (Stock image 'gtk-refresh', accelerator 'F5', tooltip 'Refresh the whole test suite so that it reflects file changes')
+  _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected
+
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
+
+Showing Notebook with tabs: Selection , Config
+Viewing page 'Selection'
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry
+'Test names containing  ' (tooltip 'Select tests for which the name contains the entered text. The text can be a regular expression.') | Text entry
+'Test paths containing  ' (tooltip 'Select tests for which the full path to the test (e.g. suite1/subsuite/testname) contains the entered text. The text can be a regular expression. You can select tests by suite name this way.') | Text entry
+'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
+'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
+'Test-files containing  ' (tooltip 'Select tests which have a file containing the entered text. The text can be a regular expression : e.g. enter '.*' to only look for the file without checking the contents.') | Text entry
+'Test-file to search  ' (tooltip 'When the 'test-files containing' field is non-empty, apply the search in files with the given stem. Unix-style file expansion (note not regular expressions) may be used. For example '*' will look in any file.') | Text entry (drop-down list containing [''])
+.....'Selection'......
+Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
+Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
+Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
+.....'Filtering'......
+Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
+Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 26Feb11:59:14.' , Image 'throbber_inactive.png'
+------------------------------------------------------------------------
+
+Changing GUI status to: 'Reading tests ...'
+Updated drop-down list in 'Test-file to search' Text entry (set to 'output') (drop-down list containing ['output'])
+
+Changing GUI status to: 'Reading tests completed at 26Feb11:59:14.'
+
+---------- Dialog 'Define a new tested application' ----------
+Default widget is 'gtk-ok'
+'Full name of application:' (tooltip 'Name of application to use in reports etc.')
+Text entry
+'
+File extension to use for TextTest files associated with this application:' (tooltip 'Short space-free extension, to identify all TextTest's files associated with this application')
+Text entry
+'
+Subdirectory name to store the above application files under (leave blank for local storage):'
+Text entry
+'
+Java Class name (instead of executable program):'
+Text entry
+''
+Combo Box (selected 'Disable GUI testing options') (drop-down list containing ['Disable GUI testing options', 'PyGTK GUI with PyUseCase 3.x', 'Tkinter GUI with PyUseCase 3.2+', 'Java GUI with JUseCase', 'Other embedded Use-case Recorder (e.g. PyUseCase 2.x, NUseCase)', 'Other GUI-test tool (enable virtual display only)'])
+.....'
+Select executable program to test:' (tooltip 'The full path to the program you want to test')......
+
+Showing File Chooser for 'Define a new tested application' (selected '/carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/AddTwoApps/TargetApp/hello.py')
+Shortcut folders (1) :
+- /carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/AddTwoApps/TargetApp
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+--------------------------------------------------------------
+
+Expected application event 'all tests to be read' occurred, proceeding.
+
+'enter file extension to use for texttest files associated with this application =' event created with arguments 'hello'
+Edited 'File extension to use for TextTest files associated with this application' Text entry (set to 'hello')
+
+'press define' event created with arguments ''
+Adding entry completion 'output' ...
+Adding entry completion 'hello' ...
+
+Changing title for Window 'TextTest static GUI : management of tests for HELLO'
+
+Updated : Test Tree with columns: Tests: All 0 selected
+-> TargetApp (hello) (grey90,bold)
+Hiding the 'Run with slow motion replay' widget
+Hiding the 'Recording Tab' widget
+
+Changing GUI status to: 'Created new application with extension 'hello'.'
+
+'define a new tested application' event created with arguments ''
+
+---------- Dialog 'Define a new tested application' ----------
+Default widget is 'gtk-ok'
+'Full name of application:' (tooltip 'Name of application to use in reports etc.')
+Text entry
+'
+File extension to use for TextTest files associated with this application:' (tooltip 'Short space-free extension, to identify all TextTest's files associated with this application')
+Text entry (set to 'hello')
+'
+Subdirectory name to store the above application files under (leave blank for local storage):'
+Text entry
+'
+Java Class name (instead of executable program):'
+Text entry
+''
+Combo Box (selected 'Disable GUI testing options') (drop-down list containing ['Disable GUI testing options', 'PyGTK GUI with PyUseCase 3.x', 'Tkinter GUI with PyUseCase 3.2+', 'Java GUI with JUseCase', 'Other embedded Use-case Recorder (e.g. PyUseCase 2.x, NUseCase)', 'Other GUI-test tool (enable virtual display only)'])
+.....'
+Select executable program to test:' (tooltip 'The full path to the program you want to test')......
+
+Showing File Chooser for 'Define a new tested application' (selected '/carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/AddTwoApps/TargetApp/config.hello')
+Shortcut folders (1) :
+- /carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/AddTwoApps/TargetApp
+---------------
+Button 'gtk-ok' (Stock image 'gtk-ok') , Button 'gtk-cancel' (Stock image 'gtk-cancel')
+--------------------------------------------------------------
+
+'enter file extension to use for texttest files associated with this application =' event created with arguments 'hello2'
+Edited 'File extension to use for TextTest files associated with this application' Text entry (set to 'hello2')
+
+'select executable program to test' event created with arguments 'hello.py'
+
+Updated : File Chooser for 'Define a new tested application' (selected '/carm/proj/texttest-tmp/geoff/texttest.26Feb115904.13975/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/AddTwoApps/TargetApp/hello.py')
+
+'press define' event created with arguments ''
+Adding entry completion 'hello2' ...
+
+Changing title for Window 'TextTest static GUI : management of tests for HELLO,HELLO2'
+
+Updated : Test Tree with columns: Tests: All 0 selected
+-> TargetApp (hello) (grey90,bold)
+-> TargetApp (hello2) (grey90,bold)
+
+Changing GUI status to: 'Created new application with extension 'hello2'.'
+
+'quit' event created with arguments ''

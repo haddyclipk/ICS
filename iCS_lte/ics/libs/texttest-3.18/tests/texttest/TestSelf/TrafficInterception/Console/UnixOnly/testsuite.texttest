@@ -1,0 +1,2 @@
+# Make sure things still work if we have a faked version of something we're recording traffic for
+RecordFromFake

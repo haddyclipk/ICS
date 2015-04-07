@@ -1,0 +1,32 @@
+Enabling entry completion, using matching 1
+Adding entry completion 'single' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing VideoStore.single under /carm/proj/texttest-tmp/geoff/texttest.14Dec132853.32072/texttest.gui/TestSelf/UITesting/UseCaseRecording/TestAndVersionIncompatible/TargetApp/source_with_pyc (started at 14Dec13:29:30)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+...........
+
+Showing Test Tree with columns: Tests: 0/1 selected, all hidden , Details
+
+------------------------------ (vertical pane separator, 77% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 14Dec13:29:31.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------------
+There weren't any tests to run, terminating...

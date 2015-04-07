@@ -1,0 +1,5 @@
+Traffic Replay INFO - Replay info seqdict(
+['<-CMD:some_program --argument /tmp/traffic.24Feb115404.20245/traffic/Test', '<-CMD:some_program /users/fakeuser/texttesttmp/traffic.24Feb115404.4575/traffic/Test'],
+{'<-CMD:some_program /users/fakeuser/texttesttmp/traffic.24Feb115404.4575/traffic/Test': [['->OUT:Matched the wrong command!\n']], '<-CMD:some_program --argument /tmp/traffic.24Feb115404.20245/traffic/Test': [['->OUT:We matched it right!\n']]})
+Traffic Replay INFO - Trying to match '<-CMD:some_program --argument <sandbox>'
+Traffic Replay INFO - Found exact match

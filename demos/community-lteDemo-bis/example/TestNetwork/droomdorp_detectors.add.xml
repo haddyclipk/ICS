@@ -1,0 +1,20 @@
+<shapes>
+    <e1-detector id="xp1-xp2" layer="1" lane="xp1-xp2turn_0" pos="1" freq="1" file="NUL"/>
+    <e1-detector id="xp1south" layer="1" lane="xp1-xp1south_0" pos="1" freq="1" file="NUL"/>
+    <e1-detector id="xp1north" layer="1" lane="xp1-xp1north_0" pos="1" freq="1" file="NUL"/>
+    <e1-detector id="xp1west" layer="1" lane="xp1-xp1west_0" pos="1" freq="1" file="NUL"/>
+
+    <e1-detector id="xp1south_in" layer="1" lane="xp1south-xp1south_turn_0" pos="20" freq="1" file="NUL"/>
+    <e1-detector id="xp1north_in" layer="1" lane="xp1north-xp1north_turn_0" pos="20" freq="1" file="NUL"/>
+    <e1-detector id="xp1west_in" layer="1" lane="xp1west-xp1west_turn_0" pos="20" freq="1" file="NUL"/>
+
+    <e1-detector id="xp2-xp1" layer="1" lane="xp2-xp1turn_0" pos="1" freq="1" file="NUL"/>
+    <e1-detector id="xp2south" layer="1" lane="xp2-xp2south_0" pos="1" freq="1" file="NUL"/>
+    <e1-detector id="xp2north" layer="1" lane="xp2-xp2north_0" pos="1" freq="1" file="NUL"/>
+    <e1-detector id="xp2east" layer="1" lane="xp2-xp2east_0" pos="1" freq="1" file="NUL"/>
+
+    <e1-detector id="xp2south_in" layer="1" lane="xp2south-xp2south_turn_0" pos="20" freq="1" file="NUL"/>
+    <e1-detector id="xp2north_in" layer="1" lane="xp2north-xp2north_turn_0" pos="20" freq="1" file="NUL"/>
+    <e1-detector id="xp2east_in" layer="1" lane="xp2east-xp2east_turn_0" pos="20" freq="1" file="NUL"/>
+
+</shapes>

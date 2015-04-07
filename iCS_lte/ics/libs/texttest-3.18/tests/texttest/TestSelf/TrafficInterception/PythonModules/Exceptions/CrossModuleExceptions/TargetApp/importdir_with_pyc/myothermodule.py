@@ -1,0 +1,4 @@
+
+class BadCallException(Exception):
+    pass
+

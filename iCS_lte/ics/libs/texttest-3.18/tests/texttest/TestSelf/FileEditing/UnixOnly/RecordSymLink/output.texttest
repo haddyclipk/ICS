@@ -1,0 +1,13 @@
+Using Application EDIT
+Running EDIT test-suite TargetApp
+  Running EDIT test-case Test
+Comparing differences for EDIT test-suite TargetApp
+  Comparing differences for EDIT test-case Test (on catalogue.edit,errors.edit,output.edit,traffic.edit)
+  EDIT test-case Test FAILED : differences in traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- Differences in traffic ----------
+1c1
+< <-CMD:editor.py --rootdir=/some/path
+---
+> <-CMD:editor.py --rootdir=/nfs/vm/texttest-tmp/geoff/texttest.03Jun144422.6883/texttest/TestSelf/FileEditing/UnixOnly/RecordSymLink/texttesttmp/console.03Jun144423.6894/edit/Test/writedir
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

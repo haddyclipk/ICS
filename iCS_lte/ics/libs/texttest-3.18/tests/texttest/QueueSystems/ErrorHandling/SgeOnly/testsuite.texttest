@@ -1,0 +1,26 @@
+# Might be local mount problems on slave machine, should recheck for existence of the executable
+BadExecutableInSlave
+
+# Check we can choose a machine and it will be forwarded to the grid
+BadRunMachine
+
+# Check batch report produced by two tests running with LSF in the same suite
+DuplicateSlave
+
+# Check we can fish results up from old accounting files
+JobInOldAcctFile
+
+# Sometimes we have to wait before we can get job info from qacct
+JobAppearsAfterDelay
+
+# Check slave handles master dropping connection without leaking lots of stuff
+MasterResetsConnection
+
+# Error message when there is no server address given
+NoServerAddress
+
+# See what happens if we can't find the server
+BadServerAddress
+
+# Make sure we can ignore unexpected printouts
+UnexpectedOutput

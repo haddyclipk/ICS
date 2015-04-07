@@ -1,0 +1,4 @@
+<-PYT:infofinder.method()
+->RET:'Fake method answer'
+<-PYT:infofinder.ClassName.staticMethod()
+->RET:'Fake static method answer'

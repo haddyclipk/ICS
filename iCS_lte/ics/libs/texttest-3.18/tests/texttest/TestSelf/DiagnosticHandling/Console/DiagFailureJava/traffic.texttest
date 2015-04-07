@@ -1,0 +1,3 @@
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.10Jun113644.14084/texttest/TestSelf/DiagnosticHandling/Console/DiagFailureJava/texttesttmp/console.java.tmp.dummy.10Jun113646.14098/diag.java.tmp.dummy/TestWithDiag; java DiagnosticWriter
+->FIL:TestWithDiag
+->OUT:This is a simple diagnostic-writing program

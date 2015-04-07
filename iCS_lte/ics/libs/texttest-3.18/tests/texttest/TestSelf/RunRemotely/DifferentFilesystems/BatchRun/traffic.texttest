@@ -1,0 +1,40 @@
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 rm -rf "~/.texttest/tmp/self_test.*"
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p '~/".texttest/tmp/self_test.09Feb153557.3266/system_under_test"'
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.09Feb153552.3260/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/TargetApp/hello.py 'testnet-s16:~/".texttest/tmp/self_test.09Feb153557.3266/system_under_test/hello.py"'
+<-CMD:ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 mkdir -p '~/".texttest/tmp/self_test.09Feb153557.3266/hello/Test"'
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 /carm/proj/texttest-tmp/geoff/texttest.09Feb153552.3260/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.09Feb153557.3266/hello/Test/run_test.sh 'testnet-s16:~/".texttest/tmp/self_test.09Feb153557.3266/hello/Test"'
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.09Feb153552.3260/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.09Feb153557.3266/hello/Test; ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 testnet-s16 '~/".texttest/tmp/self_test.09Feb153557.3266/hello/Test/run_test.sh"'
+->OUT:Hello World!
+<-CMD:scp -Crp -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=10 'testnet-s16:~/".texttest/tmp/self_test.09Feb153557.3266/hello/Test"/*' /carm/proj/texttest-tmp/geoff/texttest.09Feb153552.3260/texttest/TestSelf/RunRemotely/DifferentFilesystems/BatchRun/texttesttmp/self_test.09Feb153557.3266/hello/Test
+->FIL:Test
+<-PYT:import smtplib
+<-PYT:smtplib.SMTP()
+->RET:Instance('SMTP', 'smtp1')
+<-PYT:smtp1.connect('localhost')
+->RET:(220, 'gewoia.jeppesensystems.com ESMTP Sendmail 8.13.8/8.13.8; Tue, 9 Feb 2010 15:36:03 +0100')
+<-PYT:smtp1.sendmail('geoff@localhost', ['tom'], '''From: geoff@localhost
+To: tom
+Subject: 09Feb2010 HELLO : 1 tests : 1 FAILED
+
+Summary of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+The following tests FAILED : 
+In HELLO test-suite TargetApp:
+  - HELLO test-case Test : output different
+
+
+Details of all Unsuccessful tests follows...
+---------------------------------------------------------------------------------
+
+Detailed information for the tests that FAILED follows...
+--------------------------------------------------------
+TEST FAILED on testnet-s16 : HELLO test-case Test (under Test)
+---------- Differences in output ----------
+1c1
+< Hello
+---
+> Hello World!
+
+''')
+->RET:{}
+<-PYT:smtp1.quit()

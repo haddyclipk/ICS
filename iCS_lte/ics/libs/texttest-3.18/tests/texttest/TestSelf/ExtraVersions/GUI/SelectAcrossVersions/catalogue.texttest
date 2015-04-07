@@ -1,0 +1,13 @@
+The following new files/directories were created:
+<Test Directory>
+----TargetApp
+--------filter_files
+------------filter1
+----texttesttmp
+--------static_gui.30Apr164158.12837
+------------dynamic_run1
+----------------errors.log
+----------------gui_select
+----------------output.log
+------------temporary_filter_files
+----------------two

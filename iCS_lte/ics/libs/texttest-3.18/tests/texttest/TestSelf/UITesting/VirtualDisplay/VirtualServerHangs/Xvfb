@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+
+import os, time, signal
+
+if os.path.isfile("xvfblock"):
+    os.kill(os.getppid(), signal.SIGUSR1)
+else:
+    open("xvfblock", "w").write("dummy")
+    
+signal.pause()

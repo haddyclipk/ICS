@@ -1,0 +1,11 @@
+import_config_file:$STANDARD
+
+executable:$TEXTTEST_HOME/source/syscalls.py
+
+collect_traffic:firstcall.py
+collect_traffic:secondcall.py
+
+collect_traffic_environment:MY_ENV_VAR
+
+[run_dependent_text]
+traffic:{INTERNAL writedir}{REPLACE <texttest write dir>}

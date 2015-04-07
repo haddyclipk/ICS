@@ -1,0 +1,18 @@
+The following new files/directories were created:
+<Test Directory>
+----texttesttmp
+--------console.21Jan165429.23051
+------------env
+----------------Suite1
+--------------------Test1
+------------------------errors.env
+------------------------first.properties
+------------------------output.env
+------------------------second.properties
+------------------------third.properties
+------------------------framework_tmp
+----------------------------errors.envcmp
+----------------------------errors.envorigcmp
+----------------------------output.envcmp
+----------------------------output.envorigcmp
+----------------------------teststate

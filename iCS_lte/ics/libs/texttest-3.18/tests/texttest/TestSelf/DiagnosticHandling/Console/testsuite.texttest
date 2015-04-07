@@ -1,0 +1,5 @@
+# Check that we can spot a difference in diagnostics
+DiagFailure
+
+# Same as DiagFailure, using log4j instead of log4py
+DiagFailureJava

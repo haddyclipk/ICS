@@ -1,0 +1,8 @@
+# Check that it works and that all versions match up correctly
+VersionMatch
+
+# If we pick up multiple versions, make sure we pick up their extra versions also
+MultiVersions
+
+# If we pick up multiple versions implicitly, make sure we pick up their extra versions also
+ImplicitVersions

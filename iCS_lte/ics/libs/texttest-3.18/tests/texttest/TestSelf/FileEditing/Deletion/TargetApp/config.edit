@@ -1,0 +1,12 @@
+import_config_file:$STANDARD
+
+default_interface:console
+
+executable:${TEXTTEST_HOME}/writewitheditor.py
+
+create_catalogues:true
+
+copy_test_path:file
+copy_test_path:subdir
+
+collect_traffic:editor.py

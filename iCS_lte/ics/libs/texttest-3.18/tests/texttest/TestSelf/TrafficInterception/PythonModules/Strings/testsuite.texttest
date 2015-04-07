@@ -1,0 +1,23 @@
+# Check we can replay a recorded response from a Python module. Also check it works with DOS line endings under POSIX.
+ReplayTraffic
+
+# Check we can replay a recorded response from a Python module
+RecordTraffic
+
+# Check we can record also when python importable data files are present
+RecordWithPythonData
+
+# Check we can handle modules inside packages, i.e. package.module
+ReplayPackageModule
+
+# Check we can force the traffic handling to be single-threaded, in case thread-specific methods are called
+SingleThreaded
+
+# Send it a dictionary with unicode multiline strings in...
+ComplexArguments
+
+# Record when we have "from x import *"
+NamespaceImport
+
+# Make sure our inexact match algorithm handles brackets in a suitable way
+MethodMatching

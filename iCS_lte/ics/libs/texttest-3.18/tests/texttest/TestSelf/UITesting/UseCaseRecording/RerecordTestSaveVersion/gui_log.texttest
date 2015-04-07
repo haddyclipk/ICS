@@ -1,0 +1,175 @@
+Enabling entry completion, using matching 1
+Adding entry completion '<default>' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/TargetApp/source_with_pyc' ...
+Adding entry completion 'localhost' ...
+Adding entry completion '1' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/log/logging.debug' ...
+Adding entry completion '/users/geoff/work/master/Testing/TextTest/log/logging.debug' ...
+Adding entry completion '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/log' ...
+Adding entry completion 'site' ...
+Adding entry completion 'personal' ...
+Adding entry completion 'all' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest static GUI : management of tests for VideoStore' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'Edit' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+    ----
+  _Select (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
+  Refresh (Stock image 'gtk-refresh', accelerator 'F5', tooltip 'Refresh the whole test suite so that it reflects file changes')
+  _Run (Stock image 'gtk-execute', greyed out, accelerator 'Ctrl+R', tooltip 'Run selected tests')
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected
+
+------------------------------ (vertical pane separator, 50% from the left edge)
+...........
+
+Showing Notebook with tabs: Selection , Config
+Viewing page 'Selection'
+Viewing table with 9 rows and 2 columns.
+'Tests for version  ' (tooltip 'Select tests for a specific version.') | Text entry (drop-down list containing ['', '<default>'])
+'Test names containing  ' (tooltip 'Select tests for which the name contains the entered text. The text can be a regular expression.') | Text entry
+'Test paths containing  ' (tooltip 'Select tests for which the full path to the test (e.g. suite1/subsuite/testname) contains the entered text. The text can be a regular expression. You can select tests by suite name this way.') | Text entry
+'App names containing  ' (tooltip 'Select tests for which the application name matches the entered text. The text can be a regular expression.') | Text entry
+'Tests listed in file  ' | Text entry , Button '...'
+'Descriptions containing  ' (tooltip 'Select tests for which the description (comment) matches the entered text. The text can be a regular expression.') | Text entry
+'Execution time  ' (tooltip 'Specify execution time limits, either as '<min>,<max>', or as a list of comma-separated expressions, such as >=0:45,<=1:00. Digit-only numbers are interpreted as minutes, while colon-separated numbers are interpreted as hours:minutes:seconds.') | Text entry
+'Test-files containing  ' (tooltip 'Select tests which have a file containing the entered text. The text can be a regular expression : e.g. enter '.*' to only look for the file without checking the contents.') | Text entry
+'Test-file to search  ' (tooltip 'When the 'test-files containing' field is non-empty, apply the search in files with the given stem. Unix-style file expansion (note not regular expressions) may be used. For example '*' will look in any file.') | Text entry (drop-down list containing [''])
+.....'Selection'......
+Check button 'Select in collapsed suites' (tooltip 'Select in currently collapsed suites as well?')
+Radio button 'Discard' (checked) (tooltip 'Unselect all currently selected tests before applying the new selection criteria.') , Radio button 'Refine' (tooltip 'Apply the new selection criteria only to the currently selected tests, to obtain a subselection.') , Radio button 'Extend' (tooltip 'Keep the currently selected tests even if they do not match the new criteria, and extend the selection with all other tests which meet the new criteria.') , Radio button 'Exclude' (tooltip 'After applying the new selection criteria to all tests, unselect the currently selected tests, to exclude them from the new selection.')
+Button '_Select' (Stock image 'gtk-find', accelerator 'Ctrl+Alt+F', tooltip 'Select indicated tests')
+.....'Filtering'......
+Radio button 'Discard' (checked) (tooltip 'Show all tests which match the criteria, and hide all those that do not.') , Radio button 'Refine' (tooltip 'Hide all tests which do not match the criteria. Do not show any tests that aren't already shown.') , Radio button 'Extend' (tooltip 'Show all tests which match the criteria. Do not hide any tests that are currently shown.')
+Button 'Filter' (Stock image 'gtk-find', accelerator 'Ctrl+F', tooltip 'filter tests to show only those indicated')
+Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 29Jan11:23:10.' , Image 'throbber_inactive.png'
+---------------------------------------------------------------------------------------
+
+Changing GUI status to: 'Reading tests ...'
+
+Column titles changed in Test Tree with columns: Tests: 0/1 selected
+
+Column titles changed in Test Tree with columns: Tests: 0/2 selected
+
+Updated : Test Tree with columns: Tests: 0/2 selected
+-> TargetApp (gui) (grey90,bold)
+->   AddMovie (grey90)
+->   suite (grey90,bold)
+->     AddMovie (grey90)
+Updated drop-down list in 'Test-file to search' Text entry (set to 'options') (drop-down list containing ['options', 'usecase', '----------', 'errors', 'output'])
+
+Changing GUI status to: 'Reading tests completed at 29Jan11:23:10.'
+
+Expected application event 'all tests to be read' occurred, proceeding.
+
+'set test selection to' event created with arguments 'AddMovie under TargetApp (gui)'
+
+No longer greyed out : Record _Use-Case, _Run
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected
+
+Current page changed in Notebook with tabs: Test , Selection , Running , Config
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: AddMovie
+-> Standard Files (white,bold)
+->   errors.gui (grey90)
+->   output.gui (grey90)
+-> Definition Files (white,bold)
+->   options.gui (grey90)
+->   usecase.gui (grey90)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+
+Description:
+<No description provided>
+===============================
+
+'view options for' event created with arguments 'Running'
+
+Current page changed in Notebook with tabs: Test , Selection , Running , Config
+Viewing page 'Running'
+
+Showing Notebook with tabs: Basic , Advanced , Recording
+Viewing page 'Basic'
+Viewing table with 4 rows and 2 columns.
+'Run this version  ' | Text entry
+'Use checkout  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/TargetApp/source_with_pyc')
+'Run on machine  ' | Text entry (set to 'localhost')
+'Times to run  ' (tooltip 'Set this to some number larger than 1 to run the same test multiple times, for example to try to catch indeterminism in the system under test') | Text entry (set to '1')
+Check button 'Run with slow motion replay'
+Button '_Run' (Stock image 'gtk-execute', accelerator 'Ctrl+R', tooltip 'Run selected tests')
+Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
+
+'view sub-options for running :' event created with arguments 'Recording'
+
+Current page changed in Notebook with tabs: Basic , Advanced , Recording
+Viewing page 'Recording'
+Viewing table with 2 rows and 2 columns.
+'Version to record  ' | Text entry
+'Checkout to use for recording  ' | Text entry (set to '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/TargetApp/source_with_pyc')
+Check button 'Also record command-line or client-server traffic' (checked)
+Check button 'Automatically replay test after recording it' (checked)
+Radio button 'Auto-replay invisible' (checked) , Radio button 'Auto-replay in dynamic GUI'
+Button 'Record _Use-Case' (Stock image 'gtk-media-record', accelerator 'F9', tooltip 'Record Use-Case')
+Button 'Reset Tab' (tooltip 'Reset all the settings in the current tab to their default values')
+
+'enter version to record =' event created with arguments 'version'
+Edited 'Version to record' Text entry (set to 'version')
+
+'record use-case' event created with arguments ''
+Adding entry completion 'options' ...
+Adding entry completion 'version' ...
+Starting record run of TextTest with arguments ['-g', '-record', '-vanilla', 'site', '-a', 'gui', '-v', 'version', '-c', '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/TargetApp/source_with_pyc', '-rectraffic', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/texttesttmp/static_gui.gui.29Jan112309.28504/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/texttesttmp/static_gui.gui.29Jan112309.28504/temporary_filter_files']
+
+Waiting for application event 'replay GUI to be closed' to occur.
+
+Changing GUI status to: 'Started record session for VideoStore test-case AddMovie'
+Starting replay run of TextTest with arguments ['-vanilla', 'site', '-autoreplay', '-o', 'version', '-a', 'gui', '-v', 'version', '-c', '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/TargetApp/source_with_pyc', '-count', '1', '-f', '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/texttesttmp/static_gui.gui.29Jan112309.28504/dynamic_run1/gui_select', '-fd', '/carm/proj/texttest-tmp/geoff/texttest.29Jan112047.15356/texttest.gui/TestSelf/UITesting/UseCaseRecording/RerecordTestSaveVersion/texttesttmp/static_gui.gui.29Jan112309.28504/temporary_filter_files']
+
+Changing GUI status to: 'Recording completed for VideoStore test-case AddMovie. Auto-replay of test now started. Don't submit the test manually!'
+
+Changing GUI status to: 'Recording and auto-replay completed for VideoStore test-case AddMovie'
+
+Expected application event 'replay GUI to be closed' occurred, proceeding.
+
+'view options for' event created with arguments 'Test'
+
+Current page changed in Notebook with tabs: Test , Selection , Running , Config
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: AddMovie
+-> Standard Files (white,bold)
+->   errors.gui (grey90)
+->   output.gui (grey90)
+->   output.gui.version (grey90)
+-> Definition Files (white,bold)
+->   options.gui (grey90)
+->   usecase.gui (grey90)
+->   usecase.gui.version (grey90)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+
+Description:
+<No description provided>
+===============================
+
+'quit' event created with arguments ''

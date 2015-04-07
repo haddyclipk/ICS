@@ -1,0 +1,16 @@
+import_config_file:$STANDARD
+ 
+executable:${TEXTTEST_HOME}/writewitheditor.py
+
+create_catalogues:true
+
+copy_test_path:file
+copy_test_path:file2
+
+[collect_traffic]
+# We keep checking after subsequent traffic
+asynchronous:editor.py
+
+[collate_file]
+editedfile:file
+editedfile2:file2

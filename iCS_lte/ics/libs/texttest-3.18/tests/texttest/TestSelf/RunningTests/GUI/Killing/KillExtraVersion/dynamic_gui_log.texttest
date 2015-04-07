@@ -1,0 +1,343 @@
+Enabling entry completion, using matching 1
+Adding entry completion '<default>' ...
+Adding entry completion 'extra' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing SLEEP (started at 28Jan13:37:31)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan13:37:33'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator, 68% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 28Jan13:37:33.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 3 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/3 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 4 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/4 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 5 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/5 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 5 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 6 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 6 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (LightGoldenrod1) | (LightGoldenrod1)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 5 (white,bold) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (LightGoldenrod1) | (LightGoldenrod1)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 5 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Expected application event 'all tests to be read' occurred, proceeding.
+Expected application event 'test Basic version <default> to start' occurred, proceeding.
+
+'quit' event created with arguments ''
+Adding entry completion 'free_text' ...
+Killing running test (process id 31965)
+
+Changing GUI status to: 'Waiting for all tests to terminate ...'
+
+Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (LightGoldenrod1) | (LightGoldenrod1)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 5 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 0.166666666667, text '1 of 6 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (salmon) | KILLED (salmon)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 5 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Killed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     KILLED (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 0.333333333333, text '2 of 6 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (salmon) | KILLED (salmon)
+->     Basic2 (salmon) | cancelled (salmon)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 4 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     cancelled (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Killed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     KILLED (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 0.5, text '3 of 6 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (salmon) | KILLED (salmon)
+->     Basic2 (salmon) | cancelled (salmon)
+->   Suite (white,bold) | (white)
+->     Basic3 (salmon) | cancelled (salmon)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (white) | (white)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 3 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     cancelled (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Killed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     KILLED (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 0.666666666667, text '4 of 6 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (salmon) | KILLED (salmon)
+->     Basic2 (salmon) | cancelled (salmon)
+->   Suite (white,bold) | (white)
+->     Basic3 (salmon) | cancelled (salmon)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (salmon) | cancelled (salmon)
+->     Basic2 (white) | (white)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->     cancelled (salmon,bold) | 3 (salmon,bold) | Check box (checked)
+->   Killed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     KILLED (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 0.833333333333, text '5 of 6 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (salmon) | KILLED (salmon)
+->     Basic2 (salmon) | cancelled (salmon)
+->   Suite (white,bold) | (white)
+->     Basic3 (salmon) | cancelled (salmon)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (salmon) | cancelled (salmon)
+->     Basic2 (salmon) | cancelled (salmon)
+->   Suite (white,bold) | (white)
+->     Basic3 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 5 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->     cancelled (salmon,bold) | 4 (salmon,bold) | Check box (checked)
+->   Killed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     KILLED (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 6 tests completed at 28Jan13:37:35'
+
+Updated : Test Tree with columns: Tests: 0/6 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (salmon) | KILLED (salmon)
+->     Basic2 (salmon) | cancelled (salmon)
+->   Suite (white,bold) | (white)
+->     Basic3 (salmon) | cancelled (salmon)
+-> TargetApp (sleep.extra) (white,bold) | (white)
+->   Suite1 (white,bold) | (white)
+->     Basic (salmon) | cancelled (salmon)
+->     Basic2 (salmon) | cancelled (salmon)
+->   Suite (white,bold) | (white)
+->     Basic3 (salmon) | cancelled (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 6 (salmon,bold) | Check box (checked)
+->   Cancelled (salmon,bold) | 5 (salmon,bold) | Check box (checked)
+->     cancelled (salmon,bold) | 5 (salmon,bold) | Check box (checked)
+->   Killed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     KILLED (salmon,bold) | 1 (salmon,bold) | Check box (checked)

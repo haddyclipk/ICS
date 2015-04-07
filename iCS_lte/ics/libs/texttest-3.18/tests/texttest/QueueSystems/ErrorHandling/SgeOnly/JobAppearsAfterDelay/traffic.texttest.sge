@@ -1,0 +1,16 @@
+<-SRV:TextTest slave server started on 10.67.7.83:46659
+<-CMD:cd /nfs/vm/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/JobAppearsAfterDelay/texttesttmp/sleep.killing.01Mar115130.2876/slavelogs; env 'USECASE_RECORD_SCRIPT=' 'USECASE_REPLAY_SCRIPT=' qsub -N Test-Basic-SLEEP.killing -w e -notify -m n -cwd -b y -V -o Test-Basic-SLEEP.killing.log -e Test-Basic-SLEEP.killing.errors "exec $SHELL -c "exec /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/JobAppearsAfterDelay/TargetApp -a sleep.killing -l -tp 'Basic' -slave /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/JobAppearsAfterDelay/texttesttmp/sleep.killing.01Mar115130.2876 -servaddr 10.67.7.83:36863 -b short_local""
+->OUT:Your job 1 (stupid) has been submitted.
+<-SRV:Completed submission of all tests
+<-CMD:qdel 1
+->OUT:denied: job 1 does not exist
+<-CMD:qacct -j 1
+->ERR:error: job id 1 not found
+<-CMD:qacct -j 1 -f /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/JobAppearsAfterDelay/sge/default/common/accounting.0
+->ERR:error: job id 1 not found
+<-CMD:qacct -j 1 -f /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge/QueueSystems/ErrorHandling/SgeOnly/JobAppearsAfterDelay/sge/default/common/accounting.1
+->ERR:error: job id 1 not found
+<-CMD:qacct -j 1
+->ERR:error: job id 1 not found
+<-CMD:qacct -j 1
+->OUT:Now we've found the information!

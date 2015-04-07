@@ -1,0 +1,21 @@
+base_version:queuesystem
+
+link_test_path:sgehostfile
+
+[collect_traffic]
+default:qdel
+default:qacct
+default:qselect
+default:qstat
+# Starts a slave, which can continue to make file changes
+# after qsub has returned...
+asynchronous:qsub
+
+[collect_traffic_environment]
+qsub:USECASE_RECORD_SCRIPT
+qsub:USECASE_REPLAY_SCRIPT
+# Test environment variable, make sure it isn't set externally when it shouldn't be
+qsub:TO_GREET
+
+[test_data_environment]
+sgehostfile:PE_HOSTFILE

@@ -1,0 +1,12 @@
+[Migrated section 1]
+search_string:diagnostic-writing
+search_file:output
+bug_system:bugzilla
+bug_id:4404
+
+[Migrated section 2]
+search_string:java
+search_file:errors
+bug_system:bugzilla
+bug_id:4404
+

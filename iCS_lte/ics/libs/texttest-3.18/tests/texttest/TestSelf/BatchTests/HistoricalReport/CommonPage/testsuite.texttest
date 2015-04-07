@@ -1,0 +1,5 @@
+# Look for several apps arranged on the same page
+MultiAppsNoVersions
+
+# Yes, there isn't any performance info here, but we can at least check it writes to the correct location...
+PerformanceInfo

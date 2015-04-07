@@ -1,0 +1,1 @@
+TEXTTEST_DYNAMIC_GUI_INTERPRETER:coverage -x ${TEXTTEST_CHECKOUT}/pyusecase/bin/pyusecase -l config

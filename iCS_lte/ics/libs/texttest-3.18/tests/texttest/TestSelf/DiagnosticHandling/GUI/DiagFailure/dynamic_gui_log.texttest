@@ -1,0 +1,184 @@
+Enabling entry completion, using matching 1
+Adding entry completion 'tmp' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing DIAG.tmp (started at 28Jan12:07:35)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 28Jan12:07:37'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator, 68% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 28Jan12:07:37.' , Image 'throbber_inactive.png'
+-------------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (diag.tmp) (white,bold) | (white)
+->   TestWithDiag (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (diag.tmp) (white,bold) | (white)
+->   TestWithDiag (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (diag.tmp) (white,bold) | (white)
+->   TestWithDiag (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (diag.tmp) (white,bold) | (white)
+->   TestWithDiag (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 1 tests completed at 28Jan12:07:39'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (diag.tmp) (white,bold) | (white)
+->   TestWithDiag (DarkSeaGreen2) | first different(+) (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     first different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     third new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+Only one test found, selecting TestWithDiag
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: All 1 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: TestWithDiag , Details
+-> Comparison Files (bold)
+->   errors.diag (DarkSeaGreen2) | (DarkSeaGreen2)
+->   first.diag.tmp (salmon) | (salmon)
+->   output.diag (DarkSeaGreen2) | (DarkSeaGreen2)
+->   second.diag.tmp (DarkSeaGreen2) | (DarkSeaGreen2)
+-> New Files (bold)
+->   third.diag (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in first ----------
+1,2c1,2
+< [ firstdiag ] INFO: Some information <DIFF>
+< [ firstdiag ] DEBUG: Some debug stuff <DIFF>
+---
+> [ firstdiag ] INFO: Some information
+> [ firstdiag ] DEBUG: Some debug stuff
+---------- New result in third ----------
+[ thirddiag ] INFO: Some information
+===============================
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set file selection to' event created with arguments 'third.diag'
+
+========== Text Info ==========
+Test FAILED :
+---------- New result in third ----------
+[ thirddiag ] INFO: Some information
+===============================
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving DIAG.tmp test-case TestWithDiag : third, version tmp'
+
+Updated : Test Tree with columns: Tests: All 1 selected, none hidden , Details
+-> TargetApp (diag.tmp) (white,bold) | (white)
+->   TestWithDiag (DarkSeaGreen2) | first different (salmon)
+
+Updated : File Tree with columns: TestWithDiag , Details
+-> Comparison Files (bold)
+->   errors.diag (DarkSeaGreen2) | (DarkSeaGreen2)
+->   first.diag.tmp (salmon) | (salmon)
+->   output.diag (DarkSeaGreen2) | (DarkSeaGreen2)
+->   second.diag.tmp (DarkSeaGreen2) | (DarkSeaGreen2)
+->   third.diag.tmp (DarkSeaGreen2) | (DarkSeaGreen2)
+
+========== Text Info ==========
+Test FAILED :
+---------- Differences in first ----------
+1,2c1,2
+< [ firstdiag ] INFO: Some information <DIFF>
+< [ firstdiag ] DEBUG: Some debug stuff <DIFF>
+---
+> [ firstdiag ] INFO: Some information
+> [ firstdiag ] DEBUG: Some debug stuff
+===============================
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving DIAG.tmp test-case TestWithDiag : first, version tmp'
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (diag.tmp) (white,bold) | All 1 tests successful (DarkSeaGreen2)
+
+Current page changed in Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Initial filter (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Final filter (white) | 0 (white) | Check box (checked)
+-> Failed (white) | 0 (white) | Check box (checked)
+->   Differences (white) | 0 (white) | Check box (checked)
+->     first different (white) | 0 (white) | Check box (checked)
+->     third new (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+->   Saved (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'quit' event created with arguments ''
+Adding entry completion 'free_text' ...

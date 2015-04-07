@@ -1,0 +1,6 @@
+<-CMD:sleep.py 2
+->OUT:Sleeping for 2 seconds...
+2 seconds are up.
+<-CMD:sleep.py 0.5
+->OUT:Sleeping for 0.5 seconds...
+0.5 seconds are up.

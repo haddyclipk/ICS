@@ -1,0 +1,12 @@
+# Full path to the System Under Test
+executable:/home/geoff/.texttest/tmp/texttest.20Nov213641.8025/texttest.gui/GUI/StaticGUI/AddingApps/FromScratch/UsePyUseCase3/TargetApp/hello.py
+
+# Mode for Use-case recording (GUI, console or disabled)
+use_case_record_mode:GUI
+
+# Which Use-case recorder is being used
+use_case_recorder:pyusecase
+
+# Program to use as interpreter for the SUT
+interpreter:pyusecase
+

@@ -1,0 +1,45 @@
+<edges>
+    <edge fromnode="xp1" id="xp1-xp2turn" tonode="xp2turn" />
+    <edge fromnode="xp2turn" id="xp2turn-xp2" tonode="xp2" nolanes="3" />
+    <edge fromnode="xp2" id="xp2-xp1turn" tonode="xp1turn" />
+    <edge fromnode="xp1turn" id="xp1turn-xp1" tonode="xp1" nolanes="3" />
+
+    <edge fromnode="xp1" id="xp1-xp1south" tonode="xp1south" />
+    <edge fromnode="xp1south" id="xp1south-xp1south_out" tonode="xp1south_out" />
+    <edge fromnode="xp1" id="xp1-xp1west" tonode="xp1west" />
+    <edge fromnode="xp1west" id="xp1west-xp1west_out" tonode="xp1west_out" />
+    <edge fromnode="xp1" id="xp1-xp1north" tonode="xp1north" />
+    <edge fromnode="xp1north" id="xp1north-xp1north_out" tonode="xp1north_out" />
+
+    <edge fromnode="xp1south_turn" id="xp1south_turn-xp1" tonode="xp1" nolanes="3" />
+    <edge fromnode="xp1south" id="xp1south-xp1south_turn" tonode="xp1south_turn" />
+    <edge fromnode="xp1south_out" id="xp1south_out-xp1south" tonode="xp1south" />
+
+    <edge fromnode="xp1west_turn" id="xp1west_turn-xp1" tonode="xp1" nolanes="3" />
+    <edge fromnode="xp1west" id="xp1west-xp1west_turn" tonode="xp1west_turn" />
+    <edge fromnode="xp1west_out" id="xp1west_out-xp1west" tonode="xp1west" />
+
+    <edge fromnode="xp1north_turn" id="xp1north_turn-xp1" tonode="xp1" nolanes="3" />
+    <edge fromnode="xp1north" id="xp1north-xp1north_turn" tonode="xp1north_turn" />
+    <edge fromnode="xp1north_out" id="xp1north_out-xp1north" tonode="xp1north" />
+
+    <edge fromnode="xp2" id="xp2-xp2south" tonode="xp2south" />
+    <edge fromnode="xp2south" id="xp2south-xp2south_out" tonode="xp2south_out" />
+    <edge fromnode="xp2" id="xp2-xp2east" tonode="xp2east" />
+    <edge fromnode="xp2east" id="xp2east-xp2east_out" tonode="xp2east_out" />
+    <edge fromnode="xp2" id="xp2-xp2north" tonode="xp2north" />
+    <edge fromnode="xp2north" id="xp2north-xp2north_out" tonode="xp2north_out" />
+
+    <edge fromnode="xp2south_turn" id="xp2south_turn-xp2" tonode="xp2" nolanes="3" />
+    <edge fromnode="xp2south" id="xp2south-xp2south_turn" tonode="xp2south_turn" />
+    <edge fromnode="xp2south_out" id="xp2south_out-xp2south" tonode="xp2south" />
+
+    <edge fromnode="xp2east_turn" id="xp2east_turn-xp2" tonode="xp2" nolanes="3" />
+    <edge fromnode="xp2east" id="xp2east-xp2east_turn" tonode="xp2east_turn" />
+    <edge fromnode="xp2east_out" id="xp2east_out-xp2east" tonode="xp2east" />
+
+    <edge fromnode="xp2north_turn" id="xp2north_turn-xp2" tonode="xp2" nolanes="3" />
+    <edge fromnode="xp2north" id="xp2north-xp2north_turn" tonode="xp2north_turn" />
+    <edge fromnode="xp2north_out" id="xp2north_out-xp2north" tonode="xp2north" />
+
+</edges>

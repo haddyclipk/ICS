@@ -1,0 +1,182 @@
+Enabling entry completion, using matching 1
+Adding entry completion '<default>' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing SLEEP (started at 01Mar11:52:00)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+...........
+
+Showing Test Tree with columns: Tests: 0/2 selected, all hidden , Details
+
+------------------------------ (vertical pane separator, 77% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 01Mar11:52:03.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------
+
+Updated : Test Tree with columns: Tests: 0/2 selected, 1 hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (white) | (white)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (white) | (white)
+->   Basic2 (white) | (white)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (grey80) | PEND (grey80)
+->   Basic2 (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (grey80) | PEND (grey80)
+->   Basic2 (grey80) | PEND (grey80)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (grey80,bold) | 2 (grey80,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (LightGoldenrod1) | RUN (sunvalley) (LightGoldenrod1)
+->   Basic2 (grey80) | PEND (grey80)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 0.5, text '1 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Basic2 (grey80) | PEND (grey80)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (grey80,bold) | 1 (grey80,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Basic2 (LightGoldenrod1) | RUN (sunriver) (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 01Mar11:52:08'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (sleep) (white,bold) | (white)
+->   Basic (DarkSeaGreen2) | (DarkSeaGreen2)
+->   Basic2 (salmon) | errors new(+) (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Pending (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     errors new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output new (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set test selection to' event created with arguments 'Basic2'
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: Basic2 , Details
+-> New Files (bold)
+->   errors.sleep (salmon) | (salmon)
+->   output.sleep (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test FAILED on sunriver :
+---------- New result in errors ----------
+---------- New result in output ----------
+Sleeping for 5 seconds...
+Done
+===============================
+
+'view options for' event created with arguments 'Run Info'
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Run Info'
+...........
+
+========== Run Info ==========
+Application name : SLEEP
+Version          : 
+Number of tests  : 2
+Executable       : /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/TargetApp/sleep.py
+
+Command line     : /users/geoff/work/master/Testing/TextTest/bin/texttest.py -g -a sleep -cp 1 -xr /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/log/logging.debug -xw /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/log -vanilla site -count 2 -f /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/texttesttmp/static_gui.01Mar115147.1495/dynamic_run1/gui_select -fd /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/texttesttmp/static_gui.01Mar115147.1495/temporary_filter_files
+
+Start time       : 01Mar11:52:00
+End time         : 01Mar11:52:08
+==============================
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Test Run Info ==========
+Selected test  : Basic2
+
+Description:
+Same again
+
+Command Line   : python /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/TargetApp/sleep.py
+
+Environment variables :
+PATH=/carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/texttesttmp/sleep.01Mar115200.1548/sleep/Basic2:/carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/tmp/632908.1.short:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/users/geoff/bin/coverage.latest/usr/bin:/carm/proj/texttest/geoff/Testing/TextTest/pyusecase/bin:/users/geoff/bin:/carm/proj/texttest/release/current/site/bin:/usr/local/share/sge6.2/bin/lx24-amd64:/usr/lib64/qt-3.3/bin:/carm/rational/releases/PurifyPlus.7.0.0.0-010/i386_linux2/bin:/usr/local/sbin:/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/usr/sbin:/sbin:/usr/local/share/texttest/site/bin:/usr/local/share/java/apache-maven-2.2.1/bin:.
+QUEUE_SYSTEM_RESOURCE=
+QUEUE_SYSTEM_SUBMIT_ARGS=
+TEXTTEST_ROOT=/carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/TargetApp
+TEXTTEST_SANDBOX=/carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/texttesttmp/sleep.01Mar115200.1548/sleep/Basic2
+TEXTTEST_SANDBOX_ROOT=/carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/texttesttmp/sleep.01Mar115200.1548
+USECASE_REPLAY_SCRIPT=
+
+SGE Command   : qsub -N Test-Basic2-SLEEP -w e -notify -m n -cwd -b y -V -o Test-Basic2-SLEEP.log -e Test-Basic2-SLEEP.errors ...
+Slave Command : /users/geoff/work/master/Testing/TextTest/bin/texttest.py -d /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/TargetApp -a sleep -l -tp 'Basic2' -slave /carm/proj/texttest-tmp/geoff/texttest.01Mar115050.19486/texttest.sge.gui/QueueSystems/NormalOperation/GUI/ViewRunInfo/texttesttmp/sleep.01Mar115200.1548 -servaddr 10.67.7.13:57562
+===================================
+
+'quit' event created with arguments ''
+Adding entry completion 'output' ...

@@ -1,0 +1,4 @@
+<-CMD:some_program --argument /tmp/traffic.24Feb115404.20245/traffic/Test
+->OUT:We matched it right!
+<-CMD:some_program /users/fakeuser/texttesttmp/traffic.24Feb115404.4575/traffic/Test
+->OUT:Matched the wrong command!

@@ -1,0 +1,5 @@
+Reading bugs from file /carm/proj/texttest-tmp/geoff/texttest.23Jul122337.9717/texttest/TestSelf/KnownBugs/Console/OtherFileDiffNoBug/TargetApp/Test/knownbugs.hello.textinfile
+Reading bugs from file /carm/proj/texttest-tmp/geoff/texttest.23Jul122337.9717/texttest/TestSelf/KnownBugs/Console/OtherFileDiffNoBug/personaldir/knownbugs.hello
+Looking for bugs in file output
+Looking for bugs in /carm/proj/texttest-tmp/geoff/texttest.23Jul122337.9717/texttest/TestSelf/KnownBugs/Console/OtherFileDiffNoBug/texttesttmp/local.success.baderr.textinfile.23Jul122339.9725/hello.success.baderr.textinfile/Test/output.hello
+File not changed, ignoring all bugs

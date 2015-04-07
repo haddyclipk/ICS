@@ -1,0 +1,172 @@
+Enabling entry completion, using matching 1
+Adding entry completion 'batch.1' ...
+Adding entry completion 'batch.2' ...
+Setting window width to 60% of screen.
+Setting window height to 83% of screen.
+
+---------- Window 'TextTest dynamic GUI : testing HELLO.batch.1,HELLO.batch.2 (started at 27Jan14:54:11)' ----------
+Focus widget is 'Test Tree'
+
+Menu Bar : 'File' (+) , 'View' (+) , 'Actions' (+) , 'Help' (+)
+
+Tool Bar :
+  _Quit (Stock image 'gtk-quit', accelerator 'Ctrl+Q', tooltip 'Quit')
+  _Kill (Stock image 'gtk-stop', greyed out, accelerator 'Ctrl+Delete', tooltip 'Kill selected tests')
+  _Save (Stock image 'gtk-save', greyed out, accelerator 'Ctrl+S', tooltip 'Save results for selected tests')
+  Progress bar set to fraction 0.0, text 'All 0 tests completed at 27Jan14:54:11'
+...........
+
+Showing Test Tree with columns: Tests: All 0 selected , Details
+
+------------------------------ (vertical pane separator, 68% from the left edge)
+...........
+
+Showing Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+'Shortcuts:' , Button '_New'
+...........
+'TextTest started at 27Jan14:54:11.' , Image 'throbber_inactive.png'
+----------------------------------------------------------------------------------------------------
+
+Progress bar set to fraction 0.0, text '0 of 1 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/1 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white,bold) | (white)
+->   BothDiff (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+
+Progress bar set to fraction 0.0, text '0 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white,bold) | (white)
+->   BothDiff (white) | (white)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
+->   BothDiff (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 2 (white,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white,bold) | (white)
+->   BothDiff (LightGoldenrod1) | (LightGoldenrod1)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
+->   BothDiff (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+
+Progress bar set to fraction 0.5, text '1 of 2 tests completed'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white,bold) | (white)
+->   BothDiff (salmon) | errors different(+) (salmon)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
+->   BothDiff (white) | (white)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white,bold) | 1 (white,bold) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     errors different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white,bold) | (white)
+->   BothDiff (salmon) | errors different(+) (salmon)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
+->   BothDiff (LightGoldenrod1) | (LightGoldenrod1)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (LightGoldenrod1,bold) | 1 (LightGoldenrod1,bold) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     errors different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+
+Progress bar set to fraction 1.0, text 'All 2 tests completed at 27Jan14:54:12'
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white,bold) | (white)
+->   BothDiff (salmon) | errors different(+) (salmon)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
+->   BothDiff (salmon) | errors different(+) (salmon)
+
+Updated : Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     errors different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 2 (salmon,bold) | Check box (checked)
+
+Expected application event 'completion of test actions' occurred, proceeding.
+
+'set test selection to' event created with arguments 'BothDiff under TargetApp (hello.batch.1)'
+
+No longer greyed out : _Save
+
+Column titles changed in Test Tree with columns: Tests: 1/2 selected, none hidden , Details
+
+Current page changed in Notebook with tabs: Test , Status , Selection , Run Info
+Viewing page 'Test'
+...........
+
+Showing File Tree with columns: BothDiff , Details
+-> Comparison Files (bold)
+->   errors.hello (salmon) | (salmon)
+->   output.hello (salmon) | (salmon)
+
+------------------------------ (horizontal pane separator, 46% from the top)
+...........
+
+========== Text Info ==========
+Test FAILED on bukoba :
+---------- Differences in errors ----------
+0a1
+> Error text
+---------- Differences in output ----------
+0a1
+> Hello World!
+===============================
+
+'save results for selected tests' event created with arguments ''
+
+Changing GUI status to: 'Saving HELLO.batch.1 test-case BothDiff : errors, version batch.1'
+
+Changing GUI status to: 'Saving HELLO.batch.1 test-case BothDiff : output, version batch.1'
+
+Greyed out : _Save
+
+Updated : Test Tree with columns: Tests: 0/2 selected, none hidden , Details
+-> TargetApp (hello.batch.1) (white,bold) | All 1 tests successful (DarkSeaGreen2)
+-> TargetApp (hello.batch.2) (white,bold) | (white)
+->   BothDiff (salmon) | errors different(+) (salmon)
+
+Current page changed in Notebook with tabs: Status , Selection , Run Info
+Viewing page 'Status'
+
+Showing Test Status View with columns: Status , Number , Visible
+-> Not started (white) | 0 (white) | Check box (checked)
+-> Running (white) | 0 (white) | Check box (checked)
+-> Failed (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->   Differences (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     errors different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->     output different (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+->       Group 1 (salmon,bold) | 1 (salmon,bold) | Check box (checked)
+-> Succeeded (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+->   Saved (DarkSeaGreen2,bold) | 1 (DarkSeaGreen2,bold) | Check box (checked)
+
+Changing GUI status to: 'Saved 1 tests.'
+
+'quit' event created with arguments ''
+Adding entry completion 'free_text' ...

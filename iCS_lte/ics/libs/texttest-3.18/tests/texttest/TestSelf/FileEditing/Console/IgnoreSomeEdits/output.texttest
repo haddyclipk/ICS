@@ -1,0 +1,11 @@
+Using Application EDIT
+Running EDIT test-suite TargetApp
+  Running EDIT test-case Test
+Comparing differences for EDIT test-suite TargetApp
+  Comparing differences for EDIT test-case Test (on catalogue.edit,editedfile.edit,editedfile2.edit,editedfile3.edit,errors.edit,output.edit,traffic.edit)
+  EDIT test-case Test FAILED : differences in traffic
+  View details(v), Save Version rectraffic(1), Save(s) or continue(any other key)?
+---------- Differences in traffic ----------
+8d7
+< ->FIL:writedir
+  Save Version rectraffic(1), Save(s) or continue(any other key)?

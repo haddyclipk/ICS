@@ -1,0 +1,8 @@
+default_interface:static_gui
+
+gui_entry_completion_inline:1
+
+gui_entry_completion_matching:2
+
+gui_entry_completions:text1
+gui_entry_completions:text2

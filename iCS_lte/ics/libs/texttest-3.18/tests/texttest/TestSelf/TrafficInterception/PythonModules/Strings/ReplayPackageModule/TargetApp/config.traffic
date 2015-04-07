@@ -1,0 +1,7 @@
+import_config_file:$STANDARD
+
+default_interface:console
+
+executable:$TEXTTEST_ROOT/printtemp.py
+
+collect_traffic_py_module:package.sub.tempfile
