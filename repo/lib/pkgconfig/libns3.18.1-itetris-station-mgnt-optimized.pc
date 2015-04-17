@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.18.1
+
+Name: libns3-itetris-station-mgnt
+Description: ns-3 module ns3-itetris-station-mgnt
+Version: 3.18.1
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.18.1-itetris-station-mgnt-optimized
+Cflags: -I${includedir}
+Requires: 
